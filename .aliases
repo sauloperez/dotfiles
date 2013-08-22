@@ -22,6 +22,7 @@ alias rkt="racket -il xrepl"
 alias tmux="tmux -2"
 alias view="vim -p -R"
 alias vp="vim -p"
+alias timestamp="date +%s"
 
 # Sync
 alias sync_irc="rsync -avz ~/Sites/IRC/ talos:/mnt/www/irc.gf3.ca/public"

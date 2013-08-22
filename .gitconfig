@@ -1,6 +1,6 @@
 [user]
-  name = Gianni Chiappetta
-  email = gianni@runlevel6.org
+  name = Pau Pérez
+  email = saulopefa@gmail.com
 [alias]
   br = branch
   ci = commit
@@ -59,4 +59,6 @@
 [diff "exif"]
   textconv = exiftool
 [push]
-  default = simple
+  default = matching 
+[help]
+  autocorrect = 1
