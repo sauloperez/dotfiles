@@ -1,7 +1,6 @@
 [user]
-  name  = Gianni Chiappetta
-  email = gianni@runlevel6.org
-
+  name = Pau Pérez
+  email = saulopefa@gmail.com
 [alias]
   br  = branch
   ci  = commit
@@ -76,3 +75,15 @@
 [url "git@heroku.com:"]
   insteadOf = "heroku:"
 
+[difftool "Kaleidoscope"]
+  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+  prompt = false
+[diff]
+  tool = Kaleidoscope
+[diff "exif"]
+  textconv = exiftool
+[push]
+  default = matching 
+[help]
+  autocorrect = 1
