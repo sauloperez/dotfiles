@@ -111,7 +111,7 @@ if [ -d $HOME/.dotfiles ]; then
 else
   # Clone Repo
   notice "Downloading"
-  git clone --recursive git://github.com/gf3/dotfiles.git $HOME/.dotfiles
+  git clone --recursive git://github.com/sauloperez/dotfiles.git $HOME/.dotfiles
 
   pushd $HOME/.dotfiles
 
