@@ -29,7 +29,9 @@ cjson () {
 }
 
 # Create a new directory and enter it
-mkd() {
+md() {
   mkdir -p "$@" && cd "$@"
 }
+
+
 
