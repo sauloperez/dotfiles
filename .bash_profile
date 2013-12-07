@@ -10,3 +10,5 @@ PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 # Common junk
 [[ -s "$HOME/.commonrc" ]] && source "$HOME/.commonrc"
 
+# To avoid JVM OutOfMemoryError when running Maven
+export MAVEN_OPTS='-Xmx512m -XX:MaxPermSize=128m'
