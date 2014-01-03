@@ -10,6 +10,9 @@ PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:/usr/local/bin:/usr/l
 # Common junk
 [[ -s "$HOME/.commonrc" ]] && source "$HOME/.commonrc"
 
+# To avoid JVM OutOfMemoryError when running Maven
+export MAVEN_OPTS='-Xmx512m -XX:MaxPermSize=128m'
+
 # Makes Mysql work with Rails
 MYSQL=/usr/local/mysql/bin
 export PATH=$PATH:$MYSQL
