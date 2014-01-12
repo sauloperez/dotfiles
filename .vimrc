@@ -329,3 +329,5 @@ let g:syntastic_coffee_coffeelint_args = '-f /Users/gianni/.coffeelint.json'
 execute pathogen#infect()
 filetype plugin indent on
 
+" Add spell checking and automatic wrapping at 72 columns to your commit messages
+autocmd Filetype gitcommit setlocal spell textwidth=72
