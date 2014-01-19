@@ -19,6 +19,8 @@ export PATH=$PATH:$MYSQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 # Autocomplete git commands and branch names
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+# install via: brew install git bash-completion
+# Further details in: https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
 fi
