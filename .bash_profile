@@ -17,7 +17,6 @@ export MAVEN_OPTS='-Xmx512m -XX:MaxPermSize=128m'
 MYSQL=/usr/local/mysql/bin
 export PATH=$PATH:$MYSQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
-USE_CACHE=true
 
 # Autocomplete git commands and branch names
 if [ -f ~/.git-completion.bash ]; then
