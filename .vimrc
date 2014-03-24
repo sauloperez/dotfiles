@@ -331,3 +331,7 @@ filetype plugin indent on
 
 " Add spell checking and automatic wrapping at 72 columns to your commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd vimenter * if !argc() | NERDTree | endif 
+
+" Close vim if last window open is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif 
