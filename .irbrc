@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'interactive_editor'
-require 'ap'
+require 'awesome_print'
 
 IRB::Irb.class_eval do
   def output_value
