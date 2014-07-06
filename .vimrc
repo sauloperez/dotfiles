@@ -1,6 +1,6 @@
 " Make vim more useful
 set nocompatible
-filetype off
+filetype on
 
 " Set syntax highlighting options.
 set t_Co=256
