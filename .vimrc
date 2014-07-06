@@ -1,5 +1,6 @@
 " Make vim more useful
 set nocompatible
+filetype off
 
 " Set syntax highlighting options.
 set t_Co=256
@@ -7,8 +8,39 @@ set background=dark
 syntax on
 colorscheme molotov
 
-" Enabled later, after Pathogen
-filetype off
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'mileszs/ack.vim'
+Plugin 'bling/vim-airline'
+Plugin 'skammer/vim-css-color'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mattn/gist-vim'
+Plugin 'tpope/vim-haml'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'pangloss/vim-javascript'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Lokaltog/powerline'
+Plugin 'tpope/vim-rails'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'tpope/vim-repeat'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'slim-template/vim-slim'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'godlygeek/tabular'
+
+" All of your Plugins must be added before the following line
+call vundle#end()
+filetype plugin indent on
 
 " Change mapleader
 let mapleader=","
@@ -17,7 +49,6 @@ let mapleader=","
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 set undodir=~/.vim/undo
-
 
 " Set some junk
 set autoindent " Copy indent from last line when starting new line.
@@ -324,10 +355,6 @@ let ruby_fold = 1
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_coffee_coffeelint_args = '-f /Users/gianni/.coffeelint.json'
-
-" Emulate bundles, allow plugins to live independantly. Easier to manage.
-execute pathogen#infect()
-filetype plugin indent on
 
 " Add spell checking and automatic wrapping at 72 columns to your commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
