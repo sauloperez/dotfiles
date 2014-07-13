@@ -38,6 +38,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-endwise'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -185,11 +186,6 @@ if &term == "xterm-ipad"
   inoremap <Tab> <Esc>`^
   inoremap <Leader><Tab> <Tab>
 endif
-
-" Remap keys for auto-completion menu
-inoremap <expr> <CR>   pumvisible() ? "\<C-y>" : "\<CR>"
-inoremap <expr> <Down> pumvisible() ? "\<C-n>" : "\<Down>"
-inoremap <expr> <Up>   pumvisible() ? "\<C-p>" : "\<Up>"
 
 " Indent/unident block (,]) (,[)
 nnoremap <leader>] >i{<CR>
