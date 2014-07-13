@@ -39,8 +39,9 @@ Plugin 'scrooloose/syntastic'
 Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-endwise'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
-" All of your Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
 
@@ -364,3 +365,8 @@ nnoremap <CR> :nohlsearch<cr>
 
 " Enable and disabling paste when... pasting
 map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
