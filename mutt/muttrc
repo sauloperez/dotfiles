@@ -85,7 +85,7 @@ alternative_order text/plain text/enriched text/html
 # }}}
 # Compose View Options {{{
 
-set realname = "Gianni Chiappetta"   # who am i?
+set realname = "Pau Pérez"           # who am i?
 set envelope_from                    # which from?
 set sig_dashes                       # dashes before sig
 set edit_headers                     # show headers when composing
@@ -113,33 +113,33 @@ hdr_order from: to: cc: date: subject:  # and in this order
 # steve@stevelosh.com {{{
 
 # Default inbox.
-set spoolfile = "+gianni-runlevel6.org/INBOX"
+set spoolfile = "+saulopefa-gmail.com/INBOX"
 
 # Alternate email addresses.
-alternates gianni@metalabdesign.com
+# alternates foo@bar.com
 
 # Mailboxes to show in the sidebar.
-mailboxes +gianni-runlevel6.org/INBOX \
-          +gianni-runlevel6.org/archive \
-          +gianni-runlevel6.org/sent \
-          +gianni-runlevel6.org/drafts \
-          +gianni-runlevel6.org/chats \
+mailboxes +saulopefa-gmail.com/INBOX \
+          +saulopefa-gmail.com/archive \
+          +saulopefa-gmail.com/sent \
+          +saulopefa-gmail.com/drafts \
+          +saulopefa-gmail.com/chats \
           +temporary/search \
 
 # Other special folders.
-set mbox      = "+gianni-runlevel6.org/archive"
-set postponed = "+gianni-runlevel6.org/drafts"
+set mbox      = "+saulopefa-gmail.com/archive"
+set postponed = "+saulopefa-gmail.com/drafts"
 
 # Sending email.
-set from     = "gianni@runlevel6.org"
-set sendmail = "/usr/local/bin/msmtp -a runlevel6"
+set from     = "saulopefa@gmail.com"
+set sendmail = "/usr/local/bin/msmtp -a gmail"
 set sendmail_wait = 0 # no please don't silently fail, email is important
 unset record
 
 # }}}
 # Account Hooks {{{
 
-# folder-hook gianni-runlevel6.org/* source ~/.mutt/gianni-runlevel6.org.muttrc
+# folder-hook saulopefa-gmail.com/* source ~/.mutt/saulopefa-gmail.com.muttrc
 
 # }}}
 # Key Bindings {{{
@@ -176,8 +176,8 @@ macro index C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
 macro index M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
 
 # Quickly change mailboxes
-macro index \' "<change-folder>+gianni-runlevel6.org/INBOX<enter>"   "go to INBOX"
-macro index \" "<change-folder>+gianni-runlevel6.org/archive<enter>" "go to archive"
+macro index \' "<change-folder>+saulopefa-gmail.com/INBOX<enter>"   "go to INBOX"
+macro index \" "<change-folder>+saulopefa-gmail.com/archive<enter>" "go to archive"
 
 # Search with notmuch
 macro index S "<enter-command>unset wait_key<enter><shell-escape>mutt-notmuch-py -G ~/.mail/temporary/search<enter><change-folder-readonly>+temporary/search<enter>" "search mail (using notmuch)"
@@ -201,8 +201,8 @@ macro pager \Cu "|urlview<enter>" "call urlview to open links"
 macro pager s "<pipe-message>cat > ~/Desktop/"  "save message as"
 
 # Quickly change mailboxes
-macro pager \' "<exit><change-folder>+gianni-runlevel6.org/INBOX<enter>"   "go to INBOX"
-macro pager \" "<exit><change-folder>+gianni-runlevel6.org/archive<enter>" "go to archive"
+macro pager \' "<exit><change-folder>+saulopefa-gmail.com/INBOX<enter>"   "go to INBOX"
+macro pager \" "<exit><change-folder>+saulopefa-gmail.com/archive<enter>" "go to archive"
 
 # }}}
 # Compose {{{

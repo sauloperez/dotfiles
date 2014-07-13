@@ -354,7 +354,6 @@ let ruby_fold = 1
 " Syntastic.vim
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
-let g:syntastic_coffee_coffeelint_args = '-f /Users/gianni/.coffeelint.json'
 
 " Add spell checking and automatic wrapping at 72 columns to your commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
