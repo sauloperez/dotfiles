@@ -37,6 +37,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-dispatch'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
