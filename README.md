@@ -5,7 +5,6 @@ Prerequisites
 -------------
 
 * Git (1.8+ recommended)
-* Mercurial (1.6+ recommended)
 * Vim (7.3+ recommended)
 * Tree
 * Pygments
@@ -17,26 +16,28 @@ Optional, but recommended:
 * [Homebrew](http://mxcl.github.com/homebrew/) (OS X only)
 
 
-Bootstrapper
+Install
 ------------
 
-The bootstrapper will back up all your existing files before it installs
-anything new, it'll also warn you if a dependency isn't met.
+Dotfiles installion is handled by [thoughtbot's rcm](https://github.com/thoughtbot/rcm). A suite of tools for managing dotfiles directories. Check out whether everything will work fine:
 
 ``` bash-session
-$ bash < <( curl https://raw.github.com/sauloperez/dotfiles/master/bootstrap.sh )
+$ lsrc
 ```
 
-Don't worry, all your old files will be backed up!
+Install your dotfiles symlinking them into your home directory:
 
+``` bash-session
+$ rcup -v
+```
 
 Stay Updated
 ------------
 
-Run the bootstrapper again!
+Run the sync again!
 
 ``` bash-session
-$ ~/.dotfiles/bootstrap.sh
+$ rcup -v
 ```
 
 
@@ -137,7 +138,7 @@ Rudimentary support for vim on the iPad has been added via usage of the
 Shell
 =====
 
-Most of the shell junk is setup to work in both zsh and bash. Bash users should
+Most of the shell junk is setup to work in bash. Bash users should
 see [.bash_profile](https://github.com/sauloperez/dotfiles/blob/master/.bash_profile)
 and [.bash_prompt](https://github.com/sauloperez/dotfiles/blob/master/.bash_prompt).
 
