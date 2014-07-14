@@ -24,3 +24,7 @@ alias view="vim -p -R"
 alias vp="vim -p"
 alias timestamp="date +%s"
 alias pp="python -mjson.tool"
+
+# Rails stuff
+alias migrate="rake db:migrate db:rollback && rake db:migrate"
+alias zmigrate="zeus rake db:migrate db:rollback && zeus rake db:migrate"
