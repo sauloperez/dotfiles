@@ -44,13 +44,22 @@ $ rcup -v
 Vim
 ===
 
-Overview of the vim setup. Sensible defaults for all the things!
+Installation
+--------
 
-Remember to create the folders required in `.vimrc`:
+First create the folders required in `.vimrc`:
 
 ```
 mkdir ~/.vim/{backups,swaps,undo}
 ```
+
+Then, set up [Vundle](https://github.com/gmarik/Vundle.vim) to manage vim plugins
+
+`$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+
+and install plugins either running `:PluginInstall` from vim or install them from the command line with: `vim +PluginInstall +qall`
+
+What follows is an overview of the vim setup. Sensible defaults for all the things!
 
 Mappings
 --------
