@@ -46,6 +46,11 @@ Vim
 
 Overview of the vim setup. Sensible defaults for all the things!
 
+Remember to create the folders required in `.vimrc`:
+
+```
+mkdir ~/.vim/{backups,swaps,undo}
+```
 
 Mappings
 --------
