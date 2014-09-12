@@ -203,8 +203,8 @@ let g:NERDCustomDelimiters = { 'racket': { 'left': ';', 'leftAlt': '#|', 'rightA
 
 " Buffer navigation (,,) (,]) (,[) (,ls)
 map <Leader>, <C-^>
-" :map <Leader>] :bnext<CR>
-" :map <Leader>[ :bprev<CR>
+map <Leader>] :bnext<CR>
+map <Leader>[ :bprev<CR>
 map <Leader>ls :buffers<CR>
 
 " Close Quickfix window (,qq)
