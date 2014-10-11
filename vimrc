@@ -301,6 +301,9 @@ au BufRead,BufNewFile .zsh_rc,.functions,.commonrc set ft=zsh
 " Fish
 au BufRead,BufNewFile *.fish set ft=fish
 
+" Bash script for files without extension
+au BufNewFile,BufRead * if expand('%:t') !~ '\.' | set ft=sh | endif
+
 " XML
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 
