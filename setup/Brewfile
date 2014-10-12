@@ -41,6 +41,7 @@ install ctags
 install git-flow
 install ssh-copy-id
 install vim
+install git-extras
 cleanup
 
 # Apps
