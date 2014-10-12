@@ -10,3 +10,6 @@ echo -e "\n# Homebrew Cask settings" >> ~/.bash_profile
 echo -e 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"\n' >> ~/.bash_profile
 
 sh ./brew_bundle
+
+# Mac OS X Configuration
+sh ./osx
