@@ -89,16 +89,6 @@ Reference to vim mappings.
 * `'` Actually calls <code>`</code> for better mark jumping (line + column).
 * `J` Join lines and restore cursor position.
 
-Some handy aliases for hard to type things that I use often:
-
-* `>>` to `→`
-* `<<` to `←`
-* `^^` to `↑`
-* `VV` to `↓`
-* `aa` to `λ`
-
-As well `↑`, `↓`, `⏎`, and `⎋` may be used in completions menus. `<PageUp>` and `<PageDown>` work in both insert and command mode.
-
 
 ### Splits
 

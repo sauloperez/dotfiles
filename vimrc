@@ -90,7 +90,7 @@ set lispwords+=defpartial,defpage " Noir core
 set lispwords+=defaction,deffilter,defview,defsection " Ciste core
 set lispwords+=describe,it " Speclj TDD/BDD
 set magic " Enable extended regexes.
-set mouse=a " Enable moouse in all in all modes.
+set mouse=a " Enable moouse in all modes.
 set noerrorbells " Disable error bells.
 set nojoinspaces " Only insert single space after a '.', '?' and '!' with a join command.
 set noshowmode " Don't show the current mode (Powerline takes care of us)
@@ -163,13 +163,6 @@ command W w
 
 " Better mark jumping (line + col)
 nnoremap ' `
-
-" Hard to type things
-imap >> →
-imap << ←
-imap ^^ ↑
-imap VV ↓
-imap aa λ
 
 " Toggle show tabs and trailing spaces (,c)
 set lcs=tab:›\ ,trail:·,eol:¬,nbsp:_
@@ -302,7 +295,7 @@ au BufRead,BufNewFile .zsh_rc,.functions,.commonrc set ft=zsh
 au BufRead,BufNewFile *.fish set ft=fish
 
 " Bash script for files without extension
-au BufNewFile,BufRead * if expand('%:t') !~ '\.' | set ft=sh | endif
+" au BufNewFile,BufRead * if expand('%:t') !~ '\.' | set ft=sh | endif
 
 " XML
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
@@ -316,11 +309,6 @@ autocmd BufRead,BufNewFile *.[ch] endif
 " Airline.vim
 let g:airline_powerline_fonts = 1
 let g:airline_enable_syntastic = 1
-
-" Clojure.vim
-let g:vimclojure#ParenRainbow = 1 " Enable rainbow parens
-let g:vimclojure#DynamicHighlighting = 1 " Dynamic highlighting
-let g:vimclojure#FuzzyIndent = 1 " Names beginning in 'def' or 'with' to be indented as if they were included in the 'lispwords' option
 
 " CtrlP.vim
 let g:ctrlp_match_window_bottom = 0 " Show at top of window
@@ -376,4 +364,5 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " Custom macros
+" Replace ruby's hashrockets with the new syntax
 let @h= ':s/:\(\w\+\) =>/\1:/g'
