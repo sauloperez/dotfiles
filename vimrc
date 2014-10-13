@@ -43,6 +43,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'endel/vim-github-colorscheme'
 Plugin 'rizzatti/dash'
+Plugin 'endel/vim-github-colorscheme'
 
 call vundle#end()
 filetype plugin indent on
