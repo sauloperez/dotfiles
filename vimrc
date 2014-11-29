@@ -43,6 +43,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'endel/vim-github-colorscheme'
 Plugin 'vim-scripts/TaskList'
+Plugin 'jakobwesthoff/argumentrewrap'
 Plugin 'thoughtbot/vim-rspec'
 
 call vundle#end()
@@ -353,11 +354,17 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+" Make RSpec.vim use Dispatch.vim
+let g:rspec_command = "Dispatch rspec {spec}"
+
+" Argumentrewrap.vim
+nnoremap <silent> <leader>w :call argumentrewrap#RewrapArguments()<CR>
+
 " Add spell checking and automatic wrapping at 72 columns to your commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Close vim if last window open is NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif 
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<cr>
