@@ -43,6 +43,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'endel/vim-github-colorscheme'
 Plugin 'vim-scripts/TaskList'
+Plugin 'thoughtbot/vim-rspec'
 
 call vundle#end()
 filetype plugin indent on
@@ -345,6 +346,12 @@ let ruby_fold = 1
 " Syntastic.vim
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 " Add spell checking and automatic wrapping at 72 columns to your commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
