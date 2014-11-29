@@ -26,6 +26,7 @@ alias vp="vim -p"
 alias timestamp="date +%s"
 alias pp="python -mjson.tool"
 alias wip="git add -A && git commit -m 'WIP'"
+alias unwip="git reset HEAD^"
 
 # Rails stuff
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
