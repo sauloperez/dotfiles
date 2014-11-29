@@ -367,3 +367,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " Custom macros
 " Replace ruby's hashrockets with the new syntax
 let @h= ':s/:\(\w\+\) =>/\1:/g'
+
+" Abbreviations
+:iabbrev bb byebug
