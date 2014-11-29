@@ -42,7 +42,6 @@ Plugin 'tpope/vim-endwise'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'endel/vim-github-colorscheme'
-Plugin 'vim-scripts/TaskList'
 Plugin 'jakobwesthoff/argumentrewrap'
 Plugin 'thoughtbot/vim-rspec'
 
