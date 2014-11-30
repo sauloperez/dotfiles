@@ -89,4 +89,7 @@ function clone {
   git clone $url $repo && cd $repo && subl .;
 }
 
-
+# Attach or create tmux session named after the current directory.
+function tat {
+  tmux new-session -As "$(basename "$PWD" | tr . -)"
+}
