@@ -18,6 +18,7 @@
   vim = ! sh -c 'vim `git fshow $1`' -
   subl = ! sh -c 'subl `git fshow $1`' -
   edit  = ! sh -c '$EDITOR `git fshow $1`' -
+  fixup = "!f() { git commit --fixup=$1; git rebase -i --autosquash $1~1; }; f"
 
 [branch]
   autosetuprebase = always
