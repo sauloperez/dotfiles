@@ -45,6 +45,7 @@ Plugin 'endel/vim-github-colorscheme'
 Plugin 'jakobwesthoff/argumentrewrap'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'edsono/vim-matchit'
 
 call vundle#end()
 filetype plugin indent on
