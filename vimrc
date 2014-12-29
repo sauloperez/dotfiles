@@ -8,6 +8,9 @@ set background=dark
 syntax on
 colorscheme molotov
 
+" Use syntax included in the Go distribution
+set rtp+=/usr/local/Cellar/go/1.3.3/libexec/misc/vim
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
