@@ -177,15 +177,6 @@ nnoremap <silent> <leader>c :set nolist!<CR>
 map <silent> <leader>qs <Esc>:noh<CR>
 " map <silent> <leader>qs <Esc>:let @/ = ""<CR>
 
-" Vim on the iPad
-if &term == "xterm-ipad"
-  nnoremap <Tab> <Esc>
-  vnoremap <Tab> <Esc>gV
-  onoremap <Tab> <Esc>
-  inoremap <Tab> <Esc>`^
-  inoremap <Leader><Tab> <Tab>
-endif
-
 " Indent/unident block (,]) (,[)
 nnoremap <leader>] >i{<CR>
 nnoremap <leader>[ <i{<CR>
