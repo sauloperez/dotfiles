@@ -185,6 +185,9 @@ nnoremap <leader>[ <i{<CR>
 set pastetoggle=<leader>p
 map <leader>p :set invpaste paste?<CR>
 
+" Powerline.vim
+let g:Powerline_symbols = 'fancy'
+
 " NERD Commenter
 let NERDSpaceDelims=1
 let NERDCompactSexyComs=1
