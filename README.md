@@ -131,14 +131,6 @@ Installed plugins and syntax files.
 * Surround
 
 
-iPad
-----
-
-Rudimentary support for vim on the iPad has been added via usage of the
-`xterm-ipad` `$TERM` value. In this mode `<Tab>` is `<Esc>` and `,<Tab>` is
-`<Tab>`.
-
-
 Shell
 =====
 
@@ -184,21 +176,3 @@ Additional scripts (see [.scripts](https://github.com/sauloperez/dotfiles/tree/m
 * git-review
 * git-show-merges
 * git-wtf
-
-
-Configurations
-==============
-
-Sensible configurations exist for:
-
-* Ack
-* Awesome Print
-* RubyGems
-* Git
-* IRB
-* TMUX
-* Vim
-* GVim / MacVim
-
-...and more!
-
