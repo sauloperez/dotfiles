@@ -361,9 +361,6 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 " Close vim if last window open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" Clear the search buffer when hitting return
-nnoremap <CR> :nohlsearch<cr>
-
 " Enable and disabling paste when... pasting
 map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 
