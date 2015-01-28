@@ -46,6 +46,7 @@ Plugin 'jakobwesthoff/argumentrewrap'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'edsono/vim-matchit'
+Plugin 'tpope/vim-abolish'
 
 call vundle#end()
 filetype plugin indent on
