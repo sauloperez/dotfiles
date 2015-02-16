@@ -380,7 +380,7 @@ nnoremap <leader>ct :!ctags -R *<CR>
 
 " Custom macros
 " Replace ruby's hashrockets with the new syntax
-let @h= ':s/:\(\w\+\) =>/\1:/g'
+let @h= ':s/:\(\w\+\)\s\+=>/\1:/g'
 
 " Abbreviations
 :iabbrev bb byebug
