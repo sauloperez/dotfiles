@@ -25,6 +25,7 @@ alias view="vim -p -R"
 alias vp="vim -p"
 alias timestamp="date +%s"
 alias pp="python -mjson.tool"
+alias composer="php /usr/local/bin/composer.phar"
 
 # Rails stuff
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
