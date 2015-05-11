@@ -20,6 +20,8 @@
   subl = ! sh -c 'subl `git fshow $1`' -
   edit  = ! sh -c '$EDITOR `git fshow $1`' -
   fixup = "!f() { git commit --fixup=$1; git rebase -i --autosquash $1~1; }; f"
+  wip = !git add -A && git commit -m 'WIP'
+  unwip = !git reset HEAD^
 
 [branch]
   autosetuprebase = always
