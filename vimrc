@@ -50,6 +50,7 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'edsono/vim-matchit'
 Plugin 'tpope/vim-abolish'
+Plugin 'rainerborene/vim-reek'
 
 call vundle#end()
 filetype plugin indent on
@@ -197,6 +198,10 @@ let g:Powerline_symbols = 'fancy'
 let NERDSpaceDelims=1
 let NERDCompactSexyComs=1
 let g:NERDCustomDelimiters = { 'racket': { 'left': ';', 'leftAlt': '#|', 'rightAlt': '|#' } }
+
+" Reek
+let g:reek_line_limit = 1000
+let g:reek_on_loading = 0
 
 " Buffer navigation (,,) (,]) (,[) (,ls)
 map <Leader>, <C-^>
