@@ -187,6 +187,13 @@ map <silent> <leader>qs <Esc>:noh<CR>
 nnoremap <leader>] >i{<CR>
 nnoremap <leader>[ <i{<CR>
 
+" Better :Ggrep
+nnoremap <leader>gg :Ggr -i 
+:command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
+
+" Git grep word under cursor
+nnoremap \g :Ggr <C-R><C-W><CR>
+
 " Paste toggle (,p)
 set pastetoggle=<leader>p
 map <leader>p :set invpaste paste?<CR>
