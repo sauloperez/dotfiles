@@ -51,6 +51,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'edsono/vim-matchit'
 Plugin 'tpope/vim-abolish'
 Plugin 'rainerborene/vim-reek'
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()
 filetype plugin indent on
