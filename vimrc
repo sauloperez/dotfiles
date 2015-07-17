@@ -1,16 +1,3 @@
-" Make vim more useful
-set nocompatible
-filetype on
-
-" Set syntax highlighting options.
-set t_Co=256
-set background=dark
-syntax on
-colorscheme molotov
-
-" Use syntax included in the Go distribution
-set rtp+=/usr/local/Cellar/go/1.3.3/libexec/misc/vim
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -52,6 +39,7 @@ Plugin 'edsono/vim-matchit'
 Plugin 'tpope/vim-abolish'
 Plugin 'rainerborene/vim-reek'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'kchmck/vim-coffee-script'
 
 call vundle#end()
 filetype plugin indent on
@@ -394,6 +382,16 @@ nnoremap <leader>ct :!ctags -R *<CR>
 " Custom macros
 " Replace ruby's hashrockets with the new syntax
 let @h= ':s/:\(\w\+\)\s\+=>/\1:/g'
+
+" Make vim more useful
+set nocompatible
+filetype on
+
+" Set syntax highlighting options.
+set t_Co=256
+set background=dark
+syntax on
+colorscheme molotov
 
 " Abbreviations
 :iabbrev bb byebug
