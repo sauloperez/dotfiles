@@ -3,18 +3,18 @@
 name: redbooth
 root: ~/Teambox/Teambox-hosted
 
+pre: sudo /usr/local/mysql/support-files/mysql.server start
+
 windows:
-  - vim:
-    - vim
-  - backend:
-    - b rails s
+  - vim: vim .
+  - backend: rails s
   - bash:
-    -
   - servers:
       layout: main-vertical
       panes:
+        - zeus:
+          - zeus start
         - frontend:
           - cd ../teambox-frontend
-          - ./development.js
-        - redis: redis-server
-        - resque: b rake resque:work QUEUE=*
+        - parrot:
+          - cd ~/Teambox/parrot
