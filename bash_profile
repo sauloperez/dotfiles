@@ -7,7 +7,7 @@ source ~/.profile
 export HISTFILESIZE=10000
 export HISTSIZE=10000
 
-PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Common junk
 [[ -s "$HOME/.commonrc" ]] && source "$HOME/.commonrc"
