@@ -31,7 +31,7 @@ Plugin 'rainerborene/vim-reek'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'evanmiller/nginx-vim-syntax'
-Plugin 'flazz/vim-colorschemes'
+Plugin 'NLKNguyen/papercolor-theme'
 
 call vundle#end()
 filetype plugin indent on
@@ -190,7 +190,7 @@ au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 " Airline.vim
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#syntastic#enabled = 1
-let g:airline_theme='papercolor'
+let g:airline_theme='PaperColor'
 
 " " CtrlP.vim
 " let g:ctrlp_match_window_bottom = 0 " Show at top of window
@@ -246,10 +246,10 @@ let @h= ':s/:\(\w\+\)\s\+=>/\1:/g'
 set nocompatible
 filetype on
 
-" " Set syntax highlighting options.
+" Set syntax highlighting options.
 set t_Co=256
 syntax enable
-set background=dark
+set background=light
 colorscheme PaperColor
 
 " Abbreviations
