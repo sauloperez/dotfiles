@@ -32,6 +32,7 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'evanmiller/nginx-vim-syntax'
 Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'jgdavey/vim-blockle'
 
 call vundle#end()
 filetype plugin indent on
