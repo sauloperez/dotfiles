@@ -188,6 +188,9 @@ au BufRead,BufNewFile Rakefile,Capfile,Gemfile,.autotest,.irbrc,*.treetop,*.tt s
 " Coffee
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 
+" Wrap lines to 80 characters for Markdown files only
+au BufRead,BufNewFile *.md setlocal textwidth=80
+
 " Airline.vim
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#syntastic#enabled = 1
