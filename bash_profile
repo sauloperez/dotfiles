@@ -30,3 +30,6 @@ fi
 source ~/.tmuxinator.bash
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Add extra gemrc with Redbooth's settings
+[[ -f $HOME/.gemrc_local ]] && export GEMRC=$HOME/.gemrc_local
