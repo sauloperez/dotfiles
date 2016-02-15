@@ -36,3 +36,6 @@ source ~/.tmuxinator.bash
 
 export NVM_DIR="/Users/pau/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Use Homebrew's PHP CLI instead of the one bundled with OS X
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
