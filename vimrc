@@ -81,7 +81,7 @@ set gdefault " By default add g flag to search/replace. Add g to toggle.
 set hidden " When a buffer is brought to foreground, remember undo history and marks.
 set history=1000 " Increase history from 20 default to 1000
 set hlsearch " Highlight searches
-set ignorecase " Ignore case of searches.
+set smartcase " Ignore case of searches.
 set incsearch " Highlight dynamically as pattern is typed.
 set laststatus=2 " Always show status line
 set lispwords+=defroutes " Compojure
