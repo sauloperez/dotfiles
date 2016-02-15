@@ -33,3 +33,6 @@ source ~/.tmuxinator.bash
 
 # Add extra gemrc with Redbooth's settings
 [[ -f $HOME/.gemrc_local ]] && export GEMRC=$HOME/.gemrc_local
+
+export NVM_DIR="/Users/pau/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
