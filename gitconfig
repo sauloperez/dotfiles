@@ -1,5 +1,5 @@
 [user]
-  name = Pau Pérez
+  name = Pau Perez
   email = saulopefa@gmail.com
 [alias]
   br  = branch
@@ -15,6 +15,7 @@
   sm  = show-merges
   st  = status
   recent = !git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/ | grep -v develop | head -n 20
+  ch = !git recent | git checkout $(fzf)
   fshow = ! sh -c 'git show --pretty="format:" --name-only $1 | grep -v "^$" | uniq | sed -e "s#^#`git rev-parse --show-toplevel`/#"' -
   vim = ! sh -c 'vim `git fshow $1`' -
   subl = ! sh -c 'subl `git fshow $1`' -
@@ -90,8 +91,6 @@
   tool = Kaleidoscope
 [diff "exif"]
   textconv = exiftool
-[push]
-  default = matching
 [help]
   autocorrect = 1
 
@@ -107,3 +106,5 @@
     exit 1 if b.include?(%(<)*%L)'"
 [rebase]
   autosquash = true
+[grep]
+  extendRegexp = true
