@@ -23,6 +23,9 @@
   fixup = "!f() { git commit --fixup=$1; git rebase -i --autosquash $1~1; }; f"
   wip = !git add -A && git commit -m 'WIP'
   unwip = !git reset HEAD^
+  current = rev-parse --abbrev-ref HEAD
+  repo=!git remote -v | grep '@.*fetch' | gsed 's/.*:\\(.*\\).git.*/\\1/g'
+  pr=!open https://github.com/$(git repo)/compare/$(git current)?expand=1
 
 [branch]
   autosetuprebase = always
