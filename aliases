@@ -29,5 +29,3 @@ alias composer="php /usr/local/bin/composer.phar"
 
 # Rails stuff
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
-alias zmigrate="zeus rake db:migrate db:rollback && zeus rake db:migrate"
-alias zt="zeus test -cfd"
