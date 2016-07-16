@@ -111,15 +111,8 @@ map <C-L> <C-W>l
 " Remap :W to :w
 command W w
 
-" " Better mark jumping (line + col)
-" nnoremap ' `
-
 " Clear last search (,qs)
 map <silent> <leader>qs <Esc>:noh<CR>
-
-" " Indent/unident block (,]) (,[)
-" nnoremap <leader>] >i{<CR>
-" nnoremap <leader>[ <i{<CR>
 
 " Don't leave vim when :Ggrep ing
 nnoremap <leader>gg :Ggr -i 
@@ -149,32 +142,11 @@ map <leader>qq :cclose<CR>
 " Yank from cursor to end of line
 nnoremap Y y$
 
-" " Insert newline
-" map <leader><Enter> o<ESC>
-
 " Search and replace word under cursor (,*)
 nnoremap <leader>* :%s/\<<C-r><C-w>\>//<Left>
 
 " Join lines and restore cursor location (J)
 nnoremap J mjJ`j
-
-" " Fix page up and down
-" map <PageUp> <C-U>
-" map <PageDown> <C-D>
-" imap <PageUp> <C-O><C-U>
-" imap <PageDown> <C-O><C-D>
-
-" " Jumping to tags. (via Steve Losh)
-" "
-" " Basically, <c-]> jumps to tags (like normal) and <c-\> opens the tag in a new
-" " split instead.
-" "
-" " Both of them will align the destination line to the upper middle part of the
-" " screen.  Both will pulse the cursor line so you can see where the hell you
-" " are.  <c-\> will also fold everything in the buffer and then unfold just
-" " enough for you to see the destination line.
-" nnoremap <c-]> <c-]>mzzvzz15<c-e>`z:Pulse<cr>
-" nnoremap <c-\> <c-w>v<c-]>mzzMzvzz15<c-e>`z:Pulse<cr>
 
 " JSON
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
