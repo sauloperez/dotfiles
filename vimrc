@@ -214,6 +214,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " ctags
 nnoremap <leader>ct :!ctags -R *<CR>
 
+" Code notes
+nnoremap <Leader>nn :CtrlP ~/Dropbox/notes/<CR>
+
 " Custom macros
 " Replace ruby's hashrockets with the new syntax
 let @h= ':s/:\(\w\+\)\s\+=>/\1:/g'
