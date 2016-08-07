@@ -92,3 +92,6 @@ source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Enable Z: Tracks your most used directories, based on 'frecency'.
 . `brew --prefix`/etc/profile.d/z.sh
+
+# Edit the current commadn line in $EDITOR with 'v'
+bindkey 'v' edit-command-line
