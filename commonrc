@@ -14,13 +14,6 @@ MYSQL=/usr/local/mysql/bin
 export PATH=$PATH:$MYSQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
-# Use Homebrew's PHP CLI instead of the one bundled with OS X, if exists
-if [[ $(brew ls php56) ]]; then
-  export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
-else
-  echo 'nope'
-fi
-
 # Locale
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
