@@ -32,10 +32,3 @@ fi
 
 export NVM_DIR="/Users/pau/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# Use Homebrew's PHP CLI instead of the one bundled with OS X, if exists
-if [[ $(brew ls php56) ]]; then
-  export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
-else
-  echo 'nope'
-fi
