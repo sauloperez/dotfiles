@@ -4,8 +4,8 @@ Installation
 Prerequisites
 -------------
 
-* Git (1.8+ recommended)
-* Vim (7.3+ recommended)
+* Git (2.0+ recommended)
+* Vim (7.4+ recommended)
 * Tree
 * Pygments
 * xmllint
@@ -14,7 +14,6 @@ Optional, but recommended:
 
 * [rbenv](http://rbenv.org) or [RVM](http://rvm.beginrescueend.com/)
 * [Homebrew](http://mxcl.github.com/homebrew/) (OS X only)
-
 
 Install
 ------------
