@@ -169,9 +169,5 @@ various aliases and settings.
 
 Additional scripts (see [.scripts](https://github.com/sauloperez/dotfiles/tree/master/.scripts/) directory for source):
 
-* git-publish-branch
-* git-rank-contributors
-* git-rbranch
-* git-review
 * git-show-merges
 * git-wtf
