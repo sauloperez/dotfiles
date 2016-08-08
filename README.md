@@ -39,6 +39,44 @@ Run the sync again!
 $ rcup -v
 ```
 
+Zsh
+===
+
+```shell
+brew install zsh zsh-completions
+```
+
+Change your login shell to zsh by running `chsh -s /usr/local/bin/zsh` or System
+Preferences -> Users & Groups -> Click the lock -> Right click your user ->
+Advanced Options and paste `/usr/local/bin/zsh` in the login shell field.
+
+oh my zsh
+---------
+
+When changed to zsh run:
+
+```shell
+curl -L http://install.ohmyz.sh | sh
+```
+
+Now we can install zsh-syntax-highlighting plugin. It tells you if a command is
+valid before you hit the enter key.
+
+To install run:
+
+```shell
+cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
+```
+
+Lastly, lets install [z](https://github.com/rupa/z), a script that makes
+navigating the file system much faster.
+
+```shell
+brew install z
+```
+
+Now sync to get the dotfiles' zshrc with `rcup -v` and `source ~/.zshrc` for its
+configurations to take effect.
 
 Vim
 ===
