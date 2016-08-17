@@ -186,6 +186,7 @@ let ruby_fold = 0
 " Syntastic.vim
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
+" let g:syntastic_ruby_checkers = ['rubocop']
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
