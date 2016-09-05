@@ -29,3 +29,4 @@ alias composer="php /usr/local/bin/composer.phar"
 
 # Rails stuff
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
+alias mspec="bin/rspec $(git status | grep spec | grep \"modified:\" | cut -b 14-)"
