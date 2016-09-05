@@ -30,3 +30,6 @@ fi
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+
+# Load The Fuck https://github.com/nvbn/thefuck
+eval "$(thefuck --alias)"
