@@ -18,7 +18,6 @@
   nav = !git recent | git checkout $(fzf)
   fshow = ! sh -c 'git show --pretty="format:" --name-only $1 | grep -v "^$" | uniq | sed -e "s#^#`git rev-parse --show-toplevel`/#"' -
   vim = ! sh -c 'vim `git fshow $1`' -
-  subl = ! sh -c 'subl `git fshow $1`' -
   edit  = ! sh -c '$EDITOR `git fshow $1`' -
   fixup = "!f() { git commit --fixup=$1; git rebase -i --autosquash $1~1; }; f"
   wip = !git add -A && git commit -m 'WIP'
