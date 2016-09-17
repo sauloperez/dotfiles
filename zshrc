@@ -95,3 +95,13 @@ source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Enable history search in vi mode
 bindkey '^R' history-incremental-search-backward
+
+fpath=(~/.zsh/completion $fpath)
+
+autoload -U compinit
+compinit
+
+zstyle ':completion:*' menu select=2
+
+export NVM_DIR="/Users/pau/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
