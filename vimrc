@@ -196,6 +196,7 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 " Make RSpec.vim use Dispatch.vim
+" let g:rspec_command = "Dispatch $([[ -e bin/rspec ]] && bin/rspec {spec} || bundle exec rspec {spec})"
 let g:rspec_command = "Dispatch bin/rspec {spec}"
 
 " Argumentrewrap.vim
