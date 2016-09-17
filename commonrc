@@ -30,6 +30,8 @@ fi
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# Add extra gemrc with Redbooth's settings
+[[ -f $HOME/.gemrc_local ]] && export GEMRC=$HOME/.gemrc_local
 
 # Load The Fuck https://github.com/nvbn/thefuck
 eval "$(thefuck --alias)"

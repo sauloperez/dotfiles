@@ -18,8 +18,5 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-# Add extra gemrc with Redbooth's settings
-[[ -f $HOME/.gemrc_local ]] && export GEMRC=$HOME/.gemrc_local
-
 export NVM_DIR="/Users/pau/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
