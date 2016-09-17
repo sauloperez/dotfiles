@@ -239,7 +239,7 @@ filetype on
 " Set syntax highlighting options.
 set t_Co=256
 syntax enable
-set background=light
+set background=dark
 colorscheme PaperColor
 
 " Abbreviations
