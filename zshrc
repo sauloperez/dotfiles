@@ -53,7 +53,7 @@ ZSH_THEME="mh" # To its best when combined with "Later this evening" iTerm2 them
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(vi-mode)
+plugins=(rails vi-mode)
 
 # User configuration
 
