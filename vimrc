@@ -33,6 +33,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'evanmiller/nginx-vim-syntax'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'jgdavey/vim-blockle'
+Plugin 'textobj-user'
+Plugin 'textobj-rubyblock'
 
 call vundle#end()
 filetype plugin indent on
