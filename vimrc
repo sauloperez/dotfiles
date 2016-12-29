@@ -243,5 +243,7 @@ syntax enable
 set background=dark
 colorscheme PaperColor
 
+runtime macros/matchit.vim
+
 " Abbreviations
 :iabbrev bb byebug
