@@ -25,6 +25,7 @@
   current = rev-parse --abbrev-ref HEAD
   repo=!git remote -v | grep '@.*fetch' | gsed 's/.*:\\(.*\\).git.*/\\1/g'
   pr=!open https://github.com/$(git repo)/compare/$(git current)?expand=1
+  cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
 
 [branch]
   autosetuprebase = always
