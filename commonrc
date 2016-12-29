@@ -6,12 +6,16 @@
 # Adjust $PATH
 [[ -d "$HOME/.scripts" ]] && export PATH=$HOME/.scripts:$PATH
 
-PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+# Adds gnubin to PATH to use coreutils commands without the 'g' prefix. This
+# allows linux scripts to work.
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 # Makes Mysql work with Rails
 MYSQL=/usr/local/mysql/bin
 export PATH=$PATH:$MYSQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+
+export PATH=/usr/local/sbin:$PATH
 
 # Locale
 export LC_ALL=en_US.UTF-8  
