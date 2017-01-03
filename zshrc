@@ -4,11 +4,6 @@ export ZSH=/Users/pau/.oh-my-zsh
 # Common junk
 [[ -s "$HOME/.commonrc" ]] && source "$HOME/.commonrc"
 
-# load custom executable functions
-for function in ~/.zsh/functions/*; do
-  source $function
-done
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
