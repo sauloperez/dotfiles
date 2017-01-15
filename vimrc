@@ -1,42 +1,43 @@
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle
-Plugin 'gmarik/Vundle.vim'
+" Make sure you use single quotes
 
-Plugin 'kien/ctrlp.vim'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-haml'
-Plugin 'pangloss/vim-javascript'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-repeat'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-endwise'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'jakobwesthoff/argumentrewrap'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'edsono/vim-matchit'
-Plugin 'tpope/vim-abolish'
-Plugin 'rainerborene/vim-reek'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'evanmiller/nginx-vim-syntax'
-Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'jgdavey/vim-blockle'
-Plugin 'textobj-user'
-Plugin 'textobj-rubyblock'
+Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-haml'
+Plug 'pangloss/vim-javascript'
+Plug 'plasticboy/vim-markdown'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-repeat'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-endwise'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'jakobwesthoff/argumentrewrap'
+Plug 'thoughtbot/vim-rspec'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'tpope/vim-abolish'
+Plug 'rainerborene/vim-reek'
+Plug 'elixir-lang/vim-elixir'
+Plug 'kchmck/vim-coffee-script'
+Plug 'evanmiller/nginx-vim-syntax'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'jgdavey/vim-blockle'
 
-call vundle#end()
+Plug 'geoffharcourt/vim-matchit'
+Plug 'textobj-user'
+Plug 'textobj-rubyblock'
+
+" Initialize plugin system
+call plug#end()
+
 filetype plugin indent on
 
 " Change mapleader
