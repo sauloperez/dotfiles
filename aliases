@@ -4,9 +4,9 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
 alias ll='tree --dirsfirst -ChFupDaLg 1'
+alias a='z'
 
 # Utilities
-alias a="ack -ia"
 alias b="bundle exec"
 alias c="pygmentize -O style=monokai -f console256 -g"
 alias d="du -h -d=1"
@@ -29,3 +29,4 @@ alias composer="php /usr/local/bin/composer.phar"
 
 # Rails stuff
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
+alias mspec="bin/rspec $(git status | grep spec | grep \"modified:\" | cut -b 14-)"

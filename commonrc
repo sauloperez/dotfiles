@@ -6,7 +6,16 @@
 # Adjust $PATH
 [[ -d "$HOME/.scripts" ]] && export PATH=$HOME/.scripts:$PATH
 
-[[ -d "$HOME/.lein/bin" ]] && export PATH=$HOME/.lein/bin:$PATH
+# Adds gnubin to PATH to use coreutils commands without the 'g' prefix. This
+# allows linux scripts to work.
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+# Makes Mysql work with Rails
+MYSQL=/usr/local/mysql/bin
+export PATH=$PATH:$MYSQL
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+
+export PATH=/usr/local/sbin:$PATH
 
 # Locale
 export LC_ALL=en_US.UTF-8  
@@ -24,3 +33,8 @@ fi
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# Add extra gemrc with Redbooth's settings
+[[ -f $HOME/.gemrc_local ]] && export GEMRC=$HOME/.gemrc_local
+
+# Load The Fuck https://github.com/nvbn/thefuck
+eval "$(thefuck --alias)"

@@ -22,3 +22,10 @@ snippet yar
         # @param [${2:param}]
         # @return [${3:return}]
 	
+snippet its
+       its(:${1:method}) { should ${0} }
+       its(:${1:method}) { is_expected.to ${0} }
+
+snippet is
+       it { should ${0} }
+       it { is_expected.to ${0} }
