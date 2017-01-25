@@ -30,6 +30,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'jgdavey/vim-blockle'
+Plug 'mxw/vim-jsx'
 
 Plug 'geoffharcourt/vim-matchit'
 Plug 'textobj-user'
@@ -133,6 +134,10 @@ let g:NERDCustomDelimiters = { 'racket': { 'left': ';', 'leftAlt': '#|', 'rightA
 let g:reek_line_limit = 1000
 let g:reek_on_loading = 0
 
+" vim-jsx
+" Allow JSX in normal JS files
+let g:jsx_ext_required = 0
+
 " Buffer navigation (,,) (,]) (,[) (,ls)
 map <Leader>, <C-^>
 map <Leader>] :bnext<CR>
@@ -190,6 +195,7 @@ let ruby_fold = 0
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
 " let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_javascript_checkers = ['eslint']
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
