@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Exit if any subcommand fails
+set -e
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NO_COLOR='\033[0m'
+CLEAR_LINE='\r\033[K'
+
+printf "[1/8] Setting up dir structure"
+
+if [ ! -d ~/.vim/backups ]; then
+  mkdir ~/.vim/backups
+  mkdir ~/.vim/swaps
+  mkdir ~/.vim/undo
+fi
+
+printf "${CLEAR_LINE}[2/8] Installing Vim Plug" 
+
+if [ ! -f ~/.vim/autoload/plug.vim ]; then
+  curl -s -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim > /dev/null
+fi

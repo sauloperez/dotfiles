@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# Exit if any subcommand fails
+set -e
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NO_COLOR='\033[0m'
+CLEAR_LINE='\r\033[K'
+
+printf "${CLEAR_LINE}[4/8] Installing zsh"
+sudo apt-get -y install zsh > /dev/null
+
+printf "${CLEAR_LINE}[6/8] Intalling Oh My Zsh"
+# curl -s -L http://install.ohmyz.sh | sh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+if [ -d "~/.oh-my-zsh" ]; then
+  printf "${CLEAR_LINE}[7/8] Oh My Zsh plugins already installed"
+else
+  printf "${CLEAR_LINE}[7/8] Installing Oh My Zsh plugins"
+  # cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git > /dev/null
+fi
+
+printf "${CLEAR_LINE}[8/8] Installing Oh My Zsh plugins"
+rcup

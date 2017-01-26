@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Exit if any subcommand fails
+set -e
+
+CLEAR_LINE='\r\033[K'
+GREEN='\033[0;32m'
+
+./setup_steps/dotfiles
+./setup_steps/zsh
+./setup_steps/vim
+
+printf "${CLEAR_LINE}🎉${GREEN}   Finished!${NO_COLOR}\n"
