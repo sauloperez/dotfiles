@@ -91,7 +91,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 
 # Enable Z: Tracks your most used directories, based on 'frecency'.
-. `brew --prefix`/etc/profile.d/z.sh
+# . `brew --prefix`/etc/profile.d/z.sh
 
 # Enable history search in vi mode
 bindkey '^R' history-incremental-search-backward
