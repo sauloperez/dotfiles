@@ -30,6 +30,8 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'jgdavey/vim-blockle'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 Plug 'mxw/vim-jsx'
 
 Plug 'geoffharcourt/vim-matchit'
