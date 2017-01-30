@@ -217,6 +217,7 @@ vnoremap <Leader>rp :s/\<update\>\\|\<select\>\\|\<from\>\\|\<where>\\|\<left jo
 
 " Add spell checking and automatic wrapping at 72 columns to your commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 
 " Enable and disabling paste when... pasting
 map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
@@ -226,6 +227,9 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+" JSX syntax highlighting and indenting for .js files too
+let g:jsx_ext_required = 0
 
 " Change cursor shape from thick to thin when in insert mode
 let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
