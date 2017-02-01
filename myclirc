@@ -80,6 +80,3 @@ Token.Toolbar.System = noinherit bold
 Token.Toolbar.Arg = noinherit bold
 Token.Toolbar.Arg.Text = nobold
 [favorite_queries]
-count = SELECT count(*) FROM `tasks`  WHERE (`schedule` != '')
-schedule = "update tasks set schedule = 'DTSART' where id in(56, 57)"
-count_dates = "select id, name, schedule, schedule_start_date, schedule_end_date, due_on from tasks where id in (56, 57)"
