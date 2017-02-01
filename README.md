@@ -213,3 +213,15 @@ Additional scripts (see [.scripts](https://github.com/sauloperez/dotfiles/tree/m
 
 * git-show-merges
 * git-wtf
+
+Keyboard
+========
+
+To map Ctrl key to Caps lock:
+
+### Ubuntu
+
+```shell
+sudo apt-get install gnome-tweak-tool
+gnome-tweak-tool > Typing
+```
