@@ -9,19 +9,19 @@ YELLOW='\033[0;33m'
 NO_COLOR='\033[0m'
 CLEAR_LINE='\r\033[K'
 
-printf "${CLEAR_LINE}[4/8] Installing zsh"
+printf "${CLEAR_LINE}Installing zsh"
 sudo apt-get -y install zsh > /dev/null
 
-printf "${CLEAR_LINE}[6/8] Intalling Oh My Zsh"
-# curl -s -L http://install.ohmyz.sh | sh
+printf "${CLEAR_LINE}Intalling Oh My Zsh"
+
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 if [ -d "~/.oh-my-zsh" ]; then
-  printf "${CLEAR_LINE}[7/8] Oh My Zsh plugins already installed"
+  printf "${CLEAR_LINE}Oh My Zsh plugins already installed"
 else
-  printf "${CLEAR_LINE}[7/8] Installing Oh My Zsh plugins"
-  # cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git > /dev/null
+  printf "${CLEAR_LINE}Installing Oh My Zsh plugins"
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 fi
 
-printf "${CLEAR_LINE}[8/8] Installing Oh My Zsh plugins"
+printf "${CLEAR_LINE}Installing Oh My Zsh plugins"
 rcup

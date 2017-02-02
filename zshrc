@@ -53,7 +53,7 @@ ZSH_THEME="mh" # To its best when combined with "Later this evening" iTerm2 them
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(rails vi-mode)
+plugins=(rails vi-mode zsh-syntax-highlighting)
 
 # User configuration
 
@@ -86,9 +86,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Enable command highlight depending on whether it's valid or not
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 
 # Enable Z: Tracks your most used directories, based on 'frecency'.
 # . `brew --prefix`/etc/profile.d/z.sh

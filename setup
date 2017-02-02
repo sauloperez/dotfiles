@@ -6,8 +6,11 @@ set -e
 CLEAR_LINE='\r\033[K'
 GREEN='\033[0;32m'
 
+./setup_steps/dependencies
 ./setup_steps/dotfiles
 ./setup_steps/zsh
 ./setup_steps/vim
+
+source ~/.zshrc
 
 printf "${CLEAR_LINE}🎉${GREEN}   Finished!${NO_COLOR}\n"

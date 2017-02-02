@@ -9,7 +9,7 @@ YELLOW='\033[0;33m'
 NO_COLOR='\033[0m'
 CLEAR_LINE='\r\033[K'
 
-printf "[1/8] Setting up dir structure"
+printf "Setting up Vim's dir structure"
 
 if [ ! -d ~/.vim/backups ]; then
   mkdir ~/.vim/backups
@@ -17,7 +17,7 @@ if [ ! -d ~/.vim/backups ]; then
   mkdir ~/.vim/undo
 fi
 
-printf "${CLEAR_LINE}[2/8] Installing Vim Plug" 
+printf "${CLEAR_LINE}Installing Vim Plug"
 
 if [ ! -f ~/.vim/autoload/plug.vim ]; then
   curl -s -fLo ~/.vim/autoload/plug.vim --create-dirs \

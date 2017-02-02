@@ -9,6 +9,11 @@ YELLOW='\033[0;33m'
 NO_COLOR='\033[0m'
 CLEAR_LINE='\r\033[K'
 
-printf "${CLEAR_LINE}[1/8] Installing dependencies"
+printf "${CLEAR_LINE}Installing tmux"
 
 sudo apt-get -y install tmux > /dev/null
+
+printf "${CLEAR_LINE}Installing The Fuck"
+
+sudo apt-get -y install python-pip python-dev > /dev/null
+sudo pip install psutil thefuck > /dev/null

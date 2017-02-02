@@ -9,6 +9,6 @@ YELLOW='\033[0;33m'
 NO_COLOR='\033[0m'
 CLEAR_LINE='\r\033[K'
 
-printf "${CLEAR_LINE}[3/8] Symlinking dotfiles"
+printf "${CLEAR_LINE}Symlinking dotfiles"
 
 rcup
