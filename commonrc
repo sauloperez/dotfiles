@@ -8,7 +8,9 @@
 
 # Adds gnubin to PATH to use coreutils commands without the 'g' prefix. This
 # allows linux scripts to work.
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+if [[ "$(uname)" == "Darwin" ]]; then
+  export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+fi
 
 # Makes Mysql work with Rails
 MYSQL=/usr/local/mysql/bin
