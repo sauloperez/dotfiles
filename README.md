@@ -222,6 +222,6 @@ To map Ctrl key to Caps lock:
 ### Ubuntu
 
 ```shell
-sudo apt-get install gnome-tweak-tool
+$ sudo apt-get install gnome-tweak-tool
 gnome-tweak-tool > Typing
 ```
