@@ -34,6 +34,9 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'mxw/vim-jsx'
 
+Plug 'vim-scripts/SQLUtilities'
+Plug 'vim-scripts/Align'
+
 Plug 'geoffharcourt/vim-matchit'
 Plug 'textobj-user'
 Plug 'textobj-rubyblock'
