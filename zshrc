@@ -106,7 +106,7 @@ compinit
 
 zstyle ':completion:*' menu select=2
 
-export NVM_DIR="~/.nvm"
+export NVM_DIR=$(readlink -f "$HOME/.nvm")
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 PATH="~/perl5/bin${PATH:+:${PATH}}"; export PATH;
