@@ -198,8 +198,14 @@ Additional useful scripts bundled:
 Fonts
 =====
 
-A modified version of Menlo is available in `.fonts` for use with [powerline.vim](https://github.com/Lokaltog/vim-powerline/).
+To install fonts for Powerline clone its fonts repo and install them with:
 
+```
+https://github.com/powerline/fonts
+./install.sh
+```
+
+`Inconsolata` it's a good candidate font. It's the one I've been using so far.
 
 Git
 ===
