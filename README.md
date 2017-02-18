@@ -223,5 +223,5 @@ To map Ctrl key to Caps lock:
 
 ```shell
 $ sudo apt-get install gnome-tweak-tool
-gnome-tweak-tool > Typing
+gnome-tweak-tool > Typing > Ctrl key position
 ```
