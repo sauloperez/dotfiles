@@ -8,25 +8,13 @@ alias a='z'
 
 # Utilities
 alias b="bundle exec"
-alias c="pygmentize -O style=monokai -f console256 -g"
-alias d="du -h -d=1"
-alias df="df -h"
 alias g="git"
 alias grep='GREP_COLOR="1;37;45" LANG=C grep --color=auto'
 alias gg="git grep"
 alias h="history"
-alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 alias ip="curl -s http://checkip.dyndns.com/ | sed 's/[^0-9\.]//g'"
 alias localip="ipconfig getifaddr en1"
-alias mp="mvim -p"
-alias rkt="racket -il xrepl"
 alias tmux="TERM=screen-256color-bce tmux"
 alias view="vim -p -R"
 alias vp="vim -p"
 alias timestamp="date +%s"
-alias pp="python -mjson.tool"
-alias composer="php /usr/local/bin/composer.phar"
-
-# Rails stuff
-alias migrate="rake db:migrate db:rollback && rake db:migrate"
-alias mspec="bin/rspec $(git status | grep spec | grep \"modified:\" | cut -b 14-)"
