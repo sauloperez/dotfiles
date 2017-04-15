@@ -235,11 +235,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " JSX syntax highlighting and indenting for .js files too
 let g:jsx_ext_required = 0
 
-" Change cursor shape from thick to thin when in insert mode
-let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
-let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-
 " ctags
 nnoremap <leader>ct :!ctags -R *<CR>
 
