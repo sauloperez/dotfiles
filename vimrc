@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'kien/ctrlp.vim'
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-haml'
 Plug 'pangloss/vim-javascript'
@@ -179,7 +180,7 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 " Airline.vim
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#syntastic#enabled = 1
-let g:airline_theme='PaperColor'
+let g:airline_theme='papercolor'
 
 " " CtrlP.vim
 " let g:ctrlp_match_window_bottom = 0 " Show at top of window
