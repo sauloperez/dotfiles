@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 
 Plug 'kien/ctrlp.vim'
+Plug 'neomake/neomake'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
@@ -16,7 +17,6 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-surround'
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-endwise'
 Plug 'SirVer/ultisnips'
@@ -25,7 +25,6 @@ Plug 'jakobwesthoff/argumentrewrap'
 Plug 'thoughtbot/vim-rspec'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-abolish'
-Plug 'rainerborene/vim-reek'
 Plug 'elixir-lang/vim-elixir'
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'NLKNguyen/papercolor-theme'
@@ -178,7 +177,6 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 
 " Airline.vim
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#syntastic#enabled = 1
 let g:airline_theme='papercolor'
 
 " " CtrlP.vim
@@ -196,11 +194,8 @@ let ruby_operators = 1
 let ruby_space_errors = 1
 let ruby_fold = 0
 
-" Syntastic.vim
-let g:syntastic_error_symbol = '✗'
-let g:syntastic_warning_symbol = '⚠'
-" let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_javascript_checkers = ['eslint']
+" Neomake
+autocmd! BufReadPost,BufWritePost * Neomake
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
