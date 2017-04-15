@@ -3,8 +3,9 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
-Plug 'kien/ctrlp.vim'
 Plug 'neomake/neomake'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
@@ -179,12 +180,9 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 let g:airline_powerline_fonts = 1
 let g:airline_theme='papercolor'
 
-" " CtrlP.vim
-" let g:ctrlp_match_window_bottom = 0 " Show at top of window
-let g:ctrlp_jump_to_buffer = 'Et' " Jump to tab AND buffer if already open
-" let g:ctrlp_split_window = 1 " <CR> = New Tab
-" let g:ctrlp_open_new_file = 't' " Open newly created files in a new tab
-" let g:ctrlp_open_multiple_files = 't' " Open multiple files in new tabs
+" fzf.vim
+nnoremap <space><space> :Files<CR>
+nnoremap <space>b :Buffers<CR>
 
 " Markdown.vim
 let g:markdown_fenced_languages = ['ruby', 'html', 'javascript', 'css', 'erb=eruby.html', 'bash=sh']
