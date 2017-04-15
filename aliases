@@ -19,3 +19,7 @@ alias view="vim -p -R"
 alias vp="vim -p"
 alias timestamp="date +%s"
 alias copy="xsel -ib"
+
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+fi
