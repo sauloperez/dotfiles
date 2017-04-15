@@ -23,7 +23,7 @@ Plug 'tpope/vim-endwise'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'jakobwesthoff/argumentrewrap'
-Plug 'thoughtbot/vim-rspec'
+Plug 'janko-m/vim-test'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-abolish'
 Plug 'elixir-lang/vim-elixir'
@@ -195,15 +195,14 @@ let ruby_fold = 0
 " Neomake
 autocmd! BufReadPost,BufWritePost * Neomake
 
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-
-" Make RSpec.vim use Dispatch.vim
-" let g:rspec_command = "Dispatch $([[ -e bin/rspec ]] && bin/rspec {spec} || bundle exec rspec {spec})"
-let g:rspec_command = "Dispatch bin/rspec {spec}"
+" Vim-test
+" make test commands execute using dispatch.vim
+nmap <silent> <leader>s :TestNearest<CR>
+nmap <silent> <leader>t :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+let test#strategy = "dispatch"
 
 " Argumentrewrap.vim
 nnoremap <silent> <leader>w :call argumentrewrap#RewrapArguments()<CR>
