@@ -12,7 +12,7 @@ Prerequisites
 
 Optional, but recommended:
 
-* [rbenv](http://rbenv.org) or [RVM](http://rvm.beginrescueend.com/)
+* [rbenv](http://rbenv.org)
 * [Homebrew](http://mxcl.github.com/homebrew/) (OS X only)
 
 Install
