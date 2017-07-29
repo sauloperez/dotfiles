@@ -33,6 +33,7 @@ Plug 'jgdavey/vim-blockle'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'mxw/vim-jsx'
+Plug 'kchmck/vim-coffee-script'
 
 Plug 'vim-scripts/SQLUtilities'
 Plug 'vim-scripts/Align'
