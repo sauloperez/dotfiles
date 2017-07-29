@@ -193,7 +193,7 @@ let ruby_operators = 1
 let ruby_space_errors = 1
 let ruby_fold = 0
 
-" Neomake
+" Run NeoMake on read and write operations
 autocmd! BufReadPost,BufWritePost * Neomake
 
 " Vim-test
