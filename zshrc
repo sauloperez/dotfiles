@@ -1,9 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-# Have a "houston" Tmux session always. If it exists, attach to it
-tmux new-session -A -s houston
-
 # Common junk
 [[ -s "$HOME/.commonrc" ]] && source "$HOME/.commonrc"
 
