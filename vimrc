@@ -174,6 +174,9 @@ au BufRead,BufNewFile Rakefile,Capfile,Gemfile,.autotest,.irbrc,*.treetop,*.tt s
 " Coffee
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 
+" Deface
+au BufNewFile,BufReadPost *.deface setl ft=haml syntax=haml
+
 " Wrap lines to 80 characters for Markdown files only
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
