@@ -8,6 +8,7 @@ alias a='z'
 
 # Utilities
 alias b="bundle exec"
+alias bi="bundle install"
 alias g="git"
 alias grep='GREP_COLOR="1;37;45" LANG=C grep --color=auto'
 alias gg="git grep"
