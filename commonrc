@@ -32,8 +32,4 @@ export EDITOR=vim
 # Load The Fuck https://github.com/nvbn/thefuck
 eval "$(thefuck --alias)"
 
-# Load a random unsplash picture as wallpaper
-# if [ -f ~/.scripts/unsplash ]; then
-  # ~/.scripts/unsplash
-# fi
 export TERM=xterm-256color
