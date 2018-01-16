@@ -18,6 +18,7 @@ export PATH=$PATH:$MYSQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 export PATH=/usr/local/sbin:$PATH
+export PATH=~/.local/bin:$PATH
 
 # Locale
 export LC_ALL=en_US.UTF-8  
