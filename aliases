@@ -22,7 +22,12 @@ if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
 fi
 
-# Git aliases
+# Git aliases. Note that most of them depend on alias already defined in
+# gitconfig.
 alias g="git"
 alias gg="g g"
 alias grv="git remote -v"
+alias gci="g ci"
+alias gap="g add -p"
+alias gps="g push"
+alias gpl="g pull"
