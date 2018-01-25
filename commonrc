@@ -29,6 +29,10 @@ export EDITOR=nvim
 # Add extra gemrc with Redbooth's settings
 [[ -f $HOME/.gemrc_local ]] && export GEMRC=$HOME/.gemrc_local
 
+# Add env vars to make 3llo work. Check
+# https://github.com/qcam/3llo#installation for details
+[[ -f $HOME/.3llo_vars ]] && source $HOME/.3llo_vars
+
 # Load The Fuck https://github.com/nvbn/thefuck
 eval "$(thefuck --alias)"
 
