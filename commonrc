@@ -17,15 +17,14 @@ MYSQL=/usr/local/mysql/bin
 export PATH=$PATH:$MYSQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
-export PATH=/usr/local/sbin:$PATH
-export PATH=~/.local/bin:$PATH
+export PATH=~/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Locale
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
 
 # Misc settings
-export EDITOR=vim
+export EDITOR=nvim
 
 # Add extra gemrc with Redbooth's settings
 [[ -f $HOME/.gemrc_local ]] && export GEMRC=$HOME/.gemrc_local
