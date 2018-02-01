@@ -8,8 +8,8 @@ export ZSH=~/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="mh" # To its best when combined with "Later this evening" iTerm2 theme
-# ZSH_THEME="gozilla" # Another theme worth trying
+# ZSH_THEME="mh" # To its best when combined with "Later this evening" iTerm2 theme
+ZSH_THEME="gozilla" # Another theme worth trying
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
