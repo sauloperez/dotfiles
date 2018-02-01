@@ -26,6 +26,9 @@
   repo=!git remote -v | grep '@.*fetch' | gsed 's/.*:\\(.*\\).git.*/\\1/g'
   pr=!open https://github.com/$(git repo)/compare/$(git current)?expand=1
   cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+  ra = "!f() { \
+        git remote add $1 https://github.com/$1/$(basename $(git rev-parse --show-toplevel)).git; \
+      }; f"
 
 [branch]
   autosetuprebase = always
