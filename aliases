@@ -27,7 +27,7 @@ fi
 alias g="git"
 alias gg="g g"
 alias grv="git remote -v"
-alias gci="g ci"
+alias gc="g ci"
 alias gap="g add -p"
 alias gps="g push"
 alias gpl="g pull"
