@@ -40,8 +40,8 @@ Plug 'vim-scripts/SQLUtilities'
 Plug 'vim-scripts/Align'
 
 Plug 'geoffharcourt/vim-matchit'
-Plug 'textobj-user'
-Plug 'textobj-rubyblock'
+Plug 'rhysd/vim-textobj-ruby'
+Plug 'kana/vim-textobj-user'
 
 " Initialize plugin system
 call plug#end()
