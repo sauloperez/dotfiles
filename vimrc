@@ -34,6 +34,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'mxw/vim-jsx'
 Plug 'kchmck/vim-coffee-script'
+Plug 'rust-lang/rust.vim'
 
 Plug 'vim-scripts/SQLUtilities'
 Plug 'vim-scripts/Align'
