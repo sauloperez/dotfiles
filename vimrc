@@ -206,14 +206,7 @@ nmap <silent> <leader>t :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
-let test#strategy = "dispatch"
-
-" Dispatch.vim
-" Correctly parse rspec results to be shown in the quickfix window
-" See: https://github.com/tpope/vim-dispatch/issues/41
-let g:dispatch_compilers = {
-  \ 'bundle exec': ''
-}
+let test#strategy = "neovim"
 
 " Argumentrewrap.vim
 nnoremap <silent> <leader>w :call argumentrewrap#RewrapArguments()<CR>
