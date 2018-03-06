@@ -28,7 +28,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-abolish'
 Plug 'elixir-lang/vim-elixir'
 Plug 'evanmiller/nginx-vim-syntax'
-Plug 'NLKNguyen/papercolor-theme'
+Plug 'mhartington/oceanic-next'
 Plug 'jgdavey/vim-blockle'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
@@ -184,7 +184,6 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 
 " Airline.vim
 let g:airline_powerline_fonts = 1
-let g:airline_theme='papercolor'
 
 " fzf.vim
 nnoremap <space><space> :Files<CR>
@@ -250,7 +249,9 @@ filetype on
 set t_Co=256
 syntax enable
 set background=dark
-colorscheme PaperColor
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+colorscheme OceanicNext
 
 runtime macros/matchit.vim
 
