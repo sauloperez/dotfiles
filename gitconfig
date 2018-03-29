@@ -29,6 +29,7 @@
   ra = "!f() { \
         git remote add $1 https://github.com/$1/$(basename $(git rev-parse --show-toplevel)).git; \
       }; f"
+  sync=!git co master && git fetch --tags upstream master && git merge upstream/master && git push
 
 [branch]
   autosetuprebase = always
