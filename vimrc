@@ -37,6 +37,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'elzr/vim-json'
+Plug 'morhetz/gruvbox'
 
 Plug 'vim-scripts/SQLUtilities'
 Plug 'vim-scripts/Align'
