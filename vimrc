@@ -24,6 +24,7 @@ Plug 'tpope/vim-endwise'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'jakobwesthoff/argumentrewrap'
+Plug 'benmills/vimux'
 Plug 'janko-m/vim-test'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-abolish'
@@ -210,7 +211,7 @@ nmap <silent> <leader>t :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
-let test#strategy = "neovim"
+let test#strategy = "vimux"
 
 " Argumentrewrap.vim
 nnoremap <silent> <leader>w :call argumentrewrap#RewrapArguments()<CR>
