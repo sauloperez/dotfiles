@@ -38,6 +38,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'elzr/vim-json'
 Plug 'morhetz/gruvbox'
+Plug 'PProvost/vim-markdown-jekyll'
 
 Plug 'vim-scripts/SQLUtilities'
 Plug 'vim-scripts/Align'
