@@ -39,6 +39,7 @@ Plug 'cespare/vim-toml'
 Plug 'elzr/vim-json'
 Plug 'morhetz/gruvbox'
 Plug 'PProvost/vim-markdown-jekyll'
+Plug 'tpope/vim-liquid'
 
 Plug 'vim-scripts/SQLUtilities'
 Plug 'vim-scripts/Align'
