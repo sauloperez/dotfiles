@@ -116,8 +116,5 @@ PERL_MM_OPT="INSTALL_BASE=~/perl5"; export PERL_MM_OPT;
 # https://github.com/direnv/direnv
 command -v direnv && eval "$(direnv hook zsh)"
 
-# added by travis gem
-[ -f /home/pau/.travis/travis.sh ] && source /home/pau/.travis/travis.sh
-
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
