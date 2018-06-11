@@ -9,10 +9,6 @@ YELLOW='\033[0;33m'
 NO_COLOR='\033[0m'
 CLEAR_LINE='\r\033[K'
 
-printf "${CLEAR_LINE}Installing git"
-
-sudo apt-get -y install git > /dev/null
-
 printf "${CLEAR_LINE}Installing vim"
 
 sudo apt-get -y install vim > /dev/null
