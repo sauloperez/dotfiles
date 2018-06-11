@@ -9,9 +9,9 @@ YELLOW='\033[0;33m'
 NO_COLOR='\033[0m'
 CLEAR_LINE='\r\033[K'
 
-printf "${CLEAR_LINE}Installing vim"
+printf "${CLEAR_LINE}Installing neovim"
 
-sudo apt-get -y install vim > /dev/null
+sudo apt-get -y install neovim > /dev/null
 
 printf "${CLEAR_LINE}Installing tmux"
 
