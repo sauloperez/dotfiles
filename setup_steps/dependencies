@@ -13,6 +13,10 @@ printf "${CLEAR_LINE}Installing curl"
 
 sudo apt-get -y install curl > /dev/null
 
+printf "${CLEAR_LINE}Installing Powerline fonts"
+
+sudo apt-get install fonts-powerline
+
 printf "${CLEAR_LINE}Installing neovim"
 
 sudo apt-get -y install neovim > /dev/null
