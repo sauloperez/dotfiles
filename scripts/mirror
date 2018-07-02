@@ -1,1 +1,19 @@
-xrandr --output DP-1 --mode 1280x1024 --same-as LVDS-1
+#!/bin/bash
+
+
+if [ $# -lt 1 ]
+then
+  echo "Usage: $0 name"
+  exit
+fi
+
+name=$1
+
+case "$name" in
+"espai30")
+  xrandr --output DP-1 --mode 1280x1024 --same-as LVDS-1
+  ;;
+"home")
+  xrandr --output HDMI-1 --mode 1920x1080 --primary
+  ;;
+esac
