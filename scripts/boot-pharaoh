@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# First, make sure you mount Cleopatra CD's. Apparently when Clepoatra's
+# extension is installed the game only requires Cleopatra's CD to be mounted.
+sudo mount -o loop ~/Pharaoh/Cleopatra.iso /media/cleopatra
+
+# and Wine has drive mappings for them in the Pharaoh.exe application settings
+# What I got now is:
+#
+# E: to /media/cleopatra
+# F: to /media/pharaoh
+#
+# You can configure those running `winecfg`
+
+export WINEPREFIX="$HOME/.wine"
+
+APPDIR="$WINEPREFIX/drive_c/SIERRA/Pharaoh"
+APP='Pharaoh.exe'
+RESOLUTION='1024x768'
+
+cd $APPDIR
+
+# Change resolution and start game
+# xrandr -s $RESOLUTION
+wine "$APP"
+
+# Wait for the game to exit and clean up
+wait
+
+# xrandr -s 0                     # Change back to default resolution

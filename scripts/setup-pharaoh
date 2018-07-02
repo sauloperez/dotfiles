@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Install and configure Wine
+sudo apt install wine32
+winecfg
+
+# Mount and install Pharaoh. Follow the window's installation wizard
+sudo mkdir /media/pharaoh
+sudo mount -o loop ~/Pharaoh/Pharaoh.iso /media/pharaoh
+wine /media/pharaoh/autorun.exe
+
+# Mount and install Cleopatra. Follow the window's installation wizard
+sudo mkdir /media/cleopatra
+sudo mount -o loop ~/Pharaoh/Cleopatra.iso /media/cleopatra
+wine /media/cleopatra/autorun.exe
