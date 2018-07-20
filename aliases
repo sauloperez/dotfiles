@@ -40,3 +40,5 @@ alias glg="g lg"
 alias gdfc="g dfc"
 alias gco="g co"
 alias gaa="g add -A"
+alias gr="g reset"
+alias gw="g show" # `gs` would clash with Ghost Script
