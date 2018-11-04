@@ -60,7 +60,7 @@ plugins=(rails vi-mode zsh-syntax-highlighting z rbenv)
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# Load per-machine customizations. Don't crazy; this is intended for things
+# Load per-machine customizations. Don't get crazy; this is intended for things
 # like themes and such
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
