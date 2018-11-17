@@ -22,8 +22,8 @@ export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 export PATH=~/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
-# Setup for Python3. Following details of `brew info python` output
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
+# Setup for Golang
+export PATH=$PATH:/usr/local/go/bin
 
 # Locale
 export LC_ALL=en_US.UTF-8  

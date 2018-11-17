@@ -40,6 +40,7 @@ Plug 'elzr/vim-json'
 Plug 'morhetz/gruvbox'
 Plug 'PProvost/vim-markdown-jekyll'
 Plug 'tpope/vim-liquid'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'vim-scripts/SQLUtilities'
 Plug 'vim-scripts/Align'
