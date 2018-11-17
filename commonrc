@@ -9,7 +9,10 @@
 # Adds gnubin to PATH to use coreutils commands without the 'g' prefix. This
 # allows linux scripts to work.
 if [[ "$(uname)" == "Darwin" ]]; then
-  export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+  export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+
+  # Setup for Python3. Following details of `brew info python` output
+  export PATH=/usr/local/opt/python/libexec/bin:$PATH
 fi
 
 # Makes Mysql work with Rails
@@ -18,6 +21,9 @@ export PATH=$PATH:$MYSQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 export PATH=~/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
+
+# Setup for Python3. Following details of `brew info python` output
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
 # Locale
 export LC_ALL=en_US.UTF-8  
