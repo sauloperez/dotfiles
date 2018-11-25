@@ -42,6 +42,6 @@ export EDITOR=nvim
 [[ -f $HOME/.3llo_vars ]] && source $HOME/.3llo_vars
 
 # Load The Fuck https://github.com/nvbn/thefuck
-eval "$(thefuck --alias)"
+command -v thefuck 2>/dev/null && eval "$(thefuck --alias)"
 
 export TERM=xterm-256color
