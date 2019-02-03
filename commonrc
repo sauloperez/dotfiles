@@ -15,11 +15,6 @@ if [[ "$(uname)" == "Darwin" ]]; then
   export PATH=/usr/local/opt/python/libexec/bin:$PATH
 fi
 
-# Makes Mysql work with Rails
-MYSQL=/usr/local/mysql/bin
-export PATH=$PATH:$MYSQL
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
-
 export PATH=~/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Setup for Golang
