@@ -17,10 +17,8 @@ fi
 
 export PATH=~/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
-# Setup for Golang
-export PATH=$PATH:/usr/local/go/bin
-export PATH=~/dev/go/bin:$PATH
-export GOPATH=~/dev/go
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$GOPATH/bin
 
 # Locale
 export LC_ALL=en_US.UTF-8  
