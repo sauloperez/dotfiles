@@ -266,3 +266,5 @@ runtime macros/matchit.vim
 
 " Abbreviations
 :iabbrev bb byebug
+
+let g:go_version_warning = 0
