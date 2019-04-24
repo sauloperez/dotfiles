@@ -262,6 +262,6 @@ colorscheme nord
 runtime macros/matchit.vim
 
 " Abbreviations
-:iabbrev bb byebug
+:iabbrev bb binding.pry
 
 let g:go_version_warning = 0
