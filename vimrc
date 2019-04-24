@@ -37,7 +37,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'elzr/vim-json'
-Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 Plug 'PProvost/vim-markdown-jekyll'
 Plug 'tpope/vim-liquid'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -257,10 +257,7 @@ filetype on
 " Set syntax highlighting options.
 set t_Co=256
 syntax enable
-set background=dark
-let g:oceanic_next_terminal_bold = 1
-let g:oceanic_next_terminal_italic = 1
-colorscheme gruvbox
+colorscheme nord
 
 runtime macros/matchit.vim
 
