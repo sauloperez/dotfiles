@@ -263,5 +263,6 @@ runtime macros/matchit.vim
 
 " Abbreviations
 :iabbrev bb binding.pry
+:iabbrev ad ActiveSupport::Deprecation.silenced = true
 
 let g:go_version_warning = 0
