@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'neomake/neomake'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
@@ -190,7 +191,7 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 let g:airline_powerline_fonts = 1
 
 " fzf.vim
-nnoremap <space><space> :Files<CR>
+nnoremap <space><space> :FZF<CR>
 nnoremap <space>b :Buffers<CR>
 
 " Markdown.vim
