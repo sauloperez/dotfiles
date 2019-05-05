@@ -37,7 +37,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'elzr/vim-json'
-Plug 'arcticicestudio/nord-vim'
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'PProvost/vim-markdown-jekyll'
 Plug 'tpope/vim-liquid'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -257,7 +257,8 @@ filetype on
 " Set syntax highlighting options.
 set t_Co=256
 syntax enable
-colorscheme nord
+set background=dark
+colorscheme palenight
 
 runtime macros/matchit.vim
 
