@@ -19,7 +19,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 if [ -d "~/.oh-my-zsh" ]; then
   printf "${CLEAR_LINE}Oh My Zsh plugins already installed"
 else
-  printf "${CLEAR_LINE}Installing Oh Zsh syntax highlighting plugin"
+  printf "${CLEAR_LINE}Installing Oh My Zsh syntax highlighting plugin"
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 fi
 
