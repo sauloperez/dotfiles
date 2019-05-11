@@ -72,6 +72,15 @@ Advanced Options and paste `/usr/local/bin/zsh` in the login shell field.
 You may end up with a `~/.bashrc` because Ubuntu comes with it. If you have one,
 just delete it once Zsh is set up.
 
+### Z
+
+[Z](https://github.com/rupa/z) is an awesome utility to move around the file
+system based on "frecency" which makes me move much faster.
+
+By typing `a fo` I cd to `~/dev/openfoodnetwork`.
+
+There is no manual required to install since I use its oh my zsh plugin.
+
 ## Mappings
 
 Reference to vim mappings.
