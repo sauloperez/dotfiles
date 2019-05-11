@@ -190,14 +190,14 @@ Additional useful scripts bundled:
 Fonts
 =====
 
-To install fonts for Powerline clone its fonts repo and install them with:
+[Fira Code](https://github.com/tonsky/FiraCode) is an awesome font perfectly
+suited for my console usage. If you ran the `setup` script you got it installed
+already. To use it the Gnome terminal just open its preferences and create a new
+profile called "fira code", selecting said font at 12pt. Don't forget to set it
+as the default profile.
 
-```
-https://github.com/powerline/fonts
-./install.sh
-```
-
-`Inconsolata` it's a good candidate font. It's the one I've been using so far.
+The ligature support in Ubuntu requires some tweaking that I haven't figured out
+yet. The repo's wiki page will surely tell how.
 
 Git
 ===
