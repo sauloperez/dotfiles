@@ -14,14 +14,13 @@ sudo apt-get -y install zsh > /dev/null
 
 printf "${CLEAR_LINE}Intalling Oh My Zsh"
 
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 if [ -d "~/.oh-my-zsh" ]; then
   printf "${CLEAR_LINE}Oh My Zsh plugins already installed"
 else
-  printf "${CLEAR_LINE}Installing Oh My Zsh plugins"
+  printf "${CLEAR_LINE}Installing Oh Zsh syntax highlighting plugin"
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 fi
 
-printf "${CLEAR_LINE}Installing Oh My Zsh plugins"
 rcup
