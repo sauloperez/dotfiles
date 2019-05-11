@@ -8,7 +8,7 @@ GREEN='\033[0;32m'
 
 ./setup_steps/dependencies
 ./setup_steps/dotfiles
-./setup_steps/vim
+./setup_steps/neovim
 ./setup_steps/zsh
 
 source ~/.zshrc
