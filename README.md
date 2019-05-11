@@ -41,61 +41,11 @@ $ rcup -v
 Zsh
 ===
 
-```shell
-brew install zsh zsh-completions
-```
+Zsh and Oh My Zsh are also installed by the `setup` script.
 
 Change your login shell to zsh by running `chsh -s /usr/local/bin/zsh` or System
 Preferences -> Users & Groups -> Click the lock -> Right click your user ->
 Advanced Options and paste `/usr/local/bin/zsh` in the login shell field.
-
-oh my zsh
----------
-
-When changed to zsh run:
-
-```shell
-curl -L http://install.ohmyz.sh | sh
-```
-
-Now we can install zsh-syntax-highlighting plugin. It tells you if a command is
-valid before you hit the enter key.
-
-To install run:
-
-```shell
-cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
-```
-
-Lastly, lets install [z](https://github.com/rupa/z), a script that makes
-navigating the file system much faster.
-
-```shell
-brew install z
-```
-
-Now sync to get the dotfiles' zshrc with `rcup -v` and `source ~/.zshrc` for its
-configurations to take effect.
-
-Vim
-===
-
-Installation
---------
-
-First create the folders required in `.vimrc`:
-
-```
-mkdir ~/.vim/{backups,swaps,undo}
-```
-
-Then, set up [Vundle](https://github.com/gmarik/Vundle.vim) to manage vim plugins
-
-`$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
-
-and install plugins either running `:PluginInstall` from vim or install them from the command line with: `vim +PluginInstall +qall`
-
-What follows is an overview of the vim setup. Sensible defaults for all the things!
 
 Mappings
 --------
