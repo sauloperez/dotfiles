@@ -69,6 +69,9 @@ Change your login shell to zsh by running `chsh -s /usr/local/bin/zsh` or System
 Preferences -> Users & Groups -> Click the lock -> Right click your user ->
 Advanced Options and paste `/usr/local/bin/zsh` in the login shell field.
 
+You may end up with a `~/.bashrc` because Ubuntu comes with it. If you have one,
+just delete it once Zsh is set up.
+
 ## Mappings
 
 Reference to vim mappings.
