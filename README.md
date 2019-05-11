@@ -160,8 +160,13 @@ Scripts
 Additional useful scripts bundled:
 
 * ack
-* bookmarklet
+* git-show-merges
+* git-wtf
 
+And the two scripts needed to play Pharaoh:
+
+* setup-pharaoh
+* boot-pharaoh
 
 Fonts
 =====
