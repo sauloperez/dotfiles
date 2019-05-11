@@ -151,6 +151,14 @@ Additional scripts (see [.scripts](https://github.com/sauloperez/dotfiles/tree/m
 * git-show-merges
 * git-wtf
 
+NodeJS
+======
+
+Node is needed to run things like Coopdevs' [slides_template](https://github.com/coopdevs/slides_template).
+
+For that is better to install Nodenv so multiple versions can be installed.
+Follow its installation steps at https://github.com/nodenv/nodenv#installation.
+
 Keyboard
 ========
 
