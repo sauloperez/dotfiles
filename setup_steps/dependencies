@@ -9,9 +9,9 @@ YELLOW='\033[0;33m'
 NO_COLOR='\033[0m'
 CLEAR_LINE='\r\033[K'
 
-printf "${CLEAR_LINE}Installing curl"
+printf "${CLEAR_LINE}Installing curl and other essentials"
 
-sudo apt-get -y -q -q install curl > /dev/null
+sudo apt-get -y -q -q install curl build-essential tree htop xsel > /dev/null
 
 printf "${CLEAR_LINE}Installing Powerline fonts"
 
