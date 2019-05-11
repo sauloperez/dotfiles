@@ -28,7 +28,4 @@ export LANG=en_US.UTF-8
 # Misc settings
 export EDITOR=nvim
 
-# Add extra gemrc with Redbooth's settings
-[[ -f $HOME/.gemrc_local ]] && export GEMRC=$HOME/.gemrc_local
-
 export TERM=xterm-256color
