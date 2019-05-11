@@ -5,6 +5,7 @@ Prerequisites
 -------------
 
 * Git (2.0+ recommended)
+* Go
 * Neovim
 * [Homebrew](http://mxcl.github.com/homebrew/) (OS X only)
 
@@ -22,6 +23,19 @@ Install your dotfiles symlinking them into your home directory:
 ``` bash-session
 $ rcup -v
 ```
+
+### Go
+
+Go is required because multiple rc files refer to it. To install it head over to https://golang.org/doc/install and follow the steps.
+
+After that, create its diretory structure as follows
+
+```sh
+$ mkdir -p ~/go/{bin,pkg,src}/
+$ mkdir -p ~/go/src/gitlab.com/sauloperez
+```
+
+If you have any doubts the [workspace chapter](https://www.youtube.com/watch?v=SqrbIlUwR0U&t=133s) of the Go crash course I recently watched is perfect.
 
 ### Neovim
 
