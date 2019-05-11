@@ -19,6 +19,14 @@ Install your dotfiles symlinking them into your home directory:
 $ rcup -v
 ```
 
+### SSH key
+
+The ssh key is needed to authenticate everywhere and therefore it's better to
+get it first otherwise, I won't be able to push to git repos, etc.
+
+For that copy the private and public key from the `~/.ssh` dir of my previous
+development machine.
+
 ### Go
 
 Go is required because multiple rc files refer to it. To install it head over to https://golang.org/doc/install and follow the steps.
