@@ -23,9 +23,8 @@ Install your dotfiles symlinking them into your home directory:
 $ rcup -v
 ```
 
-### VIM
-For vim to work with all its configured plugins install Vundle as
-explained in https://github.com/VundleVim/Vundle.vim
+### Neovim
+For Neovim to work with all its configured plugins install Vim-plug is installed via the `setup` script as explained in https://github.com/junegunn/vim-plug
 
 Stay Updated
 ------------
