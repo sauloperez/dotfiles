@@ -9,6 +9,8 @@ YELLOW='\033[0;33m'
 NO_COLOR='\033[0m'
 CLEAR_LINE='\r\033[K'
 
+printf "\n\n"
+
 printf "${CLEAR_LINE}Installing zsh"
 sudo apt-get -y install zsh > /dev/null
 

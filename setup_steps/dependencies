@@ -11,23 +11,27 @@ CLEAR_LINE='\r\033[K'
 
 printf "${CLEAR_LINE}Installing curl"
 
-sudo apt-get -y install curl > /dev/null
+sudo apt-get -y -q -q install curl > /dev/null
 
 printf "${CLEAR_LINE}Installing Powerline fonts"
 
-sudo apt-get install fonts-powerline
+sudo apt-get -q -q install fonts-powerline
 
 printf "${CLEAR_LINE}Installing neovim"
 
-sudo apt-get -y install neovim > /dev/null
+sudo apt-get -y -q -q install neovim > /dev/null
 
 printf "${CLEAR_LINE}Installing tmux"
 
-sudo apt-get -y install tmux > /dev/null
+sudo apt-get -y -q install tmux > /dev/null
 
-printf "${CLEAR_LINE}Installing rcm"
+printf "${CLEAR_LINE}Installing Fira Code font\n\n"
+
+sudo apt-get -y -q install fonts-firacode
+
+printf "\n\n${CLEAR_LINE}Installing rcm\n\n"
 
 wget -qO - https://apt.thoughtbot.com/thoughtbot.gpg.key | sudo apt-key add -
 echo "deb http://apt.thoughtbot.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/thoughtbot.list
-sudo apt-get update
-sudo apt-get install rcm
+sudo apt-get -q update
+sudo apt-get -q install rcm
