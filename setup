@@ -13,4 +13,4 @@ GREEN='\033[0;32m'
 
 source ~/.zshrc
 
-printf "${CLEAR_LINE}🎉${GREEN}   Finished!${NO_COLOR}\n"
+printf "${CLEAR_LINE}${GREEN}   Finished!${NO_COLOR}\n"
