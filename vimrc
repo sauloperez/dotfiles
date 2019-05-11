@@ -57,11 +57,6 @@ filetype plugin indent on
 " Change mapleader
 let mapleader=","
 
-" Local dirs
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
-set undodir=~/.vim/undo
-
 " Set some junk
 set autoindent " Copy indent from last line when starting new line.
 set backspace=indent,eol,start

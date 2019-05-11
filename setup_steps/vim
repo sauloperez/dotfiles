@@ -9,14 +9,6 @@ YELLOW='\033[0;33m'
 NO_COLOR='\033[0m'
 CLEAR_LINE='\r\033[K'
 
-printf "Setting up Vim's dir structure"
-
-if [ ! -d ~/.vim/backups ]; then
-  mkdir ~/.vim/backups
-  mkdir ~/.vim/swaps
-  mkdir ~/.vim/undo
-fi
-
 printf "${CLEAR_LINE}Installing Vim Plug"
 
 if [ ! -f ~/.local/share/nvim/site/autoload/plug.vim ]; then
