@@ -43,6 +43,10 @@ For Neovim to work with all its configured plugins install Vim-plug is installed
 
 To install the plugins listed in `vimrc` either run `:PluginInstall` from neovim or install them from the command line with: `nvim +PluginInstall +qall`
 
+#### FZF
+
+[FZF](https://github.com/junegunn/fzf.vim) is an awesome fuzzy-finder I use from the terminal an as vim plugin. Make sure you read https://github.com/junegunn/fzf/blob/master/README-VIM.md as well. You should also read the vim plugin's README.
+
 Zsh
 ===
 
