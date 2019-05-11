@@ -5,14 +5,7 @@ Prerequisites
 -------------
 
 * Git (2.0+ recommended)
-* Vim (7.4+ recommended)
-* Tree
-* Pygments
-* xmllint
-
-Optional, but recommended:
-
-* [rbenv](http://rbenv.org)
+* Neovim
 * [Homebrew](http://mxcl.github.com/homebrew/) (OS X only)
 
 Install
