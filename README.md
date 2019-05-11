@@ -46,6 +46,17 @@ For Neovim to work with all its configured plugins install Vim-plug is installed
 
 To install the plugins listed in `vimrc` either run `:PluginInstall` from neovim or install them from the command line with: `nvim +PluginInstall +qall`
 
+Lastly, to make Neovim pick the `vimrc` you must have a file `~/.config/nvim/init.vim` with the following contents:
+
+```
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+source ~/.vimrc
+```
+
+This ensures this old configuration is read. It's about time to move it to
+adhere to Neovim's defaults though.
+
 ### FZF
 
 [FZF](https://github.com/junegunn/fzf.vim) is an awesome fuzzy-finder I use from the terminal an as vim plugin. Make sure you read https://github.com/junegunn/fzf/blob/master/README-VIM.md as well. You should also read the vim plugin's README.
