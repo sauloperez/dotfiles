@@ -140,30 +140,6 @@ Commands
 * `:R` Get the output of shell commands.
 
 
-Plugins
-=======
-
-Installed plugins and syntax files.
-
-* Ack
-* CSS-color
-* CtrlP
-* Gist
-* Haml
-* Indent Guides
-* Jade
-* Javascript
-* Markdown
-* Nerdcommenter
-* Powerline
-* Rails
-* Rainbow Parenthesis
-* Repeat
-* Ruby
-* Slim
-* Surround
-
-
 Shell
 =====
 
