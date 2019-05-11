@@ -1,16 +1,11 @@
-Installation
-============
-
-Prerequisites
--------------
+## Prerequisites
 
 * Git (2.0+ recommended)
 * Go
 * Neovim
 * [Homebrew](http://mxcl.github.com/homebrew/) (OS X only)
 
-Install
-------------
+## Install
 
 Dotfiles installion is handled by [thoughtbot's rcm](https://github.com/thoughtbot/rcm). A suite of tools for managing dotfiles directories. Check out whether everything will work fine:
 
@@ -43,12 +38,11 @@ For Neovim to work with all its configured plugins install Vim-plug is installed
 
 To install the plugins listed in `vimrc` either run `:PluginInstall` from neovim or install them from the command line with: `nvim +PluginInstall +qall`
 
-#### FZF
+### FZF
 
 [FZF](https://github.com/junegunn/fzf.vim) is an awesome fuzzy-finder I use from the terminal an as vim plugin. Make sure you read https://github.com/junegunn/fzf/blob/master/README-VIM.md as well. You should also read the vim plugin's README.
 
-Zsh
-===
+### Zsh
 
 Zsh and Oh My Zsh are also installed by the `setup` script.
 
@@ -56,8 +50,7 @@ Change your login shell to zsh by running `chsh -s /usr/local/bin/zsh` or System
 Preferences -> Users & Groups -> Click the lock -> Right click your user ->
 Advanced Options and paste `/usr/local/bin/zsh` in the login shell field.
 
-Mappings
---------
+## Mappings
 
 Reference to vim mappings.
 
@@ -95,29 +88,25 @@ Reference to vim mappings.
 * `^l` Go to split right.
 
 
-Commands
-========
+### Commands
 
 * `:W` Alias to `:w` because I'm always typing it.
 * `:R` Get the output of shell commands.
 
 
-Shell
-=====
+## Shell
 
 Most of the shell junk is setup to work in bash. Bash users should
 see [.bash_profile](https://github.com/sauloperez/dotfiles/blob/master/.bash_profile)
 and [.bash_prompt](https://github.com/sauloperez/dotfiles/blob/master/.bash_prompt).
 
 
-Aliases
--------
+## Aliases
 
 Check out [.aliases](https://github.com/sauloperez/dotfiles/blob/master/.aliases)
 
 
-Scripts
--------
+## Scripts
 
 Additional useful scripts bundled:
 
@@ -130,8 +119,7 @@ And the two scripts needed to play Pharaoh:
 * setup-pharaoh
 * boot-pharaoh
 
-Fonts
-=====
+## Fonts
 
 [Fira Code](https://github.com/tonsky/FiraCode) is an awesome font perfectly
 suited for my console usage. If you ran the `setup` script you got it installed
@@ -142,8 +130,7 @@ as the default profile.
 The ligature support in Ubuntu requires some tweaking that I haven't figured out
 yet. The repo's wiki page will surely tell how.
 
-Git
-===
+## Git
 
 I've included some handy git script additions as well as configution changes.
 Have a look at
@@ -155,16 +142,14 @@ Additional scripts (see [.scripts](https://github.com/sauloperez/dotfiles/tree/m
 * git-show-merges
 * git-wtf
 
-NodeJS
-======
+## NodeJS
 
 Node is needed to run things like Coopdevs' [slides_template](https://github.com/coopdevs/slides_template).
 
 For that is better to install Nodenv so multiple versions can be installed.
 Follow its installation steps at https://github.com/nodenv/nodenv#installation.
 
-Keyboard
-========
+## Keyboard
 
 To map Ctrl key to Caps lock:
 
@@ -175,8 +160,7 @@ $ sudo apt-get install gnome-tweak-tool
 gnome-tweak-tool > Typing > Ctrl key position
 ```
 
-Stay Updated
-------------
+## Stay Updated
 
 Run the sync again!
 
