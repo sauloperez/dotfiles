@@ -35,7 +35,4 @@ export EDITOR=nvim
 # https://github.com/qcam/3llo#installation for details
 [[ -f $HOME/.3llo_vars ]] && source $HOME/.3llo_vars
 
-# Load The Fuck https://github.com/nvbn/thefuck
-command -v thefuck 2>/dev/null && eval "$(thefuck --alias)"
-
 export TERM=xterm-256color

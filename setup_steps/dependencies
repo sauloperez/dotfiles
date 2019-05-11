@@ -31,8 +31,3 @@ wget -qO - https://apt.thoughtbot.com/thoughtbot.gpg.key | sudo apt-key add -
 echo "deb http://apt.thoughtbot.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/thoughtbot.list
 sudo apt-get update
 sudo apt-get install rcm
-
-printf "${CLEAR_LINE}Installing The Fuck"
-
-sudo apt-get -y install python-pip python-dev > /dev/null
-sudo pip install psutil thefuck > /dev/null
