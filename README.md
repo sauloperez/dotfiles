@@ -191,6 +191,22 @@ $ sudo apt-get install gnome-tweak-tool
 gnome-tweak-tool > Typing > Ctrl key position
 ```
 
+## Cool utilities
+
+### sp
+
+[sp](https://gist.github.com/wandernauta/6800547) is a Spotify cli client that
+allows you to play, pause, get the current song, etc. from the command line.
+Just what I was looking for. Install it as follows
+
+```sh
+$ sudo curl -fLo /usr/local/bin/sp \
+    https://gist.githubusercontent.com/wandernauta/6800547/raw/2c2ad0f3849b1b1cd1116b80718d986f1c1e7966/sp
+$ sudo chmod ag+x /usr/local/bin/sp
+```
+
+Now, with the Spotify app open you can do `sp current` or `sp play`. Awesome!
+
 ## Stay Updated
 
 Run the sync again!
