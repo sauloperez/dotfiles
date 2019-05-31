@@ -191,6 +191,12 @@ $ sudo apt-get install gnome-tweak-tool
 gnome-tweak-tool > Typing > Ctrl key position
 ```
 
+### Emoji support
+
+Apparently Ubuntu 18.04 introduced emoji support out of the box but I couldn't get it to work in 19.04 until installed the package `fonts-noto-color-emoji`. Read https://technastic.com/use-and-uninstall-emoji-on-ubuntu-18-04/ to know how to insert emojis.
+
+Surprinsingly, after installed that package my tmux power bar start displaying the emojis I used to have 🤩️.
+
 ## Cool utilities
 
 ### sp
