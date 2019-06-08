@@ -220,3 +220,39 @@ Run the sync again!
 ``` bash-session
 $ rcup -v
 ```
+
+## Troubleshooting
+
+### Getting Nvidia Quadro P1000 mobile to work
+
+I couldn't an external monitor connected to my brand new Thinkpad P1 through HDMI until I updated the propietary Nvidia drivers and disabled Kernel mode setting on the Nvidia kernel module.
+
+Keep in mind the HDMI port is wired to the Nvidia graphics card so you'll first have to switch to it either using `Nvidia X Server Settings` or the `prime-select` command line tool. I guess the latter gets installed with the `nvidia-prime` package but I haven't checked. Do not forget to log out and log in again for the changes to take effect. 
+
+In order to get the latest Nvidia drivers available I added the `graphics-drivers` PPA repository as follows
+
+```
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+```
+
+Because of this, now `ubuntu-drivers devices` (you can find a nice explanation of this command [here](https://askubuntu.com/a/543329)) listed a couple more options
+
+```
+== /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0 ==
+modalias : pci:v000010DEd00001CBBsv000017AAsd00002267bc03sc00i00
+vendor   : NVIDIA Corporation
+model    : GP107GLM [Quadro P1000 Mobile]
+driver   : nvidia-driver-390 - distro non-free
+driver   : nvidia-driver-418 - distro non-free
+driver   : nvidia-driver-396 - third-party free
+driver   : nvidia-driver-415 - third-party free
+driver   : nvidia-driver-430 - third-party free recommended
+driver   : xserver-xorg-video-nouveau - distro free builtin
+```
+
+Particularly `nvidia-driver-430` did not show up before. Unfortunately, the command `sudo apt install nvidia-driver-430` reported an unmet depedencies error so I went the GUI way. You can do so by opening the "Software & Updates" app, choosing the "Additional Drivers" tab. Then, choose "nvidia-driver-430" and "Apply Changes". This took a while.
+
+But it turns out this wasn't enough, even after restarting the system. Finally, I found the solution in https://www.dell.com/community/Precision-Mobile-Workstations/External-Monitor-not-working-Ubuntu-nvidia/m-p/7286631#M1634. Apparently the problem is with the [kernel mode setting](https://wiki.archlinux.org/index.php/Kernel_mode_setting#Disabling_modesetting), which needs to be disabled to work.
+
+Editing the file `/lib/modprobe.d/nvidia-kms.conf` to `options nvidia-drm modeset=0` fixed the problem after a reboot 🎉️.
