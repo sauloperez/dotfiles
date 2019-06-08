@@ -1,3 +1,32 @@
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Install](#install)
+  * [SSH key](#ssh-key)
+  * [Go](#go)
+  * [Neovim](#neovim)
+  * [FZF](#fzf)
+  * [Zsh](#zsh)
+  * [Z](#z)
+- [Mappings](#mappings)
+  * [General](#general)
+  * [Splits](#splits)
+  * [Commands](#commands)
+- [Shell](#shell)
+- [Aliases](#aliases)
+- [Scripts](#scripts)
+- [Fonts](#fonts)
+- [Git](#git)
+- [NodeJS](#nodejs)
+- [Keyboard](#keyboard)
+  * [Ubuntu](#ubuntu)
+  * [Emoji support](#emoji-support)
+- [Cool utilities](#cool-utilities)
+  * [sp](#sp)
+- [Stay Updated](#stay-updated)
+- [Troubleshooting](#troubleshooting)
+  * [Getting Nvidia Quadro P1000 mobile to work](#getting-nvidia-quadro-p1000-mobile-to-work)
+
 ## Prerequisites
 
 * Git (2.0+ recommended)
