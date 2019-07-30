@@ -290,3 +290,15 @@ Particularly `nvidia-driver-430` did not show up before. Unfortunately, the comm
 But it turns out this wasn't enough, even after restarting the system. Finally, I found the solution in https://www.dell.com/community/Precision-Mobile-Workstations/External-Monitor-not-working-Ubuntu-nvidia/m-p/7286631#M1634. Apparently the problem is with the [kernel mode setting](https://wiki.archlinux.org/index.php/Kernel_mode_setting#Disabling_modesetting), which needs to be disabled to work.
 
 Editing the file `/lib/modprobe.d/nvidia-kms.conf` to `options nvidia-drm modeset=0` fixed the problem after a reboot 🎉️.
+
+### Recovering Grub after a Lenovo's firmware upgrade
+
+After blindly applying the last firmware upgrade Grub was gone and there was no way to boot anything other than Windows 10. Disabling secure boot and enabling legacy boot didn't help either.
+
+First of all, https://unix.stackexchange.com/a/475245 shed some light on this giving some clues that led me to the solution. First kind of understood what [UEFI is about](https://www.howtogeek.com/56958/HTG-EXPLAINS-HOW-UEFI-WILL-REPLACE-THE-BIOS/) and what a [EFI system partition is](https://wiki.archlinux.org/index.php/EFI_system_partition), then I run
+
+```
+bcdedit /set {bootmgr} path \EFI\ubuntu\grubx64.efi
+```
+
+from Window's command prompt as admin, as detailed in https://itsfoss.com/no-grub-windows-linux/. Then reading [BCD System Store Settings for UEFI](BCD System Store Settings for UEFI) from Microsoft's Hardware Dev Center made me understand we basically told the Windows Boot Manager that it should boot grub's EFI application instead.
