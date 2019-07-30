@@ -251,6 +251,10 @@ Run the sync again!
 $ rcup -v
 ```
 
+## Pok3r mech keyboard
+
+You can find how to program the pok3r in [[guide] How-to: Program your Pok3r -- Programming Layers and Dipswitch 4](https://www.reddit.com/r/MechanicalKeyboards/comments/35uy60/guide_howto_program_your_pok3r_programming_layers/) from the MechanicalKeyboards subreddit.
+
 ## Troubleshooting
 
 ### Getting Nvidia Quadro P1000 mobile to work
@@ -286,7 +290,3 @@ Particularly `nvidia-driver-430` did not show up before. Unfortunately, the comm
 But it turns out this wasn't enough, even after restarting the system. Finally, I found the solution in https://www.dell.com/community/Precision-Mobile-Workstations/External-Monitor-not-working-Ubuntu-nvidia/m-p/7286631#M1634. Apparently the problem is with the [kernel mode setting](https://wiki.archlinux.org/index.php/Kernel_mode_setting#Disabling_modesetting), which needs to be disabled to work.
 
 Editing the file `/lib/modprobe.d/nvidia-kms.conf` to `options nvidia-drm modeset=0` fixed the problem after a reboot 🎉️.
-
-## Pok3r mech keyboard
-
-You can find how to program the pok3r in [[guide] How-to: Program your Pok3r -- Programming Layers and Dipswitch 4](https://www.reddit.com/r/MechanicalKeyboards/comments/35uy60/guide_howto_program_your_pok3r_programming_layers/) from the MechanicalKeyboards subreddit.
