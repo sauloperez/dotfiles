@@ -32,3 +32,9 @@ function notes {
 
   popd > /dev/null
 }
+
+# Enables the HDMI port which is wired to the NVIDIA card
+function enable-monitor {
+  sudo prime-select nvidia
+  gnome-session-quit --no-prompt
+}
