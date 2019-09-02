@@ -35,6 +35,9 @@ function notes {
 
 # Enables the HDMI port which is wired to the NVIDIA card
 function enable-monitor {
+  if [[ $(prime-select query) == "nvidia" ]]; then
+    return 0
+  fi
   sudo prime-select nvidia
   gnome-session-quit --no-prompt
 }
