@@ -41,6 +41,7 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'PProvost/vim-markdown-jekyll'
 Plug 'tpope/vim-liquid'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'posva/vim-vue'
 
 Plug 'vim-scripts/SQLUtilities'
 Plug 'vim-scripts/Align'
