@@ -234,6 +234,10 @@ let g:UltiSnipsListSnippets="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
+" Limelight config copied from https://github.com/junegunn/limelight.vim#options
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+
 " JSX syntax highlighting and indenting for .js files too
 let g:jsx_ext_required = 0
 
