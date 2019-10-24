@@ -27,7 +27,7 @@
   pr=!open https://github.com/$(git repo)/compare/$(git current)?expand=1
   cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
   ra = "!f() { \
-        git remote add $1 https://github.com/$1/$(basename $(git rev-parse --show-toplevel)).git; \
+        git remote add $1 git@github.com:$1/$(basename $(git rev-parse --show-toplevel)).git; \
       }; f"
   sync=!git co master && git fetch --tags upstream master && git merge upstream/master && git push
 
