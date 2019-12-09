@@ -116,3 +116,6 @@ command -v direnv && eval "$(direnv hook zsh)"
 
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
+
+# added by travis gem
+[ -f /home/pau/.travis/travis.sh ] && source /home/pau/.travis/travis.sh
