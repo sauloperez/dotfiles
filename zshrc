@@ -98,6 +98,11 @@ bindkey '^R' history-incremental-search-backward
 
 fpath=(~/.zsh/completion $fpath)
 
+# Set up Pure prompt. See details: https://github.com/sindresorhus/pure
+fpath+=("$HOME/.zsh/pure")
+autoload -U promptinit; promptinit
+prompt pure
+
 autoload -U compinit
 compinit
 
