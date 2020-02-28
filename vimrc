@@ -267,5 +267,6 @@ runtime macros/matchit.vim
 " Abbreviations
 :iabbrev bb binding.pry
 :iabbrev ad ActiveSupport::Deprecation.silenced = true
+:iabbrev pdb import pdb; pdb.set_trace()
 
 let g:go_version_warning = 0
