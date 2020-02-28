@@ -43,6 +43,7 @@ Plug 'tpope/vim-liquid'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'posva/vim-vue'
 Plug 'pearofducks/ansible-vim'
+Plug 'mzlogin/vim-markdown-toc'
 
 Plug 'vim-scripts/SQLUtilities'
 Plug 'vim-scripts/Align'
