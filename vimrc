@@ -115,6 +115,7 @@ set wildmode=list:longest " Complete only until point of ambiguity.
 set wrapscan " Searches wrap around end of file
 set colorcolumn=80 " Show a line at column 80
 set nofoldenable " disable folding
+set backupcopy=yes " the file gets copied to the backup location and then overwritten
 
 " Better split switching (Ctrl-j, Ctrl-k, Ctrl-h, Ctrl-l)
 map <C-j> <C-W>j
