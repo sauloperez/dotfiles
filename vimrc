@@ -106,6 +106,7 @@ set softtabstop=2 " Tab key results in 2 spaces
 " set splitright " New windows goes right
 " set suffixes=.bak,~,.swp,.swo,.o,.d,.info,.aux,.log,.dvi,.pdf,.bin,.bbl,.blg,.brf,.cb,.dmg,.exe,.ind,.idx,.ilg,.inx,.out,.toc,.pyc,.pyd,.dll
 set title " Show the filename in the window titlebar.
+set textwidth=100 " Wrap lines to 100 chars
 " set ttyfast " Send more characters at a given time.
 " set undofile " Persistent Undo.
 set visualbell " Use visual bell instead of audible bell (annnnnoying)
@@ -114,7 +115,7 @@ set wildignore+=*/smarty/*,*/vendor/*,*/node_modules/*,*/.git/*,*/.hg/*,*/.svn/*
 set wildmenu " Hitting TAB in command mode will show possible completions above command line.
 set wildmode=list:longest " Complete only until point of ambiguity.
 set wrapscan " Searches wrap around end of file
-set colorcolumn=80 " Show a line at column 80
+set colorcolumn=100 " Show a line at column 100
 set nofoldenable " disable folding
 set backupcopy=yes " the file gets copied to the backup location and then overwritten
 
