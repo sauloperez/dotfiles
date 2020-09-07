@@ -118,6 +118,7 @@ set wrapscan " Searches wrap around end of file
 set colorcolumn=100 " Show a line at column 100
 set nofoldenable " disable folding
 set backupcopy=yes " the file gets copied to the backup location and then overwritten
+set listchars=trail:- " dsiplay trailing whitespace
 
 " Better split switching (Ctrl-j, Ctrl-k, Ctrl-h, Ctrl-l)
 map <C-j> <C-W>j
