@@ -98,6 +98,7 @@ set ruler " Show the cursor position
 " set scrolloff=3 " Start scrolling three lines before horizontal border of window.
 set shell=/bin/sh " Use /bin/sh for executing shell commands
 set shiftwidth=2 " The # of spaces for indenting.
+set shiftround " Round the indent spacing to the next multiple of shiftwidth
 " set sidescrolloff=3 " Start scrolling three columns before vertical border of window.
 set smartcase " Ignore 'ignorecase' if search patter contains uppercase characters.
 set smarttab " At start of line, <Tab> inserts shiftwidth spaces, <Bs> deletes shiftwidth spaces.
