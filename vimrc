@@ -202,7 +202,7 @@ nnoremap <space><space> :FZF<CR>
 nnoremap <space>b :Buffers<CR>
 
 " Markdown.vim
-let g:markdown_fenced_languages = ['ruby', 'html', 'javascript', 'css', 'erb=eruby.html', 'bash=sh']
+let g:markdown_fenced_languages = ['ruby', 'html', 'javascript', 'css', 'erb=eruby.html', 'bash=sh', 'python']
 
 " Ruby.vim
 let ruby_operators = 1
