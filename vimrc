@@ -268,6 +268,7 @@ filetype on
 " Set syntax highlighting options.
 set t_Co=256
 syntax enable
+set termguicolors     " enable true colors support
 set background=dark
 colorscheme palenight
 
