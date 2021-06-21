@@ -44,7 +44,6 @@ Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'elzr/vim-json'
 Plug 'drewtempelmeyer/palenight.vim'
-Plug 'PProvost/vim-markdown-jekyll'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'posva/vim-vue'
 Plug 'pearofducks/ansible-vim'
