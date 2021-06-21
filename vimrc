@@ -220,6 +220,10 @@ nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 let test#strategy = "tslime"
 
+if filereadable("docker-compose.yml") && !system("cat README.md | grep decidim")
+  let test#ruby#rspec#executable = 'docker-compose run --rm web bundle exec rspec'
+endif
+
 " Tslime
 " Used with Vim-test
 let g:tslime_always_current_session = 1
