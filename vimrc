@@ -49,6 +49,7 @@ Plug 'posva/vim-vue'
 Plug 'pearofducks/ansible-vim'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'ap/vim-css-color'
+Plug 'szw/vim-maximizer'
 
 Plug 'vim-scripts/SQLUtilities'
 Plug 'vim-scripts/Align'
@@ -125,6 +126,9 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
+
+" Maximize current split or return to previous
+noremap <C-w>m :MaximizerToggle<CR>
 
 " " Sudo write (,W)
 " noremap <leader>W :w !sudo tee %<CR>
