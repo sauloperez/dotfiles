@@ -222,11 +222,19 @@ nmap <silent> <leader>t :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
-let test#strategy = "tslime"
 
-if filereadable("docker-compose.yml") && !system("cat README.md | grep decidim")
-  let test#ruby#rspec#executable = 'docker-compose run --rm web bundle exec rspec'
-endif
+let test#strategy = "tslime"
+let test#python#runner = 'pytest'
+
+function! DockerTransform(cmd) abort
+  " Exclude the top level folders and specify Python modules only
+  let path = substitute(a:cmd, 'backend\/server\/', '', '')
+  return 'docker-compose exec api-server '.path
+endfunction
+
+let g:test#custom_transformations = {'docker': function('DockerTransform')}
+let g:test#transformation = 'docker'
+
 
 " Tslime
 " Used with Vim-test
