@@ -6,15 +6,6 @@
 # Adjust $PATH
 [[ -d "$HOME/.scripts" ]] && export PATH=$HOME/.scripts:$PATH
 
-# Adds gnubin to PATH to use coreutils commands without the 'g' prefix. This
-# allows linux scripts to work.
-if [[ "$(uname)" == "Darwin" ]]; then
-  export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
-
-  # Setup for Python3. Following details of `brew info python` output
-  export PATH=/usr/local/opt/python/libexec/bin:$PATH
-fi
-
 export PATH=~/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Locale
