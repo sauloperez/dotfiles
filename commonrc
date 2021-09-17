@@ -29,5 +29,3 @@ export LANG=en_US.UTF-8
 export EDITOR=nvim
 
 export TERM=screen-256color
-
-export FETCH_OFN_SECRETS="TRUE"
