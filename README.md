@@ -7,6 +7,7 @@
   * [Neovim](#neovim)
   * [FZF](#fzf)
   * [Zsh](#zsh)
+  * [Tmux](#tmux)
   * [Z](#z)
 - [Mappings](#mappings)
   * [General](#general)
@@ -103,6 +104,10 @@ Advanced Options and paste `/usr/local/bin/zsh` in the login shell field.
 
 You may end up with a `~/.bashrc` because Ubuntu comes with it. If you have one,
 just delete it once Zsh is set up.
+
+### Tmux
+
+Beyond installing Tmux we also need to install [tpm](https://github.com/tmux-plugins/tpm), the package manager.
 
 ### Z
 
