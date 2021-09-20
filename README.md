@@ -218,7 +218,7 @@ To map Ctrl key to Caps lock:
 
 ```shell
 $ sudo apt-get install gnome-tweak-tool
-gnome-tweak-tool > Typing > Ctrl key position
+gnome-tweak-tool > Keyboard & Mouse > Additional Layout Options > Ctrl key position
 ```
 
 ### Emoji support
