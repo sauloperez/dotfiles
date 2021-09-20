@@ -109,7 +109,7 @@ system based on "frecency" which makes me move much faster.
 
 By typing `a fo` I cd to `~/dev/openfoodnetwork`.
 
-There is no manual required to install since I use its oh my zsh plugin.
+There is no manual step required to install since I use its oh my zsh plugin.
 
 ## Mappings
 
