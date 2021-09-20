@@ -87,6 +87,8 @@ source ~/.vimrc
 This ensures this old configuration is read. It's about time to move it to
 adhere to Neovim's defaults though.
 
+All this is described in https://neovim.io/doc/user/nvim.html#nvim-from-vim.
+
 ### FZF
 
 [FZF](https://github.com/junegunn/fzf.vim) is an awesome fuzzy-finder I use from the terminal an as vim plugin. Make sure you read https://github.com/junegunn/fzf/blob/master/README-VIM.md as well. You should also read the vim plugin's README.
