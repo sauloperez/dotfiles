@@ -51,6 +51,7 @@ Plug 'posva/vim-vue'
 Plug 'pearofducks/ansible-vim'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'ap/vim-css-color'
+Plug 'madzak/vim-proselint'
 Plug 'szw/vim-maximizer'
 
 Plug 'vim-scripts/SQLUtilities'
