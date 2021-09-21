@@ -66,7 +66,8 @@ sudo apt install \
   fonts-firacode \
   rcm \
   zsh \
-  jq
+  jq \
+  gawk
 ```
 
 ```sh
