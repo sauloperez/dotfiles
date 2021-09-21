@@ -5,8 +5,10 @@
   * [SSH key](#ssh-key)
   * [Go](#go)
   * [Neovim](#neovim)
+  * [Ctags](#ctags)
   * [FZF](#fzf)
   * [Zsh](#zsh)
+  * [Tmux](#tmux)
   * [Z](#z)
 - [Mappings](#mappings)
   * [General](#general)
@@ -123,6 +125,18 @@ source ~/.vimrc
 This ensures this old configuration is read. It's about time to move it to
 adhere to Neovim's defaults though.
 
+All this is described in https://neovim.io/doc/user/nvim.html#nvim-from-vim.
+
+### Ctags
+
+Install using the Snap package:
+
+```
+sudo snap install universal-ctags
+```
+
+More details: https://github.com/universal-ctags/ctags#snap
+
 ### FZF
 
 [FZF](https://github.com/junegunn/fzf.vim) is an awesome fuzzy-finder I use from the terminal an as vim plugin. Make sure you read https://github.com/junegunn/fzf/blob/master/README-VIM.md as well. You should also read the vim plugin's README.
@@ -137,6 +151,10 @@ Advanced Options and paste `/usr/local/bin/zsh` in the login shell field.
 
 You may end up with a `~/.bashrc` because Ubuntu comes with it. If you have one,
 just delete it once Zsh is set up.
+
+### Tmux
+
+Beyond installing Tmux we also need to install [tpm](https://github.com/tmux-plugins/tpm), the package manager.
 
 ### Z
 
@@ -254,14 +272,8 @@ To map Ctrl key to Caps lock:
 
 ```shell
 $ sudo apt-get install gnome-tweak-tool
-gnome-tweak-tool > Typing > Ctrl key position
+gnome-tweak-tool > Keyboard & Mouse > Additional Layout Options > Ctrl key position
 ```
-
-### Emoji support
-
-Apparently Ubuntu 18.04 introduced emoji support out of the box but I couldn't get it to work in 19.04 until installed the package `fonts-noto-color-emoji`. Read https://technastic.com/use-and-uninstall-emoji-on-ubuntu-18-04/ to know how to insert emojis.
-
-Surprinsingly, after installed that package my tmux power bar start displaying the emojis I used to have 🤩️.
 
 ## Cool utilities
 
