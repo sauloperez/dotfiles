@@ -35,6 +35,13 @@
 * Neovim
 * [Homebrew](http://mxcl.github.com/homebrew/) (OS X only)
 
+It's worth enabling passwordless ssh access to the machine first and do the
+setup through SSH.
+
+```sh
+ssh-copy-id <user>@<host>
+```
+
 ## Packages
 
 ```sh
