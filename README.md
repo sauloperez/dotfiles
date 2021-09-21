@@ -35,6 +35,35 @@
 * Neovim
 * [Homebrew](http://mxcl.github.com/homebrew/) (OS X only)
 
+## Packages
+
+```sh
+sudo apt install \
+  git \
+  neovim \
+  ssh \
+  apt-transport-https \
+  ca-certificates \
+  curl \
+  gnupg \
+  lsb-release \
+  build-essential
+  tree \
+  htop \
+  xsel \
+  fonts-powerline \
+  neovim \
+  tmux \
+  fonts-firacode \
+  rcm \
+  zsh \
+  jq
+```
+
+```sh
+sudo snap install bw
+```
+
 ## Install
 
 Dotfiles installion is handled by [thoughtbot's rcm](https://github.com/thoughtbot/rcm). A suite of tools for managing dotfiles directories. Check out whether everything will work fine:
