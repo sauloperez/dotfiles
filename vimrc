@@ -230,6 +230,10 @@ let ruby_fold = 0
 " Run NeoMake on read and write operations
 autocmd! BufReadPost,BufWritePost * Neomake
 
+" Neomake configuration
+let g:neomake_javascript_enabled_makers = ['eslint']
+let g:neomake_typescriptreact_enabled_makers = ['eslint']
+
 " Vim-test
 nmap <silent> <leader>s :TestNearest<CR>
 nmap <silent> <leader>t :TestFile<CR>
