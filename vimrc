@@ -251,8 +251,6 @@ nnoremap <silent> <leader>w :call argumentrewrap#RewrapArguments()<CR>
 " prettify sql:
 vnoremap <Leader>rp :s/\<update\>\\|\<select\>\\|\<from\>\\|\<where>\\|\<left join\>\\|\<inner join\>\\|\<group by\>\\|\<having\>\\|\<order by\>/\r\U&/ge<cr><esc>
 
-" Add spell checking and automatic wrapping at 72 columns to your commit messages
-autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 
 " Enable and disabling paste when... pasting
