@@ -53,6 +53,7 @@ Plug 'mzlogin/vim-markdown-toc'
 Plug 'ap/vim-css-color'
 Plug 'madzak/vim-proselint'
 Plug 'szw/vim-maximizer'
+Plug 'junegunn/vim-emoji'
 
 Plug 'vim-scripts/SQLUtilities'
 Plug 'vim-scripts/Align'
@@ -278,6 +279,11 @@ nnoremap <Leader>nn :CtrlP ~/Dropbox/notes/<CR>
 " Custom macros
 " Replace ruby's hashrockets with the new syntax
 let @h= ':s/:\(\w\+\)\s\+=>/\1:/g'
+
+" vim-emoji
+set completefunc=emoji#complete
+" Replace :emoji_name: into Emojis
+nnoremap <leader>em :s/:\([^:]\+\):/\=emoji#for(submatch(1), submatch(0))/g<CR>
 
 " Make vim more useful
 set nocompatible
