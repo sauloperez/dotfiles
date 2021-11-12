@@ -64,6 +64,7 @@ Plug 'kana/vim-textobj-user'
 " Initialize plugin system
 call plug#end()
 
+" Enable file type detection and enable loading the indent file for specific file types
 filetype plugin indent on
 
 " Change mapleader
@@ -282,7 +283,6 @@ let @h= ':s/:\(\w\+\)\s\+=>/\1:/g'
 
 " Make vim more useful
 set nocompatible
-filetype on
 
 " Set syntax highlighting options.
 set t_Co=256
