@@ -114,3 +114,6 @@
   autosquash = true
 [grep]
   extendRegexp = true
+
+[includeIf "gitdir/i:~/tacto/"]
+  path = ~/.gitconfig-tacto.inc
