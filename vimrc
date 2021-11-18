@@ -62,6 +62,15 @@ Plug 'geoffharcourt/vim-matchit'
 Plug 'rhysd/vim-textobj-ruby'
 Plug 'kana/vim-textobj-user'
 
+" LSP
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+
 " Initialize plugin system
 call plug#end()
 
@@ -303,3 +312,16 @@ runtime macros/matchit.vim
 :iabbrev sao save_and_open_page
 
 let g:go_version_warning = 0
+
+" LSP
+lua << EOF
+require'lspconfig'.pyright.setup{}
+EOF
+
+" COC
+"
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
