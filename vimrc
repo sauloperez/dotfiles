@@ -286,7 +286,7 @@ let g:limelight_conceal_ctermfg = 240
 let g:jsx_ext_required = 0
 
 " ctags
-nnoremap <leader>ct :!ctags -R *<CR>
+nnoremap <leader>ct :!ctags -R * --exclude=node_modules/ --exclude=frontend/<CR>
 
 " Code notes
 nnoremap <Leader>nn :CtrlP ~/Dropbox/notes/<CR>
