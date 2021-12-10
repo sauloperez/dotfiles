@@ -247,7 +247,9 @@ let test#python#runner = 'pytest'
 function! DockerTransform(cmd) abort
   " Exclude the top level folders and specify Python modules only
   let path = substitute(a:cmd, 'backend\/server\/', '', '')
-  return 'docker-compose exec api-server '.path
+  " Remove the root folder from the path passed to Pytest
+  let path = substitute(path, 'tacto-fastapi-v2\/', '', '')
+  return 'docker-compose -f backend/docker-compose.yaml -f tacto-fastapi-v2/docker-compose.yaml exec fastapi '.path
 endfunction
 
 let g:test#custom_transformations = {'docker': function('DockerTransform')}
