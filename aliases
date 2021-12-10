@@ -52,3 +52,5 @@ alias grb="g rebase"
 alias gw="g show" # `gs` would clash with Ghost Script
 alias gb="g branch"
 alias gra="g ra"
+alias grm="g rebase master || g rebase main"
+alias grim="g rebase -i master || g rebase -i main"
