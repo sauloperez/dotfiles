@@ -314,7 +314,7 @@ runtime macros/matchit.vim
 
 " Abbreviations
 :iabbrev bb byebug
-:iabbrev rem import remote_pdb; remote_pdb.set_trace(host='0.0.0.0', port=4444)
+:iabbrev rem import remote_pdb; remote_pdb.set_trace(host='0.0.0.0', port=4445)
 :iabbrev sao save_and_open_page
 
 let g:go_version_warning = 0
