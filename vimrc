@@ -249,7 +249,7 @@ function! DockerTransform(cmd) abort
   let path = substitute(a:cmd, 'backend\/server\/', '', '')
   " Remove the root folder from the path passed to Pytest
   let path = substitute(path, 'tacto-fastapi-v2\/', '', '')
-  return 'docker-compose -f backend/docker-compose.yaml -f tacto-fastapi-v2/docker-compose.yaml exec fastapi '.path
+  return 'docker-compose -f backend/docker-compose.yaml exec fastapi '.path
 endfunction
 
 let g:test#custom_transformations = {'docker': function('DockerTransform')}
