@@ -25,7 +25,7 @@
   current = rev-parse --abbrev-ref HEAD
   repo=!git remote -v | grep '@.*fetch' | gsed 's/.*:\\(.*\\).git.*/\\1/g'
   pr=!open https://github.com/$(git repo)/compare/$(git current)?expand=1
-  cleanup = "!for branch in $(git branch -vv  | grep ': gone]' | head | awk '{print $1}'); do git branch -D $branch; done"
+  cleanup = "!for branch in $(git branch -vv  | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done"
   ra = "!f() { \
         git remote add $1 git@github.com:$1/$(basename $(git rev-parse --show-toplevel)).git; \
       }; f"
