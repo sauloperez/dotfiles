@@ -46,7 +46,6 @@ Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'elzr/vim-json'
 Plug 'drewtempelmeyer/palenight.vim'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'posva/vim-vue'
 Plug 'pearofducks/ansible-vim'
 Plug 'mzlogin/vim-markdown-toc'
@@ -316,8 +315,6 @@ runtime macros/matchit.vim
 :iabbrev bb byebug
 :iabbrev rem import remote_pdb; remote_pdb.set_trace(host='0.0.0.0', port=4445)
 :iabbrev dbg from devtools import debug; debug(
-
-let g:go_version_warning = 0
 
 " LSP
 lua << EOF
