@@ -117,3 +117,6 @@
 
 [includeIf "gitdir/i:~/tacto/"]
   path = ~/.gitconfig-tacto.inc
+
+[includeIf "gitdir/i:~/infra/"]
+  path = ~/.gitconfig-tacto.inc
