@@ -162,6 +162,9 @@ nnoremap <leader>gg :Ggr -i
 " Git grep word under cursor
 nnoremap \g :Ggr <C-R><C-W><CR>
 
+" Neovim Python provider
+let g:python3_host_prog = '/home/pau/.pyenv/versions/py3nvim/bin/python'
+
 " NERD Commenter
 let NERDSpaceDelims=1
 let NERDCompactSexyComs=1
