@@ -52,7 +52,7 @@ ZSH_THEME="gitster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(vi-mode zsh-syntax-highlighting z rbenv docker docker-compose python pip pyenv kubectl)
+plugins=(vi-mode zsh-syntax-highlighting z rbenv docker docker-compose python pip pyenv poetry kubectl yarn)
 
 # User configuration
 
