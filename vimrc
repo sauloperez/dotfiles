@@ -342,3 +342,5 @@ function! s:show_documentation()
     execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
+
+autocmd BufWritePre *.py silent! :call CocAction('runCommand', 'python.sortImports')
