@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
-Plug 'neomake/neomake'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'bling/vim-airline'
@@ -229,17 +228,11 @@ nnoremap <space>b :Buffers<CR>
 " Markdown.vim
 let g:markdown_fenced_languages = ['ruby', 'html', 'javascript', 'css', 'erb=eruby.html', 'bash=sh', 'python']
 
+
 " Ruby.vim
 let ruby_operators = 1
 let ruby_space_errors = 1
 let ruby_fold = 0
-
-" Run NeoMake on read and write operations
-autocmd! BufReadPost,BufWritePost * Neomake
-
-" Neomake configuration
-let g:neomake_javascript_enabled_makers = ['eslint']
-let g:neomake_typescriptreact_enabled_makers = ['eslint']
 
 " Vim-test
 nmap <silent> <leader>s :TestNearest<CR>
