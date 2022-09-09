@@ -315,7 +315,7 @@ runtime macros/matchit.vim
 " Abbreviations
 :iabbrev bb byebug
 :iabbrev rem import remote_pdb; remote_pdb.set_trace(host='0.0.0.0', port=4445)
-:iabbrev dbg from devtools import debug; debug(
+:iabbrev dbg from devtools import debug; debug
 
 " COC
 "
