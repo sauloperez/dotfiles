@@ -61,7 +61,7 @@ Plug 'geoffharcourt/vim-matchit'
 Plug 'rhysd/vim-textobj-ruby'
 Plug 'kana/vim-textobj-user'
 
-" LSP
+" CoC land
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -69,6 +69,11 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'neoclide/coc-eslint'
+Plug 'neoclide/coc-prettier'
+Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-json'
+Plug 'fannheyward/coc-pyright'
 
 " Initialize plugin system
 call plug#end()
