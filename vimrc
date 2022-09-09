@@ -317,11 +317,6 @@ runtime macros/matchit.vim
 :iabbrev rem import remote_pdb; remote_pdb.set_trace(host='0.0.0.0', port=4445)
 :iabbrev dbg from devtools import debug; debug(
 
-" LSP
-lua << EOF
-require'lspconfig'.pyright.setup{}
-EOF
-
 " COC
 "
 " GoTo code navigation.
