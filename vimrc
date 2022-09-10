@@ -60,6 +60,9 @@ Plug 'geoffharcourt/vim-matchit'
 Plug 'rhysd/vim-textobj-ruby'
 Plug 'kana/vim-textobj-user'
 
+" Colorscheme
+Plug 'Mofiqul/dracula.nvim'
+
 " CoC land
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neovim/nvim-lspconfig'
@@ -220,6 +223,7 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 
 " Airline.vim
 let g:airline_powerline_fonts = 1
+let g:airline_theme='base16_dracula'
 
 " fzf.vim
 nnoremap <space><space> :FZF<CR>
@@ -308,7 +312,7 @@ set t_Co=256
 syntax enable
 set termguicolors     " enable true colors support
 set background=dark
-colorscheme palenight
+colorscheme dracula
 
 runtime macros/matchit.vim
 
