@@ -49,19 +49,16 @@ ssh-copy-id <user>@<host>
 ```sh
 sudo apt install \
   git \
-  neovim \
   ssh \
   apt-transport-https \
   ca-certificates \
   curl \
   gnupg \
-  lsb-release \
   build-essential
   tree \
   htop \
   xsel \
   fonts-powerline \
-  neovim \
   tmux \
   fonts-firacode \
   rcm \
@@ -71,7 +68,9 @@ sudo apt install \
 ```
 
 ```sh
-sudo snap install bw
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt update
+sudo apt install neovim
 ```
 
 ## Install
