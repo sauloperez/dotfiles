@@ -237,13 +237,11 @@ And the two scripts needed to play Pharaoh:
 ## Fonts
 
 [Fira Code](https://github.com/tonsky/FiraCode) is an awesome font perfectly
-suited for my console usage. If you ran the `setup` script you got it installed
-already. To use it the Gnome terminal just open its preferences and create a new
-profile called "fira code", selecting said font at 12pt. Don't forget to set it
-as the default profile.
+suited for my console usage.
 
-The ligature support in Ubuntu requires some tweaking that I haven't figured out
-yet. The repo's wiki page will surely tell how.
+To get symbol support from Kitty you just need to install the Symbols Nerd
+Font. Killy will pick it up automatically. More details:
+https://sw.kovidgoyal.net/kitty/faq/#kitty-is-not-able-to-use-my-favorite-font.
 
 ## Git
 
