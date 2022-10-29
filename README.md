@@ -89,8 +89,11 @@ $ rcup -v
 The ssh key is needed to authenticate everywhere and therefore it's better to
 get it first otherwise, I won't be able to push to git repos, etc.
 
-For that copy the private and public key from the `~/.ssh` dir of my previous
-development machine.
+If I have access to another working machine, it's easier to copy the `~/.ssh` through `scp`.
+
+Alternatively, I can get all key pairs from Lastpass.
+
+For the record, I have to key pairs. One for my personal accounts and one for Tacto.
 
 ### Go
 
