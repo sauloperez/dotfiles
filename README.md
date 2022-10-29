@@ -58,7 +58,6 @@ sudo apt install \
   tree \
   htop \
   xsel \
-  fonts-powerline \
   tmux \
   fonts-firacode \
   rcm \
