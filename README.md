@@ -60,7 +60,8 @@ sudo apt install \
   rcm \
   zsh \
   jq \
-  gawk
+  gawk \
+  ripgrep
 ```
 
 ```sh
