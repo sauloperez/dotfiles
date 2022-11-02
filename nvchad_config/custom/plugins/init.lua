@@ -41,6 +41,8 @@ return {
     end,
   },
 
+  ["christoomey/vim-tmux-navigator"] = {}
+
   -- remove plugin
   -- ["hrsh7th/cmp-path"] = false,
 }
