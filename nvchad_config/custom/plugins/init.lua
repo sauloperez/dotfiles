@@ -41,7 +41,10 @@ return {
     end,
   },
 
-  ["christoomey/vim-tmux-navigator"] = {}
+  ["christoomey/vim-tmux-navigator"] = {},
+
+  -- Tim Pope's realm
+  ["tpope/vim-surround"] = {}
 
   -- remove plugin
   -- ["hrsh7th/cmp-path"] = false,
