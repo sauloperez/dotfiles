@@ -5,7 +5,6 @@
   * [SSH key](#ssh-key)
   * [Go](#go)
   * [Neovim](#neovim)
-  * [Ctags](#ctags)
   * [FZF](#fzf)
   * [Zsh](#zsh)
   * [Tmux](#tmux)
@@ -126,16 +125,6 @@ This ensures this old configuration is read. It's about time to move it to
 adhere to Neovim's defaults though.
 
 All this is described in https://neovim.io/doc/user/nvim.html#nvim-from-vim.
-
-### Ctags
-
-Install using the Snap package:
-
-```
-sudo snap install universal-ctags
-```
-
-More details: https://github.com/universal-ctags/ctags#snap
 
 ### FZF
 
