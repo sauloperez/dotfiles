@@ -112,5 +112,5 @@ command -v direnv && eval "$(direnv hook zsh)"
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
 
-
+# Pyenv plugin to manage virtual envs: https://github.com/pyenv/pyenv-virtualenv.
 eval "$(pyenv virtualenv-init -)"
