@@ -110,22 +110,15 @@ If you have any doubts the [workspace chapter](https://www.youtube.com/watch?v=S
 
 ### Neovim
 
-For Neovim to work with all its configured plugins install Vim-plug is installed via the `setup` script as explained in https://github.com/junegunn/vim-plug.
-
-To install the plugins listed in `vimrc` either run `:PluginInstall` from neovim or install them from the command line with: `nvim +PluginInstall +qall`
-
-Lastly, to make Neovim pick the `vimrc` you must have a file `~/.config/nvim/init.vim` with the following contents:
+My Neovim configuration is based on [NvChad](https://nvchad.com/) with my own customizations on top. The latter are kept in these dotfiles while NvChad is taken and kept up to date from their repo. Head over to their [installation](https://nvchad.com/quickstart/install#install) instructions and then, add the customizations like so:
 
 ```
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath = &runtimepath
-source ~/.vimrc
+ln -s ~/.dotfiles/nvchad_config/custom ~/.config/nvim/lua/custom
 ```
 
-This ensures this old configuration is read. It's about time to move it to
-adhere to Neovim's defaults though.
+This is based on their suggestion at https://github.com/NvChad/NvChad/discussions/1426.
 
-All this is described in https://neovim.io/doc/user/nvim.html#nvim-from-vim.
+Remember that to install new plugins, you'll first have to run `:PackerCompile` followed by `:PackerInstall` or `:PackerSync`. The latter will also update all other plugins.
 
 ### FZF
 
