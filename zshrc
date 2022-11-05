@@ -8,6 +8,12 @@ export ZSH=~/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
+#
+# Install dracula by running:
+#
+# git clone https://github.com/dracula/zsh.git ~/dracula
+# ln -s ~/dracula/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
+#
 ZSH_THEME="dracula"
 
 # Uncomment the following line to use case-sensitive completion.
