@@ -53,9 +53,6 @@
   changed   = green
   untracked = cyan
 
-[diff]
-  tool = Kaleidoscope
-
 [diff "exif"]
   textconv = exiftool
 
