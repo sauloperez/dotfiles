@@ -47,6 +47,18 @@ return {
   ["tpope/vim-surround"] = {},
   ["tpope/vim-fugitive"] = {},
 
+  -- Focus mode
+  ["Pocco81/true-zen.nvim"] = {
+    config = function()
+       require("true-zen").setup {}
+    end
+  },
+  ["folke/twilight.nvim"] = {
+    config = function()
+      require("twilight").setup {}
+    end
+  }
+
   -- remove plugin
   -- ["hrsh7th/cmp-path"] = false,
 }
