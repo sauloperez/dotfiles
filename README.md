@@ -27,6 +27,7 @@
 - [Stay Updated](#stay-updated)
 - [Troubleshooting](#troubleshooting)
   * [Getting Nvidia Quadro P1000 mobile to work](#getting-nvidia-quadro-p1000-mobile-to-work)
+  * [Pipewire](#piepwire)
 - [Pok3r mech keyboard](#pok3r-mech-keyboard)
 
 ## Prerequisites
@@ -331,3 +332,7 @@ bcdedit /set {bootmgr} path \EFI\ubuntu\grubx64.efi
 ```
 
 from Window's command prompt as admin, as detailed in https://itsfoss.com/no-grub-windows-linux/. Then reading [BCD System Store Settings for UEFI](BCD System Store Settings for UEFI) from Microsoft's Hardware Dev Center made me understand we basically told the Windows Boot Manager that it should boot grub's EFI application instead.
+
+### Pipewire
+
+Sorry, I don't remember all the things I did to make Pipewire work with Wireplumber but https://pipewire-debian.github.io/pipewire-debian/ seems to be the best reference, togheter with https://wiki.archlinux.org/title/PipeWire, to understand and troubleshoot this.
