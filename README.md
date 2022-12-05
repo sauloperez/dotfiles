@@ -27,7 +27,7 @@
 - [Stay Updated](#stay-updated)
 - [Troubleshooting](#troubleshooting)
   * [Getting Nvidia Quadro P1000 mobile to work](#getting-nvidia-quadro-p1000-mobile-to-work)
-  * [Pipewire](#piepwire)
+  * [Pipewire](#pipewire)
 - [Pok3r mech keyboard](#pok3r-mech-keyboard)
 
 ## Prerequisites
