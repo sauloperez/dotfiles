@@ -9,7 +9,7 @@ M.treesitter = {
     "typescript",
     "python",
     "javascript",
-    "sql",
+    "sql", -- requires tree-sitter CLI to be generated from the grammar definitions. Run `npm install -g tree-sitter-cli`
     "markdown",
   },
 }
