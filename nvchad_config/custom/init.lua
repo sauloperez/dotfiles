@@ -7,7 +7,7 @@ vim.cmd("iabbrev rem import remote_pdb; remote_pdb.set_trace(host='0.0.0.0', por
 vim.opt.incsearch = true
 
 -- Auto resize panes when resizing nvim window
--- autocmd("VimResized", {
---   pattern = "*",
---   command = "tabdo wincmd =",
--- })
+autocmd("VimResized", {
+  pattern = "*",
+  command = "tabdo wincmd =",
+})
