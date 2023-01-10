@@ -109,7 +109,9 @@ compinit
 
 zstyle ':completion:*' menu select=2
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# FZF
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
 
 # Setup direnv
 # https://github.com/direnv/direnv
