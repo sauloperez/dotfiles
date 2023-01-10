@@ -48,6 +48,7 @@ return {
   ["tpope/vim-fugitive"] = {},
 
   -- Focus mode
+  -- Call TZAtaraxis for Goyo equivalent
   ["Pocco81/true-zen.nvim"] = {
     config = function()
        require("true-zen").setup {}
