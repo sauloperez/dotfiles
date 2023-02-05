@@ -8,8 +8,8 @@ local b = null_ls.builtins
 
 local sources = {
 
-  -- web stuff
-  b.formatting.prettier.with { filetypes = { "html", "markdown", "css", "typescript", "typescriptreact", "json" } },
+	-- web stuff
+	b.formatting.prettier,
 
 	-- Python
 	b.formatting.black,
