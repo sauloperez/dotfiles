@@ -8,6 +8,13 @@ vim.opt.incsearch = true
 
 -- Auto resize panes when resizing nvim window
 autocmd("VimResized", {
-  pattern = "*",
-  command = "tabdo wincmd =",
+	pattern = "*",
+	command = "tabdo wincmd =",
+})
+
+-- Use internal formatting for bindings like gq.
+vim.api.nvim_create_autocmd("LspAttach", {
+	callback = function(args)
+		vim.bo[args.buf].formatexpr = nil
+	end,
 })
