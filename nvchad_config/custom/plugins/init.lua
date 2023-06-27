@@ -1,65 +1,83 @@
-local overrides = require "custom.plugins.overrides"
+local overrides = require("custom.plugins.overrides")
 
 return {
 
-  -- ["goolord/alpha-nvim"] = { disable = false } -- enables dashboard
+	-- ["goolord/alpha-nvim"] = { disable = false } -- enables dashboard
 
-  -- Override plugin definition options
-  ["neovim/nvim-lspconfig"] = {
-    config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.plugins.lspconfig"
-    end,
-  },
+	-- Override plugin definition options
+	["neovim/nvim-lspconfig"] = {
+		config = function()
+			require("plugins.configs.lspconfig")
+			require("custom.plugins.lspconfig")
+		end,
+	},
 
-  -- overrde plugin configs
-  ["nvim-treesitter/nvim-treesitter"] = {
-    override_options = overrides.treesitter,
-  },
+	-- overrde plugin configs
+	["nvim-treesitter/nvim-treesitter"] = {
+		override_options = overrides.treesitter,
+	},
 
-  ["williamboman/mason.nvim"] = {
-    override_options = overrides.mason,
-  },
+	["williamboman/mason.nvim"] = {
+		override_options = overrides.mason,
+	},
 
-  ["kyazdani42/nvim-tree.lua"] = {
-    override_options = overrides.nvimtree,
-  },
+	-- Install a plugin
+	["kyazdani42/nvim-tree.lua"] = {
+		override_options = overrides.nvimtree,
+	},
 
-  -- Install a plugin
-  ["max397574/better-escape.nvim"] = {
-    event = "InsertEnter",
-    config = function()
-      require("better_escape").setup()
-    end,
-  },
+	["max397574/better-escape.nvim"] = {
+		event = "InsertEnter",
+		config = function()
+			require("better_escape").setup()
+		end,
+	},
 
-  -- code formatting, linting etc
-  ["jose-elias-alvarez/null-ls.nvim"] = {
-    after = "nvim-lspconfig",
-    config = function()
-      require "custom.plugins.null-ls"
-    end,
-  },
+	["klen/nvim-test"] = {
+		config = function()
+			require("nvim-test").setup({})
+			require("nvim-test.runners.pytest"):setup({
+				command = "echo 'hola'",
 
-  ["christoomey/vim-tmux-navigator"] = {},
+				-- file_pattern = "\\v(__tests__/.*|(spec|test))\\.(js|jsx|coffee|ts|tsx)$", -- determine whether a file is a testfile
+				-- find_files = { "{name}.test.{ext}", "{name}.spec.{ext}" }, -- find testfile for a file
 
-  -- Tim Pope's realm
-  ["tpope/vim-surround"] = {},
-  ["tpope/vim-fugitive"] = {},
+				filename_modifier = nil, -- modify filename before tests run (:h filename-modifiers)
+				-- working_directory = nil, -- set working directory (cwd by default)
+			})
+		end,
+	},
 
-  -- Focus mode
-  -- Call TZAtaraxis for Goyo equivalent
-  ["Pocco81/true-zen.nvim"] = {
-    config = function()
-       require("true-zen").setup {}
-    end
-  },
-  ["folke/twilight.nvim"] = {
-    config = function()
-      require("twilight").setup {}
-    end
-  }
+	-- code formatting, linting etc
+	["jose-elias-alvarez/null-ls.nvim"] = {
+		after = "nvim-lspconfig",
+		config = function()
+			require("custom.plugins.null-ls")
+		end,
+	},
 
-  -- remove plugin
-  -- ["hrsh7th/cmp-path"] = false,
+	["christoomey/vim-tmux-navigator"] = {},
+
+	-- Tim Pope's realm
+	["tpope/vim-surround"] = {},
+	["tpope/vim-fugitive"] = {},
+
+	-- Focus mode
+	-- Call TZAtaraxis for Goyo equivalent
+	["Pocco81/true-zen.nvim"] = {
+		config = function()
+			require("true-zen").setup({})
+		end,
+	},
+	["folke/twilight.nvim"] = {
+		config = function()
+			require("twilight").setup({})
+		end,
+	},
+
+	-- Databases
+	["vim-scripts/SQLUtilities"] = {},
+
+	-- remove plugin
+	-- ["hrsh7th/cmp-path"] = false,
 }
