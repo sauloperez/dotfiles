@@ -8,7 +8,7 @@ local b = null_ls.builtins
 
 local sources = {
 
-	-- web stuff
+	-- JS
 	b.formatting.prettier,
 
 	-- Python
