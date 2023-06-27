@@ -78,6 +78,8 @@ return {
 	-- Databases
 	["vim-scripts/SQLUtilities"] = {},
 
+	["github/copilot.vim"] = {},
+
 	-- remove plugin
 	-- ["hrsh7th/cmp-path"] = false,
 }
