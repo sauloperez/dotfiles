@@ -122,3 +122,7 @@ eval "$(nodenv init -)"
 
 # Pyenv plugin to manage virtual envs: https://github.com/pyenv/pyenv-virtualenv.
 eval "$(pyenv virtualenv-init -)"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
