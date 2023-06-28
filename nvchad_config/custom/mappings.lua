@@ -3,8 +3,6 @@ local M = {}
 
 M.general = {
   n = {
-    [";"] = { ":", "enter command mode", opts = { nowait = true } },
-
     -- Muscle memory inherited from my old Vim config
     ["\\g"] = { "<cmd> Telescope grep_string <CR>", "search string under cursor" },
     [",gg"] = { "<cmd> Telescope live_grep <CR>", "git grep" },
