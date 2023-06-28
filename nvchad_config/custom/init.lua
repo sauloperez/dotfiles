@@ -1,19 +1,24 @@
 local autocmd = vim.api.nvim_create_autocmd
+local opt = vim.opt
+local g = vim.g
 
-vim.g.mapleader = ','
+-------------------------------------- globals -----------------------------------------
+g.mapleader = ','
+g.copilot_no_tab_map = true
 
-vim.cmd("iabbrev rem import remote_pdb; remote_pdb.set_trace(host='0.0.0.0', port=4445)")
+-------------------------------------- options ------------------------------------------
+opt.incsearch = true
 
-vim.opt.incsearch = true
+vim.cmd.iabbrev({ "<buffer>", "rem import remote_pdb; remote_pdb.set_trace(host='0.0.0.0', port=4445)", })
 
 -- Auto resize panes when resizing nvim window
 autocmd("VimResized", {
-	pattern = "*",
-	command = "tabdo wincmd =",
+  pattern = "*",
+  command = "tabdo wincmd =",
 })
 
 -- Use internal formatting for bindings like gq.
-vim.api.nvim_create_autocmd("LspAttach", {
+autocmd("LspAttach", {
 	callback = function(args)
 		vim.bo[args.buf].formatexpr = nil
 	end,

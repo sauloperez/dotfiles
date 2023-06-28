@@ -6,11 +6,20 @@ M.treesitter = {
     "lua",
     "html",
     "css",
-    "typescript",
-    "python",
     "javascript",
-    "sql", -- requires tree-sitter CLI to be generated from the grammar definitions. Run `npm install -g tree-sitter-cli`
+    "typescript",
+    "tsx",
     "markdown",
+    "markdown_inline",
+    "python",
+    "json",
+    "sql",
+  },
+  indent = {
+    enable = true,
+    -- disable = {
+    --   "python"
+    -- },
   },
 }
 
@@ -20,10 +29,19 @@ M.mason = {
     "lua-language-server",
     "stylua",
 
+    -- web dev stuff
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
+    "deno",
+    "prettier",
     "pyright",
+    "black",
+    "ruff",
+
+    -- shell
+    "shfmt",
+    "shellcheck",
   },
 }
 
