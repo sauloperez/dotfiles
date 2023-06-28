@@ -207,13 +207,8 @@ Check out [.aliases](https://github.com/sauloperez/dotfiles/blob/master/.aliases
 
 ## Scripts
 
-Additional useful scripts bundled:
-
-* ack
-* git-show-merges
-* git-wtf
-
-And the two scripts needed to play Pharaoh:
+This folder contained more stuff in the past, but removing the ones I didn't
+use left only  the two scripts I did to play Pharaoh:
 
 * setup-pharaoh
 * boot-pharaoh
