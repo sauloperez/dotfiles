@@ -35,10 +35,13 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
+    "pyright",
+    "black",
+    "ruff",
 
-    -- c/cpp stuff
-    "clangd",
-    "clang-format",
+    -- shell
+    "shfmt",
+    "shellcheck",
   },
 }
 

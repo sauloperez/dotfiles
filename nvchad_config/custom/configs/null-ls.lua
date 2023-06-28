@@ -12,11 +12,16 @@ local sources = {
   b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
   b.formatting.prettier.with { filetypes = { "html", "markdown", "css" } }, -- so prettier works only on these filetypes
 
+  -- Python
+  b.formatting.black,
+  b.diagnostics.ruff,
+
   -- Lua
   b.formatting.stylua,
 
-  -- cpp
-  b.formatting.clang_format,
+  -- Shell
+  b.formatting.shfmt,
+  b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
 }
 
 null_ls.setup {
