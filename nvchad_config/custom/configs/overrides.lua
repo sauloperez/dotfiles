@@ -9,9 +9,11 @@ M.treesitter = {
     "javascript",
     "typescript",
     "tsx",
-    "c",
     "markdown",
     "markdown_inline",
+    "python",
+    "json",
+    "sql",
   },
   indent = {
     enable = true,
