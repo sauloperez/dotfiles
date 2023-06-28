@@ -114,12 +114,10 @@ If you have any doubts the [workspace chapter](https://www.youtube.com/watch?v=S
 My Neovim configuration is based on [NvChad](https://nvchad.com/) with my own customizations on top. The latter are kept in these dotfiles while NvChad is taken and kept up to date from their repo. Head over to their [installation](https://nvchad.com/quickstart/install#install) instructions and then, add the customizations like so:
 
 ```
-ln -s ~/.dotfiles/nvchad_config/custom ~/.config/nvim/lua/custom
+ln -s ~/.dotfiles/nvchad_config/custom ~/.config/nvim/lua/
 ```
 
 This is based on their suggestion at https://github.com/NvChad/NvChad/discussions/1426.
-
-Remember that to install new plugins, you'll first have to run `:PackerCompile` followed by `:PackerInstall` or `:PackerSync`. The latter will also update all other plugins.
 
 ### FZF
 
