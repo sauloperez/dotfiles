@@ -39,6 +39,7 @@ M.mason = {
 		"black",
 		"ruff",
 		"debugpy",
+    "sqlfluff",
 
 		-- shell
 		"shfmt",
