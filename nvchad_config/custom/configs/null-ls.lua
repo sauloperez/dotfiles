@@ -21,6 +21,9 @@ local sources = {
   b.diagnostics.sqlfluff.with({
       extra_args = { "--dialect", "postgres" },
   }),
+  b.formatting.sqlfluff.with({
+      extra_args = { "--dialect", "postgres" },
+  }),
 
 	-- Shell
 	b.formatting.shfmt,
