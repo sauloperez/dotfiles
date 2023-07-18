@@ -101,3 +101,5 @@
 
 [includeIf "gitdir/i:~/infra/"]
   path = ~/.gitconfig-tacto.inc
+[init]
+	defaultBranch = main
