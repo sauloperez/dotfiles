@@ -14,7 +14,7 @@ local sources = {
 	b.formatting.prettier.with({ filetypes = { "html", "markdown", "css" } }), -- so prettier works only on these filetypes
 
 	-- Python
-	b.formatting.black,
+	b.formatting.ruff,
 	b.diagnostics.ruff,
 
   -- SQL
