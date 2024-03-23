@@ -126,3 +126,6 @@ eval "$(pyenv virtualenv-init -)"
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
+
+# Created by `pipx` on 2023-08-28 10:23:27
+export PATH="$PATH:/home/pau/.local/bin"
