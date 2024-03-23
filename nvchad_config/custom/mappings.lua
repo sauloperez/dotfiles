@@ -13,12 +13,12 @@ M.general = {
 		["<leader>y"] = { '"+y' }, -- yank into system's clipboard
 
 		-- DAP
-		["<leader>db"] = { "<cmd> DapToggleBreakpoint <CR>" },
-		["<leader>dpr"] = {
-			function()
-				require("dap-python").test_method()
-			end,
-		},
+		-- ["<leader>db"] = { "<cmd> DapToggleBreakpoint <CR>" },
+		-- ["<leader>dpr"] = {
+		-- 	function()
+		-- 		require("dap-python").test_method()
+		-- 	end,
+		-- },
 	},
 	i = {
 		["<C-J>"] = {

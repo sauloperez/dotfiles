@@ -92,38 +92,59 @@ local plugins = {
 		lazy = false,
 	},
 
+  {
+    "uga-rosa/translate.nvim",
+    cmd = { "Translate" },
+  },
+
+  {
+    'mzlogin/vim-markdown-toc',
+    ft = { "markdown" },
+  },
+
 	-- DAP
-	{
-		"rcarriga/nvim-dap-ui",
-		dependencies = "mfussenegger/nvim-dap",
-		config = function()
-			local dap = require("dap")
-			local dapui = require("dapui")
-			dapui.setup()
-			dap.listeners.after.event_initialized["dapui_config"] = function()
-				dapui.open()
-			end
-			dap.listeners.before.event_terminated["dapui_config"] = function()
-				dapui.close()
-			end
-			dap.listeners.before.event_exited["dapui_config"] = function()
-				dapui.close()
-			end
-		end,
-	},
-	{ "mfussenegger/nvim-dap" },
-	{
-		"mfussenegger/nvim-dap-python",
-		ft = "python",
-		dependencies = {
-			"mfussenegger/nvim-dap-python",
-			"rcarriga/nvim-dap-ui",
-		},
-		config = function()
-			local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
-			require("dap-python").setup(path)
-		end,
-	},
+	-- {
+	-- 	"rcarriga/nvim-dap-ui",
+	-- 	dependencies = "mfussenegger/nvim-dap",
+	-- 	config = function()
+	-- 		local dap = require("dap")
+	-- 		local dapui = require("dapui")
+	-- 		dapui.setup()
+	-- 		dap.listeners.after.event_initialized["dapui_config"] = function()
+	-- 			dapui.open()
+	-- 		end
+	-- 		dap.listeners.before.event_terminated["dapui_config"] = function()
+	-- 			dapui.close()
+	-- 		end
+	-- 		dap.listeners.before.event_exited["dapui_config"] = function()
+	-- 			dapui.close()
+	-- 		end
+	-- 	end,
+	-- },
+	-- { "mfussenegger/nvim-dap" },
+	-- {
+	-- 	"mfussenegger/nvim-dap-python",
+	-- 	ft = "python",
+	-- 	dependencies = {
+	-- 		"mfussenegger/nvim-dap-python",
+	-- 		"rcarriga/nvim-dap-ui",
+	-- 	},
+	-- 	config = function()
+	-- 		local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
+	-- 		require("dap-python").setup(path)
+	-- 	end,
+	-- },
+	--
+ --  {
+ --    "PedramNavid/dbtpal",
+ --    config = function()
+ --      local dbt = require('dbtpal')
+ --      dbt.setup {
+ --          path_to_dbt = "dbt"
+ --      }
+ --      require('telescope').load_extension('dbtpal')
+ --    end,
+ --  },
 
 	-- To make a plugin not be loaded
 	-- {

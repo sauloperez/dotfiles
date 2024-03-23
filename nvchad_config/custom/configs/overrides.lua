@@ -14,6 +14,7 @@ M.treesitter = {
 		"python",
 		"json",
 		"sql",
+    "yaml"
 	},
 	indent = {
 		enable = true,
@@ -33,13 +34,12 @@ M.mason = {
 		"css-lsp",
 		"html-lsp",
 		"typescript-language-server",
-		"deno",
-		"prettier",
+		"prettierd",
+    "eslint_d",
 		"pyright",
-		"black",
 		"ruff",
 		"debugpy",
-    "sqlfluff",
+    "mypy",
 
 		-- shell
 		"shfmt",
