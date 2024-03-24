@@ -93,6 +93,17 @@ local plugins = {
 	},
 
   {
+    "robitx/gp.nvim",
+		lazy = false,
+    config = function()
+      local config = {
+        openai_api_key = os.getenv("OPENAI_API_KEY"),
+      }
+      require("gp").setup(config)
+    end,
+  },
+
+  {
     "uga-rosa/translate.nvim",
     cmd = { "Translate" },
   },
