@@ -102,6 +102,16 @@ local plugins = {
     ft = { "markdown" },
   },
 
+  -- pretty diagnostics panel
+  {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    cmd = "Trouble",
+    config = function()
+      require("trouble").setup()
+    end,
+  },
+
 	-- DAP
 	-- {
 	-- 	"rcarriga/nvim-dap-ui",

@@ -29,6 +29,15 @@ M.general = {
 	},
 }
 
--- more keybinds!
+M.trouble = {
+  n = {
+    ["<leader>xx"] = { "<cmd> Trouble <CR>", "trouble" },
+    ["<leader>xw"] = { "<cmd>TroubleToggle workspace_diagnostics  <CR>", "trouble" },
+    ["<leader>xd"] = { "<cmd>TroubleToggle document_diagnostics <CR>", "trouble" },
+    ["<leader>xq"] = { "<cmd>TroubleToggle quickfix <CR>", "trouble" },
+    ["<leader>xl"] = { "<cmd>TroubleToggle loclist <CR>", "trouble" },
+    ["gR"] = { "<cmd>TroubleToggle lsp_references <CR>", "trouble" },
+  },
+}
 
 return M
