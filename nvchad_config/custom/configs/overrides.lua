@@ -36,7 +36,6 @@ M.mason = {
 		"typescript-language-server",
 		"prettierd",
     "eslint_d",
-		"pyright",
 		"ruff",
 		"debugpy",
     "mypy",

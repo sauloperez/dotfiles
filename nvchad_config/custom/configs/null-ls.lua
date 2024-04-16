@@ -17,7 +17,7 @@ local sources = {
 	-- Python
 	b.formatting.ruff,
 	b.diagnostics.ruff,
-  -- b.diagnostics.mypy,
+  b.diagnostics.mypy,
 
 	-- Shell
 	b.diagnostics.shellcheck.with({ diagnostics_format = "#{m} [#{c}]" }),
