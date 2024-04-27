@@ -1,11 +1,20 @@
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+local log = require("null-ls.logger")
 local present, null_ls = pcall(require, "null-ls")
+local util = require('lspconfig/util')
+local path = util.path
 
 if not present then
 	return
 end
 
 local b = null_ls.builtins
+
+local function poetry_mypy_path(dir)
+  local venv = vim.fn.trim(vim.fn.system('poetry --directory ' .. dir .. ' env info -p'))
+  log:debug(string.format('venv=%s', venv))
+  return path.join(venv, 'bin', 'mypy')
+end
 
 local sources = {
 
@@ -17,7 +26,12 @@ local sources = {
 	-- Python
 	b.formatting.ruff,
 	b.diagnostics.ruff,
-  b.diagnostics.mypy,
+  b.diagnostics.mypy.with({
+    timeout = 10000,
+    dynamic_command = function()
+      return poetry_mypy_path('backend')
+    end,
+  }),
 
 	-- Shell
 	b.diagnostics.shellcheck.with({ diagnostics_format = "#{m} [#{c}]" }),
