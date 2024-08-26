@@ -35,8 +35,9 @@
 * Git (2.0+ recommended)
 * Neovim
 
-It's worth enabling passwordless ssh access to the machine first and do the
-setup through SSH.
+When setting up a new computer, if you have a working one at hand, it's worth
+enabling passwordless ssh access to the new machine first and do the setup through
+SSH.
 
 ```sh
 ssh-copy-id <user>@<host>
@@ -73,6 +74,16 @@ sudo apt install neovim
 
 ## Install
 
+### SSH key
+
+The ssh key is needed to get this dotfiles from Github so it's inevitably the first step.
+
+If I have access to another working machine, it's easier to copy the `~/.ssh` through `scp`.
+
+Alternatively, I can get all key pairs from 1password, the personal and the work ones.
+
+### Dotfiles
+
 Dotfiles installion is handled by [thoughtbot's rcm](https://github.com/thoughtbot/rcm). A suite of tools for managing dotfiles directories. Check out whether everything will work fine:
 
 ``` bash-session
@@ -84,30 +95,6 @@ Install your dotfiles symlinking them into your home directory:
 ``` bash-session
 $ rcup -v
 ```
-
-### SSH key
-
-The ssh key is needed to authenticate everywhere and therefore it's better to
-get it first otherwise, I won't be able to push to git repos, etc.
-
-If I have access to another working machine, it's easier to copy the `~/.ssh` through `scp`.
-
-Alternatively, I can get all key pairs from Lastpass.
-
-For the record, I have to key pairs. One for my personal accounts and one for Tacto.
-
-### Go
-
-Go is required because multiple rc files refer to it. To install it head over to https://golang.org/doc/install and follow the steps.
-
-After that, create its diretory structure as follows
-
-```sh
-$ mkdir -p ~/go/{bin,pkg,src}/
-$ mkdir -p ~/go/src/gitlab.com/sauloperez
-```
-
-If you have any doubts the [workspace chapter](https://www.youtube.com/watch?v=SqrbIlUwR0U&t=133s) of the Go crash course I recently watched is perfect.
 
 ### Neovim
 
