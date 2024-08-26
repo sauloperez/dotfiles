@@ -45,6 +45,8 @@ ssh-copy-id <user>@<host>
 
 ## Packages
 
+### Ubuntu
+
 ```sh
 sudo apt install \
   git \
@@ -71,6 +73,17 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt update
 sudo apt install neovim
 ```
+
+### Mac
+
+```sh
+brew install \
+    git \
+    neovim \
+    git-delta \
+    rcm \
+```
+
 
 ## Install
 
