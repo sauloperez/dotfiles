@@ -82,6 +82,8 @@ brew install \
     neovim \
     git-delta \
     rcm \
+    nodenv \
+    pyenv \
 ```
 
 
