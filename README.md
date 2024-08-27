@@ -85,6 +85,7 @@ brew install \
     nodenv \
     pyenv \
     tree \
+    ripgrep \
 ```
 
 
@@ -128,14 +129,11 @@ This is based on their suggestion at https://github.com/NvChad/NvChad/discussion
 
 ### Zsh
 
-Zsh and Oh My Zsh are also installed by the `setup` script.
+Since Zsh comes installed with Mac, you just need to install Oh My Zsh by running the following command, although check on their website for the update [installation instructions](https://ohmyz.sh/#install):
 
-Change your login shell to zsh by running `chsh -s /usr/local/bin/zsh` or System
-Preferences -> Users & Groups -> Click the lock -> Right click your user ->
-Advanced Options and paste `/usr/local/bin/zsh` in the login shell field.
-
-You may end up with a `~/.bashrc` because Ubuntu comes with it. If you have one,
-just delete it once Zsh is set up.
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
 ### Tmux
 
