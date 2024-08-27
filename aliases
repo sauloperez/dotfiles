@@ -9,7 +9,7 @@ alias a='z'
 # Utilities
 alias grep='GREP_COLOR="1;37;45" LANG=C grep --color=auto'
 alias h="history"
-alias localip="ipconfig getifaddr en1"
+alias localip="ipconfig getifaddr en0"
 alias view="vim -p -R"
 alias vp="vim -p"
 alias timestamp="date +%s"
