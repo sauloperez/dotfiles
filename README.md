@@ -86,6 +86,7 @@ brew install \
     pyenv \
     tree \
     ripgrep \
+    luarocks \
 ```
 
 
