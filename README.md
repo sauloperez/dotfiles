@@ -84,6 +84,7 @@ brew install \
     rcm \
     nodenv \
     pyenv \
+    tree \
 ```
 
 
