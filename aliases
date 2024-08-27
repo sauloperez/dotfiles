@@ -7,11 +7,6 @@ alias ll='tree --dirsfirst -ChFupDaLg 1'
 alias a='z'
 
 # Utilities
-alias b="bundle exec"
-alias bi="bundle install"
-alias bu="bundle update"
-alias brs="bundle exec rails s"
-alias brc="bundle exec rails c"
 alias grep='GREP_COLOR="1;37;45" LANG=C grep --color=auto'
 alias h="history"
 alias localip="ipconfig getifaddr en1"

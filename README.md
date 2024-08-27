@@ -87,6 +87,8 @@ brew install \
     tree \
     ripgrep \
     luarocks \
+    tmux \
+    z \
 ```
 
 
@@ -123,6 +125,12 @@ ln -s ~/.dotfiles/nvchad_config/custom ~/.config/nvim/lua/
 ```
 
 This is based on their suggestion at https://github.com/NvChad/NvChad/discussions/1426.
+
+## Fonts
+
+[Fira Code](https://github.com/tonsky/FiraCode) is an awesome font perfectly suited for my console usage and Nvchad need for a Nerd Font. Go install it from their website.
+
+Despite NvChad's suggestion to use Fira Code patched with icons, it's best to install a standalone symbols package to get icon support from Kitty. Install the Symbols Nerd Font Mono from [Nerd Fonts releases page](https://github.com/ryanoasis/nerd-fonts/releases). The `kitty.conf` file will pick it up automatically. More details: https://sw.kovidgoyal.net/kitty/faq/#kitty-is-not-able-to-use-my-favorite-font.
 
 ### FZF
 
@@ -212,15 +220,6 @@ use left only  the two scripts I did to play Pharaoh:
 
 * setup-pharaoh
 * boot-pharaoh
-
-## Fonts
-
-[Fira Code](https://github.com/tonsky/FiraCode) is an awesome font perfectly
-suited for my console usage.
-
-To get symbol support from Kitty you just need to install the Symbols Nerd
-Font. Killy will pick it up automatically. More details:
-https://sw.kovidgoyal.net/kitty/faq/#kitty-is-not-able-to-use-my-favorite-font.
 
 ## Git
 
