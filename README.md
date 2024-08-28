@@ -93,6 +93,7 @@ brew install \
     # some more generic packages Mac lacks
     gpg \
     gsed \
+    jq \
 ```
 
 
