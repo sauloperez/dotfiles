@@ -89,6 +89,7 @@ brew install \
     luarocks \
     tmux \
     z \
+    fzf \
 ```
 
 
