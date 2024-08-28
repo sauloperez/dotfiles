@@ -1,8 +1,3 @@
-# Load things
-[[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
-
-[[ -f "$HOME/.functions" ]] && source "$HOME/.functions"
-
 # Adjust $PATH
 [[ -d "$HOME/.scripts" ]] && export PATH=$HOME/.scripts:$PATH
 
