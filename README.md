@@ -92,6 +92,7 @@ brew install \
     fzf \
     # some more generic packages Mac lacks
     gpg \
+    gsed \
 ```
 
 
