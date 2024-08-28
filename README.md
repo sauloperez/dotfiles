@@ -90,6 +90,8 @@ brew install \
     tmux \
     z \
     fzf \
+    # some more generic packages Mac lacks
+    gpg \
 ```
 
 
