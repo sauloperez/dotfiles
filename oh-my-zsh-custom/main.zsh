@@ -15,9 +15,6 @@
 # zshrc file. Keeping a dotfiles version in sync by hand with theirs it's too hard.
 ZSH_THEME="dracula"
 
-# Common junk
-# [[ -s "$HOME/.commonrc" ]] && source "$HOME/.commonrc"
-
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
