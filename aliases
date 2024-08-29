@@ -10,8 +10,7 @@ alias a='z'
 alias grep='GREP_COLOR="1;37;45" LANG=C grep --color=auto'
 alias h="history"
 alias localip="ipconfig getifaddr en0"
-alias view="vim -p -R"
-alias vp="vim -p"
+alias view="nvim -R"
 alias timestamp="date +%s"
 alias copy="pbcopy"
 alias tn="telnet 0.0.0.0 4445"
