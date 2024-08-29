@@ -11,9 +11,18 @@
 # brainstormr=~/Projects/development/planetargon/brainstormr
 # cd $brainstormr
 #
+# User configuration
+#
 # All my personal configs are here so as not to overwrite the default Oh My Zsh
 # zshrc file. Keeping a dotfiles version in sync by hand with theirs it's too hard.
 ZSH_THEME="dracula"
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
