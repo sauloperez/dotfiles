@@ -245,6 +245,16 @@ Node is needed to run things like Coopdevs' [slides_template](https://github.com
 For that is better to install Nodenv so multiple versions can be installed.
 Follow its installation steps at https://github.com/nodenv/nodenv#installation.
 
+### Support for different patch versions
+
+Oftentimes, projects define a `.node_version` up to the minor version leaving room for patch upgrades without having to constantly update the version.
+
+To support this, you have to install [nodenv-aliases](https://github.com/nodenv/nodenv-aliases). So you can alias versions like 
+
+```
+nodenv alias 20.11 20.11.1
+```
+
 ## Keyboard
 
 To map Ctrl key to Caps lock:
