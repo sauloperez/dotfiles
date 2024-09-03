@@ -40,3 +40,6 @@ source <(fzf --zsh)
 eval "$(nodenv init -)"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Created by `pipx` on 2024-09-03 09:48:23
+export PATH="$PATH:/Users/pau/.local/bin"
