@@ -43,3 +43,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Created by `pipx` on 2024-09-03 09:48:23
 export PATH="$PATH:/Users/pau/.local/bin"
+
+# Enable pipx autocompletion. Oh My Zsh has autocompletion enabled by default
+# so no need to call `compinit`.
+eval "$(register-python-argcomplete pipx)"
