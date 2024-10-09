@@ -37,7 +37,6 @@ M.mason = {
 		"prettierd",
     "eslint_d",
 		"pyright",
-		"ruff",
 		"debugpy",
     "mypy",
 
