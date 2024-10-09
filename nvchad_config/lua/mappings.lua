@@ -1,5 +1,11 @@
----@type MappingsTable
+require "nvchad.mappings"
+
 local M = {}
+
+local map = vim.keymap.set
+
+map("n", ";", ":", { desc = "CMD enter command mode" })
+map("n", ",gg", "<cmd> Telescope live_grep <CR>", { desc = "git grep" })
 
 M.general = {
 	n = {

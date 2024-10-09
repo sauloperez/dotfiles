@@ -1,12 +1,14 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require("configs.overrides")
 
----@type NvPluginSpec[]
-local plugins = {
+return {
+  {
+    "stevearc/conform.nvim",
+    -- event = 'BufWritePre', -- uncomment for format on save
+    opts = require "configs.conform",
+  },
 
-	-- Override plugin definition options
-
-	{
-		"neovim/nvim-lspconfig",
+  {
+    "neovim/nvim-lspconfig",
 		dependencies = {
 			-- format & linting
 			{
@@ -16,11 +18,10 @@ local plugins = {
 				end,
 			},
 		},
-		config = function()
-			require("plugins.configs.lspconfig")
-			require("custom.configs.lspconfig")
-		end, -- Override to setup mason-lspconfig
-	},
+    config = function()
+      require "configs.lspconfig"
+    end,
+  },
 
 	-- override plugin configs
 	{
@@ -38,7 +39,7 @@ local plugins = {
 		opts = overrides.nvimtree,
 	},
 
-	-- Install a plugin
+	-- Install other plugins
 	{
 		"max397574/better-escape.nvim",
 		event = "InsertEnter",
@@ -181,5 +182,3 @@ local plugins = {
 	--   lazy = false,
 	-- }
 }
-
-return plugins

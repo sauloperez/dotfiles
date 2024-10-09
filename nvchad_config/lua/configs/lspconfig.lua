@@ -1,21 +1,22 @@
-local on_attach = require("plugins.configs.lspconfig").on_attach
-local capabilities = require("plugins.configs.lspconfig").capabilities
+-- load defaults i.e lua_lsp
+require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 
--- if you just want default config for the servers then put them in a table
 local servers = { "html", "cssls", "tsserver", "ruff" }
+local nvlsp = require "nvchad.configs.lspconfig"
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
+    on_attach = nvlsp.on_attach,
+    on_init = nvlsp.on_init,
+    capabilities = nvlsp.capabilities,
   }
 end
 
 lspconfig["pyright"].setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
+  on_attach = nvlsp.on_attach,
+  capabilities = nvlsp.capabilities,
   settings = {
     pyright = {
       -- Using Ruff's import organizer
@@ -31,8 +32,8 @@ lspconfig["pyright"].setup {
 }
 
 lspconfig["ltex"].setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
+  on_attach = nvlsp.on_attach,
+  capabilities = nvlsp.capabilities,
   cmd = { "ltex-ls" },
   filetypes = { "markdown", "text" },
   flags = { debounce_text_changes = 300 },
