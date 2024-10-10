@@ -5,6 +5,7 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 
 -- Muscle memory inherited from my old Vim config
+map("n", "\\g", "<cmd> Telescope grep_string <CR>", { desc = "search string under cursor"})
 map("n", ",gg", "<cmd> Telescope live_grep <CR>", { desc = "git grep" })
 map('n', '<space>b', '<cmd>Telescope buffers<CR>', { noremap = true, silent = true, desc = 'find buffers' })
 map('n', '<space><space>', '<cmd>Telescope find_files<CR>', { noremap = true, silent = true, desc = 'find files' })
