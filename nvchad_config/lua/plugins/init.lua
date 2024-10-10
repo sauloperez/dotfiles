@@ -25,11 +25,6 @@ return {
 
 	-- override plugin configs
 	{
-		"williamboman/mason.nvim",
-		opts = overrides.mason,
-	},
-
-	{
 		"nvim-treesitter/nvim-treesitter",
 		opts = overrides.treesitter,
 	},
