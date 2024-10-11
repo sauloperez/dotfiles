@@ -8,13 +8,15 @@ local M = {}
 -- Path to overriding theme and highlights files
 local highlights = require "highlights"
 
-M.ui = {
+M.base46 = {
   theme = "tokyonight",
   theme_toggle = { "tokyonight", "one_light" },
 
   hl_override = highlights.override,
   hl_add = highlights.add,
+}
 
+M.ui = {
   statusline = {
     theme = "minimal", -- default/vscode/vscode_colored/minimal
     -- default/round/block/arrow separators work only for default statusline theme
