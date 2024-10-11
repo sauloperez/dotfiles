@@ -2,17 +2,17 @@
 
 - [Prerequisites](#prerequisites)
 - [Install](#install)
-  * [SSH key](#ssh-key)
-  * [Go](#go)
-  * [Neovim](#neovim)
-  * [FZF](#fzf)
-  * [Zsh](#zsh)
-  * [Tmux](#tmux)
-  * [Z](#z)
+  - [SSH key](#ssh-key)
+  - [Go](#go)
+  - [Neovim](#neovim)
+  - [FZF](#fzf)
+  - [Zsh](#zsh)
+  - [Tmux](#tmux)
+  - [Z](#z)
 - [Mappings](#mappings)
-  * [General](#general)
-  * [Splits](#splits)
-  * [Commands](#commands)
+  - [General](#general)
+  - [Splits](#splits)
+  - [Commands](#commands)
 - [Shell](#shell)
 - [Aliases](#aliases)
 - [Scripts](#scripts)
@@ -20,20 +20,20 @@
 - [Git](#git)
 - [NodeJS](#nodejs)
 - [Keyboard](#keyboard)
-  * [Ubuntu](#ubuntu)
-  * [Emoji support](#emoji-support)
+  - [Ubuntu](#ubuntu)
+  - [Emoji support](#emoji-support)
 - [Cool utilities](#cool-utilities)
-  * [sp](#sp)
+  - [sp](#sp)
 - [Stay Updated](#stay-updated)
 - [Troubleshooting](#troubleshooting)
-  * [Getting Nvidia Quadro P1000 mobile to work](#getting-nvidia-quadro-p1000-mobile-to-work)
-  * [Pipewire](#pipewire)
+  - [Getting Nvidia Quadro P1000 mobile to work](#getting-nvidia-quadro-p1000-mobile-to-work)
+  - [Pipewire](#pipewire)
 - [Pok3r mech keyboard](#pok3r-mech-keyboard)
 
 ## Prerequisites
 
-* Git (2.0+ recommended)
-* Neovim
+- Git (2.0+ recommended)
+- Neovim
 
 When setting up a new computer, if you have a working one at hand, it's worth
 enabling passwordless ssh access to the new machine first and do the setup through
@@ -96,7 +96,6 @@ brew install \
     jq \
 ```
 
-
 ## Install
 
 ### SSH key
@@ -111,25 +110,27 @@ Alternatively, I can get all key pairs from 1password, the personal and the work
 
 Dotfiles installion is handled by [thoughtbot's rcm](https://github.com/thoughtbot/rcm). A suite of tools for managing dotfiles directories. Check out whether everything will work fine:
 
-``` bash-session
+```bash-session
 $ lsrc
 ```
 
 Install your dotfiles symlinking them into your home directory:
 
-``` bash-session
+```bash-session
 $ rcup -v
 ```
 
 ### Neovim
 
-My Neovim configuration is based on [NvChad](https://nvchad.com/) with my own customizations on top. The latter are kept in these dotfiles while NvChad is taken and kept up to date from their repo. Head over to their [installation](https://nvchad.com/quickstart/install#install) instructions and then, add the customizations like so:
+My Neovim configuration, found under `/nvchad_config`, is based on [NvChad](https://nvchad.com/) with my own customizations on top. That folder contains all Noevim's config files, using NvChad as plugin. Install them with the following symlink:
 
 ```
-ln -s ~/.dotfiles/nvchad_config/custom ~/.config/nvim/lua/
+ln -s ~/.dotfiles/nvchad_config ~/.config/nvim
 ```
 
-This is based on their suggestion at https://github.com/NvChad/NvChad/discussions/1426.
+Once done, open Neovim and run `:Lazy sync` to install all plugins, and `:MasonInstallAll` to install all LSP servers. Lastly, Copilot will require calling `:Copilot setup` in any new device.
+
+Read the [NvChad documentation](https://nvchad.com/docs/quickstart/install) for more details.
 
 ## Fonts
 
