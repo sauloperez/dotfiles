@@ -144,7 +144,7 @@ Despite NvChad's suggestion to use Fira Code patched with icons, it's best to in
 
 ### Zsh
 
-Since Zsh comes installed with Mac, you just need to install Oh My Zsh by running the following command, although check on their website for the update [installation instructions](https://ohmyz.sh/#install):
+Since Zsh comes installed with Mac, you just need to install Oh My Zsh by running the following command, although check their website for up to date [installation instructions](https://ohmyz.sh/#install):
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -167,45 +167,41 @@ There is no manual step required to install since I use its oh my zsh plugin.
 
 Reference to vim mappings.
 
-
 ### General
 
-* `,a=` Tabularize on assignment (=)
-* `,a=>` Tabularize on hash rocket keys (=>)
-* `,a:` Tabularize on hash/object/dict keys (:)
-* `,a,` Tabularize on comma (,)
-* `,c` Toggle invisibles.
-* `,ls` Show buffers (same as `:buffers`).
-* `,p` Toggle paste mode.
-* `,qs` Toggle search highlight.
-* `,qq` Close Quickfix window (think Ack.vim).
-* `,rp` Toggle Rainbow Parenthesis.
-* `,ss` Strip all trailing whitespace in buffer.
-* `,W` Sudo write!
-* `Y` Yank from cursor to end of line (same as `y$`).
-* `,*` Replace word under cursor.
-* `,]` Indent current block.
-* `,[` Outdent current block.
-* `,⏎` Insert newline.
-* `'` Actually calls <code>`</code> for better mark jumping (line + column).
-* `J` Join lines and restore cursor position.
-
+- `,a=` Tabularize on assignment (=)
+- `,a=>` Tabularize on hash rocket keys (=>)
+- `,a:` Tabularize on hash/object/dict keys (:)
+- `,a,` Tabularize on comma (,)
+- `,c` Toggle invisibles.
+- `,ls` Show buffers (same as `:buffers`).
+- `,p` Toggle paste mode.
+- `,qs` Toggle search highlight.
+- `,qq` Close Quickfix window (think Ack.vim).
+- `,rp` Toggle Rainbow Parenthesis.
+- `,ss` Strip all trailing whitespace in buffer.
+- `,W` Sudo write!
+- `Y` Yank from cursor to end of line (same as `y$`).
+- `,*` Replace word under cursor.
+- `,]` Indent current block.
+- `,[` Outdent current block.
+- `,⏎` Insert newline.
+- `'` Actually calls <code>`</code> for better mark jumping (line + column).
+- `J` Join lines and restore cursor position.
 
 ### Splits
 
-* `+` Increase split size.
-* `-` Decrease split size.
-* `^j` Go to split below.
-* `^k` Go to split above.
-* `^h` Go to split left.
-* `^l` Go to split right.
-
+- `+` Increase split size.
+- `-` Decrease split size.
+- `^j` Go to split below.
+- `^k` Go to split above.
+- `^h` Go to split left.
+- `^l` Go to split right.
 
 ### Commands
 
-* `:W` Alias to `:w` because I'm always typing it.
-* `:R` Get the output of shell commands.
-
+- `:W` Alias to `:w` because I'm always typing it.
+- `:R` Get the output of shell commands.
 
 ## Shell
 
@@ -213,19 +209,17 @@ Most of the shell junk is setup to work in bash. Bash users should
 see [.bash_profile](https://github.com/sauloperez/dotfiles/blob/master/.bash_profile)
 and [.bash_prompt](https://github.com/sauloperez/dotfiles/blob/master/.bash_prompt).
 
-
 ## Aliases
 
 Check out [.aliases](https://github.com/sauloperez/dotfiles/blob/master/.aliases)
 
-
 ## Scripts
 
 This folder contained more stuff in the past, but removing the ones I didn't
-use left only  the two scripts I did to play Pharaoh:
+use left only the two scripts I did to play Pharaoh:
 
-* setup-pharaoh
-* boot-pharaoh
+- setup-pharaoh
+- boot-pharaoh
 
 ## Git
 
@@ -236,8 +230,8 @@ various aliases and settings.
 
 Additional scripts (see [.scripts](https://github.com/sauloperez/dotfiles/tree/master/.scripts/) directory for source):
 
-* git-show-merges
-* git-wtf
+- git-show-merges
+- git-wtf
 
 ## NodeJS
 
@@ -250,7 +244,7 @@ Follow its installation steps at https://github.com/nodenv/nodenv#installation.
 
 Oftentimes, projects define a `.node_version` up to the minor version leaving room for patch upgrades without having to constantly update the version.
 
-To support this, you have to install [nodenv-aliases](https://github.com/nodenv/nodenv-aliases). So you can alias versions like 
+To support this, you have to install [nodenv-aliases](https://github.com/nodenv/nodenv-aliases). So you can alias versions like
 
 ```
 nodenv alias 20.11 20.11.1
@@ -287,7 +281,7 @@ Now, with the Spotify app open you can do `sp current` or `sp play`. Awesome!
 
 Run the sync again!
 
-``` bash-session
+```bash-session
 $ rcup -v
 ```
 
@@ -301,7 +295,7 @@ You can find how to program the pok3r in [[guide] How-to: Program your Pok3r -- 
 
 I couldn't an external monitor connected to my brand new Thinkpad P1 through HDMI until I updated the propietary Nvidia drivers and disabled Kernel mode setting on the Nvidia kernel module.
 
-Keep in mind the HDMI port is wired to the Nvidia graphics card so you'll first have to switch to it either using `Nvidia X Server Settings` or the `prime-select` command line tool. I guess the latter gets installed with the `nvidia-prime` package but I haven't checked. Do not forget to log out and log in again for the changes to take effect. 
+Keep in mind the HDMI port is wired to the Nvidia graphics card so you'll first have to switch to it either using `Nvidia X Server Settings` or the `prime-select` command line tool. I guess the latter gets installed with the `nvidia-prime` package but I haven't checked. Do not forget to log out and log in again for the changes to take effect.
 
 In order to get the latest Nvidia drivers available I added the `graphics-drivers` PPA repository as follows
 
