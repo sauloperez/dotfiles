@@ -85,9 +85,6 @@
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
 
-[url "git@heroku.com:"]
-  insteadOf = "heroku:"
-
 [help]
   autocorrect = 1
 
