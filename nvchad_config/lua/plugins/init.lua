@@ -82,11 +82,6 @@ return {
     lazy = false,
   },
 
-  -- Tim Pope's realm
-  {
-    "tpope/vim-surround",
-    lazy = false,
-  },
   {
     "tpope/vim-fugitive",
     cmd = { "Git", "G" },
@@ -94,6 +89,24 @@ return {
   {
     "tpope/vim-repeat",
     lazy = false,
+  },
+
+  -- mini.plugins
+  {
+    "echasnovski/mini.ai",
+    lazy = false,
+    version = "*",
+    config = function()
+      require("mini.ai").setup()
+    end,
+  },
+  {
+    "echasnovski/mini.surround",
+    event = "BufRead",
+    version = "*",
+    config = function()
+      require("mini.surround").setup()
+    end,
   },
 
   -- Focus mode
