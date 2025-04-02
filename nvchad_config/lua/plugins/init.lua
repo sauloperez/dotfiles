@@ -114,23 +114,6 @@ return {
   },
 
   {
-    "robitx/gp.nvim",
-    lazy = false,
-    config = function()
-      local config = {
-        openai_api_key = os.getenv "OPENAI_API_KEY",
-        -- I need to get the API key but can't log in to the console.
-        providers = {
-          antrophic = {
-            secret = os.getenv "ANTROPHIC_API_KEY",
-          },
-        },
-      }
-      require("gp").setup(config)
-    end,
-  },
-
-  {
     "uga-rosa/translate.nvim",
     cmd = { "Translate" },
     config = function()
@@ -156,6 +139,42 @@ return {
       require("trouble").setup()
     end,
   },
+
+  {
+    "yetone/avante.nvim",
+    event = "VeryLazy",
+    version = false,
+    opts = {
+      provider = "openai",
+      openai = {
+        endpoint = "https://api.openai.com/v1",
+        model = "gpt-4o",
+        timeout = 30000, -- Timeout in milliseconds, increase this for reasoning models
+        temperature = 0,
+        max_tokens = 8192, -- Increase this to include reasoning tokens (for reasoning models)
+        --reasoning_effort = "medium", -- low|medium|high, only used for reasoning models
+      },
+    },
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "stevearc/dressing.nvim",
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+      --- The below dependencies are optional,
+      "nvim-telescope/telescope.nvim", -- for file_selector provider telescope
+      "hrsh7th/nvim-cmp", -- autocompletion for avante commands and mentions
+      "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
+      {
+        -- Make sure to set this up properly if you have lazy=true
+        'MeanderingProgrammer/render-markdown.nvim',
+        opts = {
+          file_types = { "markdown", "Avante" },
+        },
+        ft = { "markdown", "Avante" },
+      },
+    }
+  }
+
 
   -- DAP
   -- {
