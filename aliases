@@ -15,10 +15,6 @@ alias timestamp="date +%s"
 alias copy="pbcopy"
 alias tn="telnet 0.0.0.0 4445"
 
-if type nvim > /dev/null 2>&1; then
-  alias vim='nvim'
-fi
-
 # Git aliases. Note that most of them depend on an alias already defined in
 # gitconfig.
 alias g="git"
