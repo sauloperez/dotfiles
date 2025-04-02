@@ -3,7 +3,6 @@
 - [Prerequisites](#prerequisites)
 - [Install](#install)
   - [SSH key](#ssh-key)
-  - [Go](#go)
   - [Neovim](#neovim)
   - [FZF](#fzf)
   - [Zsh](#zsh)
@@ -111,13 +110,13 @@ Alternatively, I can get all key pairs from 1password, the personal and the work
 Dotfiles installion is handled by [thoughtbot's rcm](https://github.com/thoughtbot/rcm). A suite of tools for managing dotfiles directories. Check out whether everything will work fine:
 
 ```bash-session
-$ lsrc
+lsrc
 ```
 
 Install your dotfiles symlinking them into your home directory:
 
 ```bash-session
-$ rcup -v
+rcup -v
 ```
 
 ### Neovim
@@ -136,11 +135,11 @@ Read the [NvChad documentation](https://nvchad.com/docs/quickstart/install) for 
 
 [Fira Code](https://github.com/tonsky/FiraCode) is an awesome font perfectly suited for my console usage and Nvchad need for a Nerd Font. Go install it from their website.
 
-Despite NvChad's suggestion to use Fira Code patched with icons, it's best to install a standalone symbols package to get icon support from Kitty. Install the Symbols Nerd Font Mono from [Nerd Fonts releases page](https://github.com/ryanoasis/nerd-fonts/releases). The `kitty.conf` file will pick it up automatically. More details: https://sw.kovidgoyal.net/kitty/faq/#kitty-is-not-able-to-use-my-favorite-font.
+Despite NvChad's suggestion to use Fira Code patched with icons, it's best to install a standalone symbols package to get icon support from Kitty. Install the Symbols Nerd Font Mono from [Nerd Fonts releases page](https://github.com/ryanoasis/nerd-fonts/releases). The `kitty.conf` file will pick it up automatically. More details: <https://sw.kovidgoyal.net/kitty/faq/#kitty-is-not-able-to-use-my-favorite-font>.
 
 ### FZF
 
-[FZF](https://github.com/junegunn/fzf.vim) is an awesome fuzzy-finder I use from the terminal an as vim plugin. Make sure you read https://github.com/junegunn/fzf/blob/master/README-VIM.md as well. You should also read the vim plugin's README.
+[FZF](https://github.com/junegunn/fzf.vim) is an awesome fuzzy-finder I use from the terminal an as vim plugin. Make sure you read <https://github.com/junegunn/fzf/blob/master/README-VIM.md> as well. You should also read the vim plugin's README.
 
 ### Zsh
 
@@ -238,7 +237,7 @@ Additional scripts (see [.scripts](https://github.com/sauloperez/dotfiles/tree/m
 Node is needed to run things like Coopdevs' [slides_template](https://github.com/coopdevs/slides_template).
 
 For that is better to install Nodenv so multiple versions can be installed.
-Follow its installation steps at https://github.com/nodenv/nodenv#installation.
+Follow its installation steps at <https://github.com/nodenv/nodenv#installation>.
 
 ### Support for different patch versions
 
@@ -282,7 +281,7 @@ Now, with the Spotify app open you can do `sp current` or `sp play`. Awesome!
 Run the sync again!
 
 ```bash-session
-$ rcup -v
+rcup -v
 ```
 
 ## Pok3r mech keyboard
@@ -321,7 +320,7 @@ driver   : xserver-xorg-video-nouveau - distro free builtin
 
 Particularly `nvidia-driver-430` did not show up before. Unfortunately, the command `sudo apt install nvidia-driver-430` reported an unmet depedencies error so I went the GUI way. You can do so by opening the "Software & Updates" app, choosing the "Additional Drivers" tab. Then, choose "nvidia-driver-430" and "Apply Changes". This took a while.
 
-But it turns out this wasn't enough, even after restarting the system. Finally, I found the solution in https://www.dell.com/community/Precision-Mobile-Workstations/External-Monitor-not-working-Ubuntu-nvidia/m-p/7286631#M1634. Apparently the problem is with the [kernel mode setting](https://wiki.archlinux.org/index.php/Kernel_mode_setting#Disabling_modesetting), which needs to be disabled to work.
+But it turns out this wasn't enough, even after restarting the system. Finally, I found the solution in <https://www.dell.com/community/Precision-Mobile-Workstations/External-Monitor-not-working-Ubuntu-nvidia/m-p/7286631#M1634>. Apparently the problem is with the [kernel mode setting](https://wiki.archlinux.org/index.php/Kernel_mode_setting#Disabling_modesetting), which needs to be disabled to work.
 
 Editing the file `/lib/modprobe.d/nvidia-kms.conf` to `options nvidia-drm modeset=0` fixed the problem after a reboot 🎉️.
 
@@ -329,14 +328,14 @@ Editing the file `/lib/modprobe.d/nvidia-kms.conf` to `options nvidia-drm modese
 
 After blindly applying the last firmware upgrade Grub was gone and there was no way to boot anything other than Windows 10. Disabling secure boot and enabling legacy boot didn't help either.
 
-First of all, https://unix.stackexchange.com/a/475245 shed some light on this giving some clues that led me to the solution. First kind of understood what [UEFI is about](https://www.howtogeek.com/56958/HTG-EXPLAINS-HOW-UEFI-WILL-REPLACE-THE-BIOS/) and what a [EFI system partition is](https://wiki.archlinux.org/index.php/EFI_system_partition), then I run
+First of all, <https://unix.stackexchange.com/a/475245> shed some light on this giving some clues that led me to the solution. First kind of understood what [UEFI is about](https://www.howtogeek.com/56958/HTG-EXPLAINS-HOW-UEFI-WILL-REPLACE-THE-BIOS/) and what a [EFI system partition is](https://wiki.archlinux.org/index.php/EFI_system_partition), then I run
 
 ```
 bcdedit /set {bootmgr} path \EFI\ubuntu\grubx64.efi
 ```
 
-from Window's command prompt as admin, as detailed in https://itsfoss.com/no-grub-windows-linux/. Then reading [BCD System Store Settings for UEFI](BCD System Store Settings for UEFI) from Microsoft's Hardware Dev Center made me understand we basically told the Windows Boot Manager that it should boot grub's EFI application instead.
+from Window's command prompt as admin, as detailed in <https://itsfoss.com/no-grub-windows-linux/>. Then reading [BCD System Store Settings for UEFI](BCD System Store Settings for UEFI) from Microsoft's Hardware Dev Center made me understand we basically told the Windows Boot Manager that it should boot grub's EFI application instead.
 
 ### Pipewire
 
-Sorry, I don't remember all the things I did to make Pipewire work with Wireplumber but https://pipewire-debian.github.io/pipewire-debian/ seems to be the best reference, togheter with https://wiki.archlinux.org/title/PipeWire, to understand and troubleshoot this.
+Sorry, I don't remember all the things I did to make Pipewire work with Wireplumber but <https://pipewire-debian.github.io/pipewire-debian/> seems to be the best reference, togheter with <https://wiki.archlinux.org/title/PipeWire>, to understand and troubleshoot this.
