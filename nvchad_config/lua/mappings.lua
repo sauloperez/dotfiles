@@ -3,16 +3,18 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 
 -- Muscle memory inherited from my old Vim config
-map("n", "\\g", "<cmd> Telescope grep_string <CR>", { desc = "search string under cursor"})
+map("n", "\\g", "<cmd> Telescope grep_string <CR>", { desc = "search string under cursor" })
 map("n", ",gg", "<cmd> Telescope live_grep <CR>", { desc = "git grep" })
-map('n', '<space>b', '<cmd>Telescope buffers<CR>', { noremap = true, silent = true, desc = 'find buffers' })
-map('n', '<space><space>', '<cmd>Telescope find_files<CR>', { noremap = true, silent = true, desc = 'find files' })
+map("n", "<space>b", "<cmd>Telescope buffers<CR>", { noremap = true, silent = true, desc = "find buffers" })
+map("n", "<space><space>", "<cmd>Telescope find_files<CR>", { noremap = true, silent = true, desc = "find files" })
 
--- Utilities
-map('n', '<leader>y', '"+y', { noremap = true, silent = true })
-
--- Copilot. Replaces the default <Tab> which is already taken 
-map('i', '<C-J>', "copilot#Accept('<CR>')", { silent = true, expr = true, replace_keycodes = false, desc = 'accept current Copilot suggestion' })
+-- Copilot. Replaces the default <Tab> which is already taken
+map(
+  "i",
+  "<C-J>",
+  "copilot#Accept('<CR>')",
+  { silent = true, expr = true, replace_keycodes = false, desc = "accept current Copilot suggestion" }
+)
 
 -- Mappings for Trouble
 map("n", "<leader>xx", "<cmd>Trouble<CR>", { noremap = true, silent = true, desc = "trouble" })
