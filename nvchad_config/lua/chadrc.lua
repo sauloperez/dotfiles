@@ -25,26 +25,4 @@ M.ui = {
   },
 }
 
-M.mason = {
-  pkgs = {
-		-- lua stuff
-		"stylua",
-
-		-- web dev stuff
-		"css-lsp",
-		"html-lsp",
-		"typescript-language-server",
-		"prettierd",
-    "eslint_d",
-		"pyright",
-		"debugpy",
-    "mypy",
-
-		-- shell
-		"shfmt",
-		"shellcheck",
-	},
-
-}
-
 return M

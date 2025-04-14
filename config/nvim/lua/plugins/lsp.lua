@@ -6,6 +6,9 @@ return {
         html = {},
         cssls = {},
         ltex_plus = {},
+        ts_ls = {
+          enabled = true,
+        },
       },
     },
   },
