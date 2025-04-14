@@ -21,10 +21,8 @@ local sources = {
   -- webdev stuff
   -- b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
   b.diagnostics.eslint_d, -- this keeps linting consistent with JS project configurations
-  b.formatting.prettierd,
 
   -- Python
-  b.formatting.ruff,
   b.diagnostics.ruff,
   b.diagnostics.mypy.with {
     timeout = 10000,
