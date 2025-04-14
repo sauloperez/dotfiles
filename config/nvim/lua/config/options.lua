@@ -8,3 +8,5 @@ vim.g.snacks_animate = false
 
 vim.g.lazyvim_python_ruff = "ruff"
 vim.g.lazyvim_python_lsp = "basedpyright"
+
+vim.opt.incsearch = true
