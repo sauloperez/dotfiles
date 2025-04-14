@@ -36,6 +36,7 @@ end
 vim.api.nvim_create_user_command("Tomata", function(opts)
   if opts.bang then
     Tomata.stop()
+    notify("Tomata stopped")
     return
   end
   Tomata.start(opts.args)
