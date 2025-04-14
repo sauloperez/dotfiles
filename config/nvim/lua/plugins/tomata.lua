@@ -2,14 +2,14 @@ local notify = function(msg, level)
   vim.notify(msg, level or vim.log.levels.INFO, { title = "🍅 Tomata" })
 end
 
-local Tomata = { timer = nil, duration = nil }
+local Tomata = { timer = nil }
 
-function Tomata.start(duration)
+function Tomata.start(duration) -- Duration in minutes
   if Tomata.timer then
     Tomata.stop()
   end
 
-  Tomata.duration = tonumber(duration) or (25 * 60) -- Default to 25 minutes
+  duration = tonumber(duration) or 25 -- Default to 25 minutes
   Tomata.timer = vim.uv.new_timer()
 
   if not Tomata.timer then
@@ -17,12 +17,12 @@ function Tomata.start(duration)
     return
   end
 
-  Tomata.timer:start(Tomata.duration * 1000, 0, function()
+  Tomata.timer:start(duration * 60 * 1000, 0, function()
     notify("Time is up!")
     Tomata.stop()
   end)
 
-  notify("Tomata started for " .. Tomata.duration / 60 .. " minutes")
+  notify("Tomata started for " .. duration .. " minutes")
 end
 
 function Tomata.stop()
@@ -31,7 +31,6 @@ function Tomata.stop()
     Tomata.timer:close()
     Tomata.timer = nil
   end
-  Tomata.duration = nil
 end
 
 vim.api.nvim_create_user_command("Tomata", function(opts)
