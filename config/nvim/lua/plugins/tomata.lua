@@ -22,7 +22,7 @@ function M.start(duration) -- Duration in minutes
     M.stop()
   end)
 
-  notify("Tomata started for " .. duration .. " minutes")
+  notify("Starting pomodoro timer for " .. duration .. " minutes")
 end
 
 function M.stop()
@@ -36,7 +36,7 @@ end
 vim.api.nvim_create_user_command("Tomata", function(opts)
   if opts.bang then
     M.stop()
-    notify("Tomata stopped")
+    notify("Timer stopped")
     return
   end
   M.start(opts.args)
