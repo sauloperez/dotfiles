@@ -24,6 +24,7 @@ return {
           "prettierd",
         },
         lua = { "stylua" },
+        markdown = { "markdownlint-cli2" },
       },
     },
   },
