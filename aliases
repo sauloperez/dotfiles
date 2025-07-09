@@ -17,6 +17,7 @@ alias tn="telnet 0.0.0.0 4445"
 
 # Git aliases. Note that most of them depend on an alias already defined in
 # gitconfig.
+alias gap="g add -p"
 alias gpl="g pull"
 alias gs="g st"
 alias gl="g lg"
