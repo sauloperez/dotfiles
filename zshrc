@@ -62,8 +62,10 @@ ZSH_THEME="robbyrussell"
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
+# IMPORTANT: This below is the only modification to the vanilla oh-my-zsh zshrc file.
+# All other configuration are in the $ZSH_CUSTOM/ folder.
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=~/.config/ohmyzsh
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
