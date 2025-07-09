@@ -4,11 +4,9 @@ alias a='z'
 # Utilities
 alias grep='GREP_COLOR="1;37;45" LANG=C grep --color=auto'
 alias h="history"
-alias localip="ipconfig getifaddr en0"
 alias view="nvim -R"
 alias timestamp="date +%s"
 alias copy="xsel -ib"
-alias tn="telnet 0.0.0.0 4445"
 
 # Git aliases. Note that most of them depend on an alias already defined in
 # gitconfig.
