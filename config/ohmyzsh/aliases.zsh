@@ -3,7 +3,7 @@ alias a='z'
 
 # Utilities
 alias grep='GREP_COLOR="1;37;45" LANG=C grep --color=auto'
-alias h="history"
+alias h="omz_history"
 alias view="nvim -R"
 alias timestamp="date +%s"
 alias copy="xsel -ib"
