@@ -1,8 +1,3 @@
-# Dir navigation
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias ~='cd ~'
 alias ll='tree --dirsfirst -ChFupDaLg 1'
 alias a='z'
 
