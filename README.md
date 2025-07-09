@@ -162,24 +162,6 @@ By typing `a fo` I cd to `~/dev/openfoodnetwork`.
 
 There is no manual step required to install since I use its oh my zsh plugin.
 
-## Shell
-
-Most of the shell junk is setup to work in bash. Bash users should
-see [.bash_profile](https://github.com/sauloperez/dotfiles/blob/master/.bash_profile)
-and [.bash_prompt](https://github.com/sauloperez/dotfiles/blob/master/.bash_prompt).
-
-## Aliases
-
-Check out [.aliases](https://github.com/sauloperez/dotfiles/blob/master/.aliases)
-
-## Scripts
-
-This folder contained more stuff in the past, but removing the ones I didn't
-use left only the two scripts I did to play Pharaoh:
-
-- setup-pharaoh
-- boot-pharaoh
-
 ## Git
 
 I've included some handy git script additions as well as configution changes.
@@ -187,17 +169,11 @@ Have a look at
 [.gitconfig](https://github.com/sauloperez/dotfiles/blob/master/.gitconfig) to see
 various aliases and settings.
 
-Additional scripts (see [.scripts](https://github.com/sauloperez/dotfiles/tree/master/.scripts/) directory for source):
+## Node
 
-- git-show-merges
-- git-wtf
+Node is needed for things like Neovim and many other tools.
 
-## NodeJS
-
-Node is needed to run things like Coopdevs' [slides_template](https://github.com/coopdevs/slides_template).
-
-For that is better to install Nodenv so multiple versions can be installed.
-Follow its installation steps at <https://github.com/nodenv/nodenv#installation>.
+Use Nodenv to install manage multiple node versions. Follow its installation steps at <https://github.com/nodenv/nodenv#installation>.
 
 ### Support for different patch versions
 
