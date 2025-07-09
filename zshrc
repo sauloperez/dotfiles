@@ -63,8 +63,8 @@ ZSH_THEME="robbyrussell"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # IMPORTANT: This below is the only modification to the vanilla oh-my-zsh zshrc file.
-# All other configuration are in the $ZSH_CUSTOM/ folder.
-# Would you like to use another custom folder than $ZSH/custom?
+# All other configuration are in the $ZSH_CUSTOM/ folder. Whatever you place inside of it 
+# will take precedence over the built-in configuration.
 ZSH_CUSTOM=~/.config/ohmyzsh
 
 # Which plugins would you like to load?
