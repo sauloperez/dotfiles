@@ -1,6 +1,3 @@
-# Adjust $PATH
-[[ -d "$HOME/.scripts" ]] && export PATH=$HOME/.scripts:$PATH
-
 export PATH=~/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Locale
