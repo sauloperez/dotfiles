@@ -6,6 +6,7 @@ alias grep='GREP_COLOR="1;37;45" LANG=C grep --color=auto'
 alias h="omz_history"
 alias view="nvim -R"
 alias timestamp="date +%s"
+alias n='nvim'
 
 # Git aliases. Note that most of them depend on an alias already defined in
 # gitconfig.
