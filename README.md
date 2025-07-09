@@ -162,46 +162,6 @@ By typing `a fo` I cd to `~/dev/openfoodnetwork`.
 
 There is no manual step required to install since I use its oh my zsh plugin.
 
-## Mappings
-
-Reference to vim mappings.
-
-### General
-
-- `,a=` Tabularize on assignment (=)
-- `,a=>` Tabularize on hash rocket keys (=>)
-- `,a:` Tabularize on hash/object/dict keys (:)
-- `,a,` Tabularize on comma (,)
-- `,c` Toggle invisibles.
-- `,ls` Show buffers (same as `:buffers`).
-- `,p` Toggle paste mode.
-- `,qs` Toggle search highlight.
-- `,qq` Close Quickfix window (think Ack.vim).
-- `,rp` Toggle Rainbow Parenthesis.
-- `,ss` Strip all trailing whitespace in buffer.
-- `,W` Sudo write!
-- `Y` Yank from cursor to end of line (same as `y$`).
-- `,*` Replace word under cursor.
-- `,]` Indent current block.
-- `,[` Outdent current block.
-- `,⏎` Insert newline.
-- `'` Actually calls <code>`</code> for better mark jumping (line + column).
-- `J` Join lines and restore cursor position.
-
-### Splits
-
-- `+` Increase split size.
-- `-` Decrease split size.
-- `^j` Go to split below.
-- `^k` Go to split above.
-- `^h` Go to split left.
-- `^l` Go to split right.
-
-### Commands
-
-- `:W` Alias to `:w` because I'm always typing it.
-- `:R` Get the output of shell commands.
-
 ## Shell
 
 Most of the shell junk is setup to work in bash. Bash users should
