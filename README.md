@@ -149,12 +149,6 @@ Since Zsh comes installed with Mac, you just need to install Oh My Zsh by runnin
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-Run the following command to copy over my customizations on top of their vanilla zshrc. The issue with this approach though is that when installing CLI tools, like Yarn they will add their load command into `~/.zshrc` automatically leading to duplication.
-
-```
-cp -R oh-my-zsh-custom/* $ZSH_CUSTOM/.
-```
-
 ### Tmux
 
 Beyond installing Tmux we also need to install [tpm](https://github.com/tmux-plugins/tpm), the package manager.
