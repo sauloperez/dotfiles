@@ -14,7 +14,3 @@ eval "$(nodenv init -)"
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
-
-# Setup direnv
-# https://github.com/direnv/direnv
-command -v direnv && eval "$(direnv hook zsh)"
