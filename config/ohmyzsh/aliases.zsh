@@ -3,6 +3,7 @@ alias ls='eza -lh --group-directories-first --icons=auto'
 alias lt='eza --tree --level=2 --long --icons --git'
 alias ff="fzf --preview 'batcat --style=numbers --color=always {}'"
 alias a='z'
+alias d='cd ~/.dotfiles'
 
 # Utilities
 alias grep='GREP_COLOR="1;37;45" LANG=C grep --color=auto'
