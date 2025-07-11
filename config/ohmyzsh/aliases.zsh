@@ -1,4 +1,7 @@
-alias ll='tree --dirsfirst -ChFupDaLg 1'
+# File system
+alias ls='eza -lh --group-directories-first --icons=auto'
+alias lt='eza --tree --level=2 --long --icons --git'
+alias ff="fzf --preview 'batcat --style=numbers --color=always {}'"
 alias a='z'
 
 # Utilities
