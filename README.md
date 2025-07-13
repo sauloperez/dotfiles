@@ -107,7 +107,9 @@ Alternatively, I can get all key pairs from 1password, the personal and the work
 
 ### Dotfiles
 
-Dotfiles installion is handled by [thoughtbot's rcm](https://github.com/thoughtbot/rcm). A suite of tools for managing dotfiles directories. Check out whether everything will work fine:
+These dotfiles are installed with [thoughtbot's rcm](https://github.com/thoughtbot/rcm). A suite of tools to manage dotfiles directories.
+
+Check out whether everything will work fine:
 
 ```bash-session
 lsrc
@@ -121,15 +123,9 @@ rcup -v
 
 ### Neovim
 
-My Neovim configuration, found under `/nvchad_config`, is based on [NvChad](https://nvchad.com/) with my own customizations on top. That folder contains all Noevim's config files, using NvChad as plugin. Install them with the following symlink:
+My Neovim configuration, based on [LazyVim](https://www.lazyvim.org/), is found in `config/nvim/`. Installing all dotfiles will also symlink it to `~/.config/nvim`. Then, open neovim, which will automatically install all plugins and LSP servers, and run `:LazyHealth` to check everything is working correctly.
 
-```
-ln -s ~/.dotfiles/nvchad_config ~/.config/nvim
-```
-
-Once done, open Neovim and run `:Lazy sync` to install all plugins, and `:MasonInstallAll` to install all LSP servers. Lastly, Copilot will require calling `:Copilot setup` in any new device.
-
-Read the [NvChad documentation](https://nvchad.com/docs/quickstart/install) for more details.
+Note Copilot will require calling `:Copilot setup` in any new device.
 
 ## Fonts
 
