@@ -127,6 +127,10 @@ My Neovim configuration, based on [LazyVim](https://www.lazyvim.org/), is found 
 
 Note Copilot will require calling `:Copilot setup` in any new device.
 
+### Gnome
+
+Run `source ~/.dotfiles/install/set-gnome-theme.sh` to install my own Gnome theme customizations.
+
 ## Fonts
 
 [Fira Code](https://github.com/tonsky/FiraCode) is an awesome font perfectly suited for my console usage and Nvchad need for a Nerd Font. Go install it from their website.
