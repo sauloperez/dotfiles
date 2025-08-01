@@ -149,6 +149,10 @@ Since Zsh comes installed with Mac, you just need to install Oh My Zsh by runnin
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+#### Custom configuration
+
+Environment variables and custom settings are organized in `config/ohmyzsh/config.zsh` to avoid modifying the main `.zshrc` file. This approach allows pulling dotfiles updates without losing personal configurations like PATH modifications, version manager setups, and system-specific settings. The `.zshrc` only sets `ZSH_CUSTOM=~/.config/ohmyzsh` to load all custom configurations from the config directory.
+
 ### Tmux
 
 Beyond installing Tmux we also need to install [tpm](https://github.com/tmux-plugins/tpm), the package manager.

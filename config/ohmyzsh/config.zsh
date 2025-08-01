@@ -19,3 +19,6 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['caps:ctrl_modifier'
 # Omakub
 export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/omakub/bin:$PATH"
 export OMAKUB_PATH="/home/$USER/.local/share/omakub"
+
+# opencode
+export PATH=/home/pau/.opencode/bin:$PATH
