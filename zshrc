@@ -74,7 +74,7 @@ ZSH_CUSTOM=~/.config/ohmyzsh
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode z fzf)
+plugins=(git vi-mode z fzf fzf-tab)
 
 source $ZSH/oh-my-zsh.sh
 
