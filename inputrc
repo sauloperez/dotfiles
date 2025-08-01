@@ -1,4 +1,16 @@
+# Vi-style editing in Readline-based tools (Bash, Python REPL, psql, etc.)
 set keymap vi
 set editing-mode vi
-set completion-ignore-case on
+
+# Better completions
+set completion-ignore-case on         # Case-insensitive matching
+set show-all-if-ambiguous on          # Show all matches immediately if ambiguous
+set show-all-if-unmodified on         # Show matches even if nothing new is typed
+set completion-query-items 200        # Only ask if completions > 200
+set page-completions off              # Avoid pagination for completions
+
+# Matching parentheses highlight (if supported)
 set blink-matching-paren on
+
+# No annoying bell
+set bell-style none
