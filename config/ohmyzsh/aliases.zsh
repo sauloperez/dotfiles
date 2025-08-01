@@ -6,7 +6,7 @@ alias a='z'
 alias d='cd ~/.dotfiles'
 
 # Utilities
-alias grep='GREP_COLOR="1;37;45" LANG=C grep --color=auto'
+alias grep="rg"
 alias h="omz_history"
 alias view="nvim -R"
 alias timestamp="date +%s"
