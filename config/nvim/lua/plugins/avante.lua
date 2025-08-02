@@ -1,67 +1,42 @@
 return {
-  -- Copied from the unmerged PR https://github.com/LazyVim/LazyVim/pull/4440/
-  -- with my own former openai config
+  -- Based on the unmerged PR https://github.com/LazyVim/LazyVim/pull/4440/
+  -- avant's default config and my own ollama config
   {
     "yetone/avante.nvim",
     event = "VeryLazy",
+    version = false,
     dependencies = {
-      "stevearc/dressing.nvim",
-      "ibhagwan/fzf-lua",
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+      --- The below dependencies are optional,
+      "hrsh7th/nvim-cmp", -- autocompletion for avante commands and mentions
+      "folke/snacks.nvim", -- for input provider snacks
     },
     opts = {
-      -- Default configuration
-      hints = { enabled = false },
-
-      ---@alias AvanteProvider "claude" | "openai" | "azure" | "gemini" | "cohere" | "copilot" | string
-      provider = "openai",
-      openai = {
-        endpoint = "https://api.openai.com/v1",
-        model = "gpt-4o",
-        timeout = 30000, -- Timeout in milliseconds, increase this for reasoning models
-        temperature = 0,
-        max_tokens = 8192, -- Increase this to include reasoning tokens (for reasoning models)
-        --reasoning_effort = "medium", -- low|medium|high, only used for reasoning models
-      },
-
-      -- File selector configuration
-      --- @alias FileSelectorProvider "native" | "fzf" | "mini.pick" | "snacks" | "telescope" | string
-      file_selector = {
-        provider = "fzf", -- Avoid native provider issues
-        provider_opts = {},
+      provider = "ollama",
+      providers = {
+        openai = {
+          endpoint = "https://api.openai.com/v1",
+          model = "gpt-4o-mini",
+        },
+        ollama = {
+          endpoint = "http://localhost:11434",
+          model = "llama3.2:3b",
+        },
       },
     },
   },
   {
-    "saghen/blink.cmp",
+    "Kaiser-Yang/blink-cmp-avante",
     lazy = true,
-    dependencies = { "saghen/blink.compat" },
-    opts = {
-      sources = {
-        default = { "avante_commands", "avante_mentions", "avante_files" },
-        compat = {
-          "avante_commands",
-          "avante_mentions",
-          "avante_files",
-        },
-        -- LSP score_offset is typically 60
-        providers = {
-          avante_commands = {
-            name = "avante_commands",
-            module = "blink.compat.source",
-            score_offset = 90,
-            opts = {},
-          },
-          avante_files = {
-            name = "avante_files",
-            module = "blink.compat.source",
-            score_offset = 100,
-            opts = {},
-          },
-          avante_mentions = {
-            name = "avante_mentions",
-            module = "blink.compat.source",
-            score_offset = 1000,
-            opts = {},
+    specs = {
+      {
+        "saghen/blink.cmp",
+        optional = true,
+        opts = {
+          sources = {
+            default = { "avante" },
+            providers = { avante = { module = "blink-cmp-avante", name = "Avante" } },
           },
         },
       },
