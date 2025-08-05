@@ -15,6 +15,7 @@ return {
   {
     "mfussenegger/nvim-lint",
     opts = {
+      events = { "BufWritePost", "BufReadPost", "InsertLeave" },
       linters_by_ft = {
         python = { "dmypy" },
         sh = { "shellcheck" },
@@ -29,6 +30,7 @@ return {
       ensure_installed = {
         "eslint_d",
         "prettierd",
+        "mypy",
       },
     },
   },
