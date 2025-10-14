@@ -125,7 +125,7 @@ rcup -v
 
 My Neovim configuration, based on [LazyVim](https://www.lazyvim.org/), is found in `config/nvim/`. Installing all dotfiles will also symlink it to `~/.config/nvim`. Then, open neovim, which will automatically install all plugins and LSP servers, and run `:LazyHealth` to check everything is working correctly.
 
-Note Copilot will require calling `:Copilot setup` in any new device.
+Note Copilot will require calling `:Copilot auth` in any new device.
 
 ### Gnome
 
