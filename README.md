@@ -89,6 +89,7 @@ brew install \
     tmux \
     z \
     fzf \
+    eza \
     # some more generic packages Mac lacks
     gpg \
     gsed \
