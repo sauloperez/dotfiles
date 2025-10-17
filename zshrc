@@ -74,6 +74,13 @@ ZSH_CUSTOM=~/.config/ohmyzsh
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+# Ensure fzf-tab plugin is installed
+FZF_TAB_DIR="${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab"
+if [[ ! -d "$FZF_TAB_DIR" ]]; then
+  echo "fzf-tab plugin not found. Installing to $FZF_TAB_DIR ..."
+  git clone https://github.com/Aloxaf/fzf-tab "$FZF_TAB_DIR"
+fi
+
 plugins=(git vi-mode z fzf fzf-tab)
 
 source $ZSH/oh-my-zsh.sh

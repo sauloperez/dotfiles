@@ -9,12 +9,17 @@ fi
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
+if [[ -d "$HOME/.pyenv" && -x "$HOME/.pyenv/bin/pyenv" ]]; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init - zsh)"
+fi
 
-# Map ctrl to caps lock
-gsettings set org.gnome.desktop.input-sources xkb-options "['caps:ctrl_modifier']"
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  # Map ctrl to caps lock
+  gsettings set org.gnome.desktop.input-sources xkb-options "['caps:ctrl_modifier']"
+fi
+
 
 # Omakub
 export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/omakub/bin:$PATH"
