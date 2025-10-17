@@ -158,9 +158,6 @@ git clone https://github.com/dracula/zsh.git dracula
 mv ~/dracula/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
 ```
 
-```
-
-
 #### Custom configuration
 
 Environment variables and custom settings are organized in `config/ohmyzsh/config.zsh` to avoid modifying the main `.zshrc` file. This approach allows pulling dotfiles updates without losing personal configurations like PATH modifications, version manager setups, and system-specific settings. The `.zshrc` only sets `ZSH_CUSTOM=~/.config/ohmyzsh` to load all custom configurations from the config directory.
