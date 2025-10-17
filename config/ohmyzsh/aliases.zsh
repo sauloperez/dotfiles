@@ -23,3 +23,4 @@ alias gcom="g co main 2> /dev/null || g co master"
 alias gw="g show" # `gs` would clash with Ghost Script
 alias grim="g rebase -i main || g rebase -i master"
 alias gca="gc --amend"
+alias gg="g g"
