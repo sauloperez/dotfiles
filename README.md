@@ -187,7 +187,9 @@ Oftentimes, projects define a `.node_version` up to the minor version leaving ro
 To support this, you have to install [nodenv-aliases](https://github.com/nodenv/nodenv-aliases). So you can alias versions like
 
 ```
+
 nodenv alias 20.11 20.11.1
+
 ```
 
 ## Keyboard
