@@ -24,3 +24,9 @@ alias gw="g show" # `gs` would clash with Ghost Script
 alias grim="g rebase -i main || g rebase -i master"
 alias gca="gc --amend"
 alias gg="g g"
+
+# Pnpm aliases
+alias pni="pnpm install" # `pi` clashes with Pi, the coding agent
+
+# Agentic stuff
+alias cc="claude --dangerously-skip-permissions"
